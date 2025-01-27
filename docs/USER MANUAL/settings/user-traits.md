@@ -16,7 +16,7 @@ You can also export your CSV data from [Looker](looker)
 
 ## Formatting the CSV file
 
-Here is an example of what your CSV file should look like. **The first column must be user_id**, all other columns can be utilized to specify user traits. There are no limits on columns but please keep in mind this can significantly impact load and sync times.
+Here is an example of what your CSV file should look like. **The first column must be user\_id**, all other columns can be utilized to specify user traits. There are no limits on columns but please keep in mind this can significantly impact load and sync times.
 
 ```
 user_id, ltv, channel, signup_date, nps, plan_type, payment_failed
@@ -29,10 +29,10 @@ user_id, ltv, channel, signup_date, nps, plan_type, payment_failed
 
 Note - to activate third party connectors like Stripe, Salesforce, and others the following columns are required.
 
-- Salesforce: salesforce_id (the id of the Salesforce contact) OR email_address
-- Sendgrid: email_address
-- Stripe: stripe_id (the id of the Stripe customer) OR email_address
-- Zendesk: zendesk_id (the id of the zendesk user) OR email_address
+* Salesforce: salesforce\_id (the id of the Salesforce contact) OR email\_address
+* Sendgrid: email\_address
+* Stripe: stripe\_id (the id of the Stripe customer) OR email\_address
+* Zendesk: zendesk\_id (the id of the zendesk user) OR email\_address
 
 ### Push Notifications
 
@@ -54,11 +54,11 @@ After creating your CSV file you will need to upload it to ya secure area on Ama
 
 1. Go to Settings > User Traits
 
-   [block:image]{"images":[{"image":["https://files.readme.io/da8ce5e-image.png",null,""],"align":"center","border":true}]}[/block]
+   <Image align="center" className="border" border={true} src="https://files.readme.io/da8ce5e-image.png" />
 
 2. Select "Click here for AWS S3 credentials"
 
-   [block:image]{"images":[{"image":["https://files.readme.io/679abbc-image.png",null,""],"align":"center","border":true}]}[/block]
+   <Image align="center" className="border" border={true} src="https://files.readme.io/679abbc-image.png" />
 
 3. Check the "Show Credentials" box to view your credentials. You will need to use the AWS Bucket, Access Key and Secret Key to login and securely upload via AWS. Keep this information handy, you will need it to upload the CSV.
 
@@ -68,15 +68,15 @@ After creating your CSV file you will need to upload it to ya secure area on Ama
 
 6. Click the plus sign to add a new connection
 
-   [block:image]{"images":[{"image":["https://files.readme.io/fc1bd26-image.png",null,""],"align":"center","border":true}]}[/block]
+   <Image align="center" className="border" border={true} src="https://files.readme.io/fc1bd26-image.png" />
 
 7. Select "Amazon S3" from the dropdown list
 
-   [block:image]{"images":[{"image":["https://files.readme.io/193d845-image.png",null,""],"align":"center","border":true}]}[/block]
+   <Image align="center" className="border" border={true} src="https://files.readme.io/193d845-image.png" />
 
 8. Type in your credentials. Then click "More Options" and type in your AWS Bucket in the "Path" field with the"**/**" in front of it (see the screenshot for reference)  
 
-   [block:image]{"images":[{"image":["https://files.readme.io/5a75d55-image.png",null,""],"align":"center","border":true}]}[/block]
+   <Image align="center" className="border" border={true} src="https://files.readme.io/5a75d55-image.png" />
 
 9. Locate Upload Location which gives you the location where you should put your csv.
 
@@ -84,7 +84,7 @@ After creating your CSV file you will need to upload it to ya secure area on Ama
 
 10. Drag and drop your csv file to the ingest folder, using the information from above. Within 3 hour your data will be fully ingested. You should receive an email once you're done.
 
-    [block:image]{"images":[{"image":["https://files.readme.io/5319ecd-image.png",null,""],"align":"center","border":true}]}[/block]
+    <Image align="center" className="border" border={true} src="https://files.readme.io/5319ecd-image.png" />
 
 ## Customizing User Traits
 
@@ -92,7 +92,7 @@ After importing the CSV successfully you will need to configure the new user tra
 
 1. Go to Settings > User Traits, you should now see all imported columns
 
-   [block:image]{"images":[{"image":["https://files.readme.io/1fe2677-image.png",null,""],"align":"center","border":true}]}[/block]
+   <Image align="center" className="border" border={true} src="https://files.readme.io/1fe2677-image.png" />
 
 2. Now go through each trait to update the type, display and description (optional) by clicking on the "Edit" (pencil) icon
 
@@ -109,46 +109,31 @@ user_id, ltv, channel, signup_date, nps, plan_type, payment_failed
 900194,100,homepage,2018-04-1,9,annual,true
 ```
 
-- ltv - number 
-- channel - string
-- signup_date - date
-- nps - number
-- plan_type - string
-- payment_failed - boolean
+* ltv - number 
+* channel - string
+* signup\_date - date
+* nps - number
+* plan\_type - string
+* payment\_failed - boolean
 
 Now that we know the types selecting the display is easy. Here are some guidelines for what display should be set to for various types
 
-- numbers - should normally be slider (unless it refers to a id such as zendesk_id 
-- then it should be multi_select)
-- string - multi_select
-- boolean - multi_select
-- date - date_range
+* numbers - should normally be slider (unless it refers to a id such as zendesk\_id 
+* then it should be multi\_select)
+* string - multi\_select
+* boolean - multi\_select
+* date - date\_range
 
-  [block:image]{"images":[{"image":["https://files.readme.io/e418514-image.png",null,""],"align":"center","border":true}]}[/block]
+  <Image align="center" className="border" border={true} src="https://files.readme.io/e418514-image.png" />
 
 Note - For the slider display type there is a Normalize to 0 - 10 checkbox. You can check this box and it will allow you to target percentiles rather than the exact number. e.g. top 20% ltv users
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b56371d-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/b56371d-image.png" />
 
 <br />
 
 1. Now when you create or edit a segment you can filter based on these user traits.
 
-   [block:image]{"images":[{"image":["https://files.readme.io/0cc29c7-image.png",null,""],"align":"center","border":true}]}[/block]
+   <Image align="center" className="border" border={true} src="https://files.readme.io/0cc29c7-image.png" />
 
    <br />
