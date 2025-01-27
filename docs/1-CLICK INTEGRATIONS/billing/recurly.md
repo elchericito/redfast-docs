@@ -12,19 +12,9 @@ next:
 ---
 ## Overview
 
-[block:embed]
-{
-  "html": false,
-  "url": "https://www.loom.com/embed/46bc074c2ae84fcd8fd55d7b342859d2?sid=e0016d71-fd55-4097-99fc-af43e548f7d8",
-  "title": "iframe",
-  "provider": "loom.com",
-  "href": "https://www.loom.com/embed/46bc074c2ae84fcd8fd55d7b342859d2?sid=e0016d71-fd55-4097-99fc-af43e548f7d8",
-  "typeOfEmbed": "iframe",
-  "height": "400px",
-  "width": "100%",
-  "iframe": true
-}
-[/block]
+<HTMLBlock>{`
+<iframe width="712" height="400" src="https://www.loom.com/embed/46bc074c2ae84fcd8fd55d7b342859d2?sid=d12f25e0-c01d-4ce7-b63c-a6c26f28f83d" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+`}</HTMLBlock>
 
 ## Activation
 
