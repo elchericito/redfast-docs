@@ -22,22 +22,7 @@ When procurred with an application, Redfast will set up an admin user account(s)
 
 **App admins** have the same ability to alter app settings as company admins, but only for a specific app and cannot create new apps. If you'd like your staging and production apps to have different admins, you should set the company settings to **Member** and the corresponding app settings to **Admin**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7b25a52-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/7b25a52-image.png" />
 
 ### App Member
 
@@ -51,12 +36,12 @@ When procurred with an application, Redfast will set up an admin user account(s)
 
 To add a user:
 
-- [ ] Go to Settings > Users > Add user
+* [ ] Go to Settings > Users > Add user
 
-  [block:image]{"images":[{"image":["https://files.readme.io/8080696-image.png",null,""],"align":"center","border":true}]}[/block]
-- [ ] Input user name and email along with permissions level. To learn more about permission levels check [here](pulse-users).
+  <Image align="center" className="border" border={true} src="https://files.readme.io/8080696-image.png" />
+* [ ] Input user name and email along with permissions level. To learn more about permission levels check [here](pulse-users).
 
-  [block:image]{"images":[{"image":["https://files.readme.io/9bca05b-image.png",null,""],"align":"center","border":true}]}[/block]
-- [ ] The invitee will now receive an email invitation to create their login credentials
+  <Image align="center" className="border" border={true} src="https://files.readme.io/9bca05b-image.png" />
+* [ ] The invitee will now receive an email invitation to create their login credentials
 
-  [block:image]{"images":[{"image":["https://files.readme.io/9f75c54-image.png",null,""],"align":"center","border":true}]}[/block]
+  <Image align="center" className="border" border={true} src="https://files.readme.io/9f75c54-image.png" />
