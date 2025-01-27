@@ -18,22 +18,7 @@ Using this approach, your business can recover 40% or more of users with abandon
 
 <br />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/50f04cb-Screenshot_2024-04-30_at_4.09.36_PM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/50f04cb-Screenshot_2024-04-30_at_4.09.36_PM.png" />
 
 <br />
 
@@ -43,22 +28,22 @@ Using this approach, your business can recover 40% or more of users with abandon
 
 ## Step-by-step
 
-- [ ] If you maintain visitor attributes related to cart abandonment, sync those attributes and create an `Abandoned Cart` segment. Otherwise, you may utilize the built in `Anonymous Users` segment.
+* [ ] If you maintain visitor attributes related to cart abandonment, sync those attributes and create an `Abandoned Cart` segment. Otherwise, you may utilize the built in `Anonymous Users` segment.
 
-- [ ] Follow these instructions to [Create a Popup Prompt](create-a-pop-up) 
+* [ ] Follow these instructions to [Create a Popup Prompt](create-a-pop-up) 
 
-- [ ] Modify the headline and message, including any dynamic variables for personalization, such as first name
+* [ ] Modify the headline and message, including any dynamic variables for personalization, such as first name
 
-- [ ] Under Add Action, set a redirect to the cart URL
+* [ ] Under Add Action, set a redirect to the cart URL
 
-- [ ] Set the segment to **Test Users**.
+* [ ] Set the segment to **Test Users**.
 
-- [ ] Set the trigger to activate while on the checkout flow of the site (example "/checkout/\*"). Utilize the "Exit Intent" advanced trigger to recognize when anonymous users are attempting to leave the checkout process.
+* [ ] Set the trigger to activate while on the checkout flow of the site (example "/checkout/\*"). Utilize the "Exit Intent" advanced trigger to recognize when anonymous users are attempting to leave the checkout process.
 
-- [ ] Start the prompt
+* [ ] Start the prompt
 
-- [ ] Add your user ID to the Test Users segment (Settings > Users > Test Users)
+* [ ] Add your user ID to the Test Users segment (Settings > Users > Test Users)
 
-- [ ] Confirm that the prompt is triggered when exhibiting Exit Intent while in the checkout flow
+* [ ] Confirm that the prompt is triggered when exhibiting Exit Intent while in the checkout flow
 
-- [ ] Update the targeted segment to the one identified in Step 1
+* [ ] Update the targeted segment to the one identified in Step 1
