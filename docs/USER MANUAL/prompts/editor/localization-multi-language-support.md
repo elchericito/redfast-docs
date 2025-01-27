@@ -18,104 +18,29 @@ Typically each prompt contains a headline, message body, and call to action butt
 
 Desktop:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/dc57b6a-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" border={true} src="https://files.readme.io/dc57b6a-image.png" />
 
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/18bf885-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/18bf885-image.png" />
 
 Devices:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1facf58-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" border={true} src="https://files.readme.io/1facf58-image.png" />
 
+<Image align="center" className="border" border={true} src="https://files.readme.io/a2ca771-image.png" />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a2ca771-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
-
-<br>
+<br />
 
 > 🚧 Do not delete columns in the CSV. All columns are required.
-> 
+>
 > Leave the fields you do not intend to use blank.
 
-<br>
+<br />
 
 Exactly **one** (1) language should have `default` set to `true`. The values in this row will be returned as the default for end users whose detected language does not appear in the list.
 
 After uploading the CSV and saving the prompt, the language selector dropdown will appear in the prompt preview area. Select a language to view the preview in Pulse. Click Live Preview to view the preview within your site.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ecfc764-image.png",
-        null,
-        null
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/ecfc764-image.png" />
 
 ## Technical Information
 
