@@ -24,75 +24,19 @@ You may add the Redfast SDK from the public Github [repository](https://github.c
 
 1. Add a new Package Dependency to your existing project.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b69fc2ebde28f7ca810e40ffcc781d6eb0838fe6c859fe97c482ca0f1cd8cbac-Screenshot_2024-11-20_at_19.55.49.png",
-        "",
-        ""
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/b69fc2ebde28f7ca810e40ffcc781d6eb0838fe6c859fe97c482ca0f1cd8cbac-Screenshot_2024-11-20_at_19.55.49.png" />
 
 2. Paste the Github repo URL and select appropriate Dependency Rule. Add to your existing project.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/fa893cbcac4f982e312da89be3b511bec8b321c4c8f4fc7f53f660f30157edd8-Screenshot_2024-11-20_at_19.58.25.png",
-        "",
-        ""
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/fa893cbcac4f982e312da89be3b511bec8b321c4c8f4fc7f53f660f30157edd8-Screenshot_2024-11-20_at_19.58.25.png" />
 
 3. Complete adding the package
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/76fdc54ab8b032fd78e26a3b5e14d80593d14279d6707f81b9e69747926936cf-Screenshot_2024-11-20_at_19.59.52.png",
-        "",
-        ""
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/76fdc54ab8b032fd78e26a3b5e14d80593d14279d6707f81b9e69747926936cf-Screenshot_2024-11-20_at_19.59.52.png" />
 
 4. Confirm successful package installation
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9dcc3755e04a1a6daa30fd8f890f99fe420cc12675e2f918e70c2dce8fd88b6e-Screenshot_2024-11-20_at_20.02.19.png",
-        "",
-        ""
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/9dcc3755e04a1a6daa30fd8f890f99fe420cc12675e2f918e70c2dce8fd88b6e-Screenshot_2024-11-20_at_20.02.19.png" />
 
 ### Legacy Installation via local SDK
 
@@ -101,26 +45,12 @@ You may add the Redfast SDK from the public Github [repository](https://github.c
 1. Within Xcode, select Target > General > Frameworks > Libraries > Embedded Content and click on `+`.
 2. Select "Add Other" on bottom left corner and choose "Add Files"
 
-   [block:image]{"images":[{"image":["https://files.readme.io/0824267-Screenshot_2024-05-23_at_3.19.28_PM.png","",""],"align":"left","sizing":"400px"}]}[/block]
+   <Image align="left" width="400px" src="https://files.readme.io/0824267-Screenshot_2024-05-23_at_3.19.28_PM.png" />
 3. Open the `Redfast.xcframework` file
 4. Ensure the "Embed & Sign option is selected"
 5. Import the SDK into your project
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ff07460-Screenshot_2024-05-23_at_3.22.56_PM.png",
-        "",
-        ""
-      ],
-      "align": "left"
-    }
-  ]
-}
-[/block]
-
+<Image align="left" src="https://files.readme.io/ff07460-Screenshot_2024-05-23_at_3.22.56_PM.png" />
 
 <br />
 
@@ -229,7 +159,7 @@ This may be performed in addition to `PromotionManager.setScreenName()` if a tri
 
 Use the following function to retrieve a inline prompt items that can be rendered within the desired app screens. Any activity relating to the prompts should be reported via the user activity functions specified below. The `screenName` argument may be left undefined if the desired trigger(s) are eligible for all screens.
 
-## 
+##
 
 ```swift Swift
 func foo() async {
