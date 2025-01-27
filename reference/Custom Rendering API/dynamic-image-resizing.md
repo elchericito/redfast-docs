@@ -10,11 +10,11 @@ metadata:
 next:
   description: ''
 ---
-When rendering prompts for different screen sizes on TV devices, you may elect to utilize the Redfast dynamic resizing feature to deliver an image asset sized no larger than a specified max height. In order to request a dynamically sized image, you simply add a screen_size parameter to the image request. Note that this feature only works for images hosted by the Redfast platform. If no screen_size parameter is specified, or an invalid value is specified, the original image will be returned.
+When rendering prompts for different screen sizes on TV devices, you may elect to utilize the Redfast dynamic resizing feature to deliver an image asset sized no larger than a specified max height. In order to request a dynamically sized image, you simply add a screen\_size parameter to the image request. Note that this feature only works for images hosted by the Redfast platform. If no screen\_size parameter is specified, or an invalid value is specified, the original image will be returned.
 
 ### Query Params
 
-- screen_size: Accepted values are `1080`, `720`, and `480`
+* screen\_size: Accepted values are `1080`, `720`, and `480`
 
 ### Example Request
 
