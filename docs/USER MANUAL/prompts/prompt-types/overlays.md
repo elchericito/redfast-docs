@@ -57,7 +57,7 @@ This prompt is a banner image with text that spans the bottom portion of the scr
 
 Here is a video tutorial that shows how to create a single popup. The instructions for creating interstitial, notification, video prompt are exactly the same.
 
-<Embed url="https://www.loom.com/embed/37d0ba60b71e4444be6ddcfe14e56add?sid=77dddded-5f13-4cd0-899b-9105cde9f286" nJvsnLtmKCrXY4dDsfkpywOr4wmdOyAf" title="iframe" provider="loom.com" href="https://www.loom.com/embed/37d0ba60b71e4444be6ddcfe14e56add?sid=77dddded-5f13-4cd0-899b-9105cde9f286" nJvsnLtmKCrXY4dDsfkpywOr4wmdOyAf" typeOfEmbed="iframe" height="480px" width="100%" iframe="true" />
+<Embed url="https://www.loom.com/embed/37d0ba60b71e4444be6ddcfe14e56add?sid=77dddded-5f13-4cd0-899b-9105cde9f286 nJvsnLtmKCrXY4dDsfkpywOr4wmdOyAf" title="iframe" provider="loom.com" href="https://www.loom.com/embed/37d0ba60b71e4444be6ddcfe14e56add?sid=77dddded-5f13-4cd0-899b-9105cde9f286 nJvsnLtmKCrXY4dDsfkpywOr4wmdOyAf" typeOfEmbed="iframe" height="480px" width="100%" iframe="true" />
 
 ***
 
