@@ -18,21 +18,7 @@ API actions can be used to send data to the Google Analytics Measurement Protoco
 
 Follow the steps to create an API action. This action should be a POST request. The required url is listed here.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ebf7cc4-Google_Analytics_Custom_Action.png",
-        "",
-        ""
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/ebf7cc4-Google_Analytics_Custom_Action.png" />
 
 ### Specify the payload
 
