@@ -12,16 +12,16 @@ next:
 ---
 ## Required Settings
 
-- Merchant ID
-- Public key
-- Secret key
+* Merchant ID
+* Public key
+* Secret key
 
 ## Supported Actions
 
-| Action         | Description                           | User Dependencies             | Additional Instructions            |
-| -------------- | ------------------------------------- | ----------------------------- | ---------------------------------- |
-| Subscribe Plan | Subscribe the user to a specific plan | braintree or email_address    | Select plan from dropdown          |
-| Add Discount   | Add discount to the user subscription | braintree_id or email_address | Select discount code from dropdown |
+| Action         | Description                           | User Dependencies               | Additional Instructions            |
+| -------------- | ------------------------------------- | ------------------------------- | ---------------------------------- |
+| Subscribe Plan | Subscribe the user to a specific plan | braintree or email\_address     | Select plan from dropdown          |
+| Add Discount   | Add discount to the user subscription | braintree\_id or email\_address | Select discount code from dropdown |
 
 ## Additional Information
 
