@@ -12,8 +12,8 @@ next:
 ---
 Welcome Recurly customers!
 
-_Add Recurly + Redfast Video_
+*Add Recurly + Redfast Video*
 
-_Add Recurly Support contact info_
+*Add Recurly Support contact info*
 
 Click [here](https://help.redfast.com) to visit the Redfast Support Hub.
