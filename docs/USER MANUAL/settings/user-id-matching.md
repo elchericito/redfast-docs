@@ -14,67 +14,22 @@ When authenticated users visit your site, a unique identifier (User ID) is typic
 
 You may need to work with your developers to determine the best method to identify users. The most common methods to retrieve a User ID are from within:
 
-- localStorage item 
-- sessionStorage item
-- browser cookie
-- accessing an item stored in the browser's dataLayer
+* localStorage item 
+* sessionStorage item
+* browser cookie
+* accessing an item stored in the browser's dataLayer
 
 Please specify the storage location and key in the User ID Matching configuration.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/997b754b9eca52a38e829bfb135e3a944f21ae3abdcb7736520990b6561e118c-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/997b754b9eca52a38e829bfb135e3a944f21ae3abdcb7736520990b6561e118c-image.png" />
 
 If the resulting value is encoded, please specify how it should be decoded. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a10af0c7a355927ec26e1db6537ebf1727b49ac6d90a2486d9fb6a5b52d4213a-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/a10af0c7a355927ec26e1db6537ebf1727b49ac6d90a2486d9fb6a5b52d4213a-image.png" />
 
 Finally, if the resulting value is a JSON object, specify a path to access the desired property.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/40644c7db538ade718d1542656d22f4a71f2330860e791905b935daa6ea1c894-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/40644c7db538ade718d1542656d22f4a71f2330860e791905b935daa6ea1c894-image.png" />
 
 Once the form is filled in, scroll down to the bottom and hit the Save button.
 
