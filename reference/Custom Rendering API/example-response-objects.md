@@ -37,7 +37,7 @@ next:
 | path_group_slug | SDK specific identifier for Zone                                                            |                                                                                                                                                 |
 | zone            | Name of zone utilized by inline prompt                                                      |                                                                                                                                                 |
 | zone_type       | Zone type                                                                                   | code (default), live (only applies to JS SDK)                                                                                                   |
-| order           | Order in which inline prompts should be rendered                                            | <integer>                                                                                                                                       |
+| order           | Order in which inline prompts should be rendered                                            | `<integer>`                                                                                                                                     |
 | website_actions | Custom code to be executed upon prompt interaction (Only utilized by SDK)                   |                                                                                                                                                 |
 | settings        | SDK specific rendering settings                                                             |                                                                                                                                                 |
 
@@ -58,8 +58,8 @@ next:
 | url_hash (optional)     |                                                              |                                          |
 | click_id (optional)     | ID of click target                                           | For browsers, can be CSS style selector. |
 | query_params (optional) |                                                              |                                          |
-| delay_seconds           | Number of seconds to wait before rendering prompt            | <number of seconds>                      |
-| click_count_threshold   | Number of times click_id is invoked betwen triggering prompt | <integer>                                |
+| delay_seconds           | Number of seconds to wait before rendering prompt            | `<number of seconds>`                    |
+| click_count_threshold   | Number of times click_id is invoked betwen triggering prompt | `<integer>`                              |
 | use_regex               | Specify whether url_path should be considered a regexp       | true, false                              |
 | inject                  | Only utilized by SDK                                         |                                          |
 | custom_trigger_args     | Only utilized by SDK                                         |                                          |
@@ -70,7 +70,7 @@ next:
 | Attribute      | Description                                                           | Values                                                                           |
 | -------------- | --------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
 | id             | Unique identifier for Trigger                                         |                                                                                  |
-| ping_frequency | Number of seconds client should wait before issuing next Ping request | <integer>                                                                        |
-| last_update    | Epoch of time at which response objecdt was last updated              | <epoch timestamp>                                                                |
+| ping_frequency | Number of seconds client should wait before issuing next Ping request | `<integer>`                                                                      |
+| last_update    | Epoch of time at which response objecdt was last updated              | `<epoch timestamp>`                                                              |
 | device_type    | Device type to which prompt applies                                   | web, ios, tv_os, android_os, roku_os (addl custom device types may be available) |
 | autoingest     | Only utilized by SDK                                                  |                                                                                  |
