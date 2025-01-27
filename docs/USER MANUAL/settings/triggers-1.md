@@ -16,43 +16,13 @@ Triggers allow you to specify the required criteria to show a prompt. This guide
 
 The page trigger is the most common type of trigger that displays a prompt when visitors arrive on a screen with the matching URL path. You may set a timer that will show the prompt after specified number of seconds rather than immediately.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1227b33-Screenshot_2024-04-25_at_19.21.09.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/1227b33-Screenshot_2024-04-25_at_19.21.09.png" />
 
 ## Any Page
 
 This basic option will trigger your prompt on any page of your site.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2c363a4-Screenshot_2024-04-25_at_19.22.59.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/2c363a4-Screenshot_2024-04-25_at_19.22.59.png" />
 
 ## Wildcard URL Path
 
@@ -60,25 +30,11 @@ This option will trigger prompts on pages with the matching URL path. Below are 
 
 **Wildcard examples**
 
-- `/categories/*` - matches any url path matching the wildcard, such as `/categories/123` or `/categories/123/detail`
-- `/categories/movies/*`- matches url paths like`/categories/123/movies/456` or `/categories/movies/top-ten`
-- `/movies/the-*`- matches `/movies/the-end`or `/movies/the-best/123`
+* `/categories/*` - matches any url path matching the wildcard, such as `/categories/123` or `/categories/123/detail`
+* `/categories/movies/*`- matches url paths like`/categories/123/movies/456` or `/categories/movies/top-ten`
+* `/movies/the-*`- matches `/movies/the-end`or `/movies/the-best/123`
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/929942b-Screenshot_2024-04-25_at_19.27.22.png",
-        "",
-        ""
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/929942b-Screenshot_2024-04-25_at_19.27.22.png" />
 
 ### Query Parameters
 
@@ -86,9 +42,9 @@ Triggers may also include matches against query parameters. Wildcard expressions
 
 Examples:
 
-- `campaignid=*`
-- `id=*&referrer_id=456`
-- `utm=mycampaign`
+* `campaignid=*`
+* `id=*&referrer_id=456`
+* `utm=mycampaign`
 
 ### URL Hash
 
@@ -96,26 +52,12 @@ Triggers may include matches against URL hash properties containing the `#` char
 
 Examples:
 
-- `#anchor1`
-- `#category*`
+* `#anchor1`
+* `#category*`
 
 Wildcard URL, Query Parameter and URL Hash options may be combined per the below example. Leave the appropriate input field blank if you do not want to utilize one or more of these options.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/25bec36-Screenshot_2024-04-25_at_21.36.00.png",
-        "",
-        ""
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/25bec36-Screenshot_2024-04-25_at_21.36.00.png" />
 
 ## Regular Expression URL Path
 
@@ -125,20 +67,20 @@ This option also allows you specify matching URL paths with a regular expression
 
 Examples:
 
-`^(?!\/accounts).*`- Includes all URL paths except for anything starting with `/accounts/`  
+`^(?!\/accounts).*`- Includes all URL paths except for anything starting with `/accounts/`\
 `^(?!\/category\/live-news).*`- Include all URL paths except for anything starting with `/category/live-news`
 
 ### Query Parameters
 
 Example:
 
-- `^(?!campaign_id).*` - Excludes URLs which contain the `campaign_id` parameter
+* `^(?!campaign_id).*` - Excludes URLs which contain the `campaign_id` parameter
 
 ### URL Hash
 
 Example:
 
-- `^(?!#section_5).*` - Excludes hash property `section_5`
+* `^(?!#section_5).*` - Excludes hash property `section_5`
 
 ### Complex Regular Expressions
 
@@ -146,63 +88,18 @@ Please reach out to your Customer Success Manager for help creating regular expr
 
 Examples:
 
-- `\/skus\/123[a-z]{3,}456` - Match all SKUs in your catalog that start with 123 and end with 456 that have 3 or more letters in between, for example, `/skus/123abc456` and `/skus/123wxyz456`
-- `\/series\/.+-episode-[246]`- Match all episodes in the catalog that end with episode 2, 4, 6, for example,  `/series/the-last-pumpkin-episode-2` and `/series/fav-widget-show-episode-6`
+* `\/skus\/123[a-z]{3,}456` - Match all SKUs in your catalog that start with 123 and end with 456 that have 3 or more letters in between, for example, `/skus/123abc456` and `/skus/123wxyz456`
+* `\/series\/.+-episode-[246]`- Match all episodes in the catalog that end with episode 2, 4, 6, for example,  `/series/the-last-pumpkin-episode-2` and `/series/fav-widget-show-episode-6`
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a7d9477-Screenshot_2024-04-29_at_18.00.48.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/a7d9477-Screenshot_2024-04-29_at_18.00.48.png" />
 
 ### Regular Expression Tester
 
 Use the tester to determine whether sample URL paths match the specified regular expression.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a61d37b-Screenshot_2024-04-29_at_18.04.25.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" border={true} src="https://files.readme.io/a61d37b-Screenshot_2024-04-29_at_18.04.25.png" />
 
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ddfd19c-Screenshot_2024-04-29_at_18.06.00.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/ddfd19c-Screenshot_2024-04-29_at_18.06.00.png" />
 
 # Click Trigger
 
@@ -210,43 +107,13 @@ Click triggers will show a prompt after a specified number of clicks have occurr
 
 Here are some examples:
 
-- The prompt will be shown after 5 clicks on anything on any page. The CSS query selector `*` indicates that all page elements will be monitored for clicks.
+* The prompt will be shown after 5 clicks on anything on any page. The CSS query selector `*` indicates that all page elements will be monitored for clicks.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/66db085-Screenshot_2024-04-29_at_18.08.12.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" border={true} src="https://files.readme.io/66db085-Screenshot_2024-04-29_at_18.08.12.png" />
 
+* The prompt will be shown after a single click of the Cancel Subscription button on the `/accounts` page. The CSS query selector `#cancel-subscription` references the appropriate button on the Account page.
 
-- The prompt will be shown after a single click of the Cancel Subscription button on the `/accounts` page. The CSS query selector `#cancel-subscription` references the appropriate button on the Account page.
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/001f9ed-Screenshot_2024-04-29_at_18.10.37.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/001f9ed-Screenshot_2024-04-29_at_18.10.37.png" />
 
 # Advanced Trigger
 
@@ -336,22 +203,7 @@ If the Advanced Trigger is to be polled, set the polling interval. In most cases
 
 If the Advanced Trigger is event based, select "Event-based" option.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/49ebd62-Screenshot_2024-04-29_at_18.12.52.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/49ebd62-Screenshot_2024-04-29_at_18.12.52.png" />
 
 # Help
 
