@@ -16,7 +16,7 @@ Required information: `FCM service json`
 
 Steps:
 
-1. Select your project from <https://console.firebase.google.com/>, and click the gear icon on the top of the sidebar.
+1. Select your project from [https://console.firebase.google.com/](https://console.firebase.google.com/), and click the gear icon on the top of the sidebar.
 2. Navigate to Project Settings -> Service Account tab 
 3. Generate New Private Key
 4. Download the JSON file 
