@@ -1,0 +1,204 @@
+---
+title: Android
+excerpt: ''
+deprecated: false
+hidden: false
+metadata:
+  title: ''
+  description: ''
+  robots: index
+next:
+  description: ''
+---
+The Redfast Android SDK brings the ability to monitor consumption and show Redfast configured prompts within your native Android app. The Android SDK is the common starting point for Android Phones, Tablets, TVs, Fire Tablets, and Fire TV. The SDK automatically handles display of modals (popups, video popups and banners) and the related user triggered events. Inline prompts are accessible via helper functions with the necessary metadata for rendering within chosen areas of the app.
+
+## Install the SDK
+
+The Redfast Android SDK includes support for mobile, tablet and TV devices. The latest SDK version as well as the source code of an example app is available [here](https://github.com/redfast/redfast-sdk-android/releases). Please reach out to your customer success manager if you would like the keys needed to run the example app.
+
+**Steps:**
+
+1. Create folder “libs” under “src/main”
+2. Add “.aar” library to “libs” folder
+3. Add library as a dependency in “build.gradle”. Example: 
+
+```kotlin
+"implementation"(files("src/main/libs/google-sdk.aar"))
+```
+
+4. For the`google-sdk.aar`library, it is also required to add the Android billing library dependency. Example: 
+
+```kotlin
+"implementation"("com.android.billingclient:billing:6.0.1")
+"implementation"("com.android.billingclient:billing-ktx:6.0.1")
+```
+
+5. Enable the following features in `build.gradle`:
+
+```kotlin Kotlin
+buildFeatures {
+  viewBinding = true
+  dataBinding = true
+}
+```
+
+## Initialize Redfast
+
+In the your app's main activity or application file, add the following line and replace with your appID and the userID of the current user. The appID is available on the Settings > Application screen within Pulse.
+
+```kotlin Kotlin
+PromotionManager.initPromotion([appID], [userID])
+```
+
+## Trigger Popup via Screen Name
+
+Allow the Redfast SDK to display a popup on a specific Screen Name. Add the following line in the activity or fragment's onCreate function:
+
+```kotlin
+override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+    ...
+    PromotionManager.setScreenName(binding.root, "ViewController") {
+        when (it.code) {
+            PromotionResult.timerExpired,
+            PromotionResult.declined,
+            PromotionResult.abort,
+            PromotionResult.accepted...
+        }
+    }
+}
+```
+
+## Trigger Popup via Button Click
+
+Allow the Redfast SDK to display a popup configured with a Screen Name and Click ID. Add the following line in the button's click handler:
+
+```kotlin
+PromotionManager.getTriggerablePrompts(screenName = "home", clickId = "clickId", type = PathType.MODAL) {
+  val item = it.asList().firstOrNull()
+  item?.let { prompt ->
+    PromotionManager.showModal(promptId = prompt.id, requireContext()) {
+      Log.d("HomeFragment", "${it.code}")
+    }
+  }
+}
+```
+
+## Retrieve Inline Prompts
+
+The SDK provides a function to retrieve a collection of inline items that are configured to trigger based on a Screen Name and/or Click ID. The properties of each Prompt object may be used to render the inline prompt in the appropriate location.
+
+```kotlin
+PromotionManager.getTriggerablePrompts("ScreenName", "ClickId") { prompts ->
+  prompts.firstOrNull()?.let {
+    /* Inline Prompt Image - based on device settings, one of:
+      rf_settings_bg_image_android_os_fire_tv_composite
+      rf_settings_bg_image_android_os_tablet_composite
+      rf_settings_bg_image_android_os_phone_composite
+    */
+    val bgImage = it.bgImage
+    // Device Metadata - rf_metadata
+    val deviceMeta = it.deviceMeta
+    // Deeplink - rf_settings_deeplink
+    val deeplink  = it.deeplink
+    // Confirm Button Color - rf_retention_confirm_button_text_color
+    val button1Color = it.button1Color
+    // Second Button Color - rf_retention_confirm_button_2_text_color
+    val button2Color = it.button2Color
+    // Cancel Button Color - rf_retention_cancel_button_text_color
+    val button3Color = it.button3Color
+    // All of the properties related to Timer
+    // rf_settings_close_seconds
+    val timerSeconds = it.timerSeconds
+    // rf_settings_close_seconds
+    val timerText = it.timerText
+    // rf_settings_timer_font_size
+    val timerTextFontSize = it.timerTextFontSize
+    // rf_settings_timer_font_color
+    val timerTextFontColor = it.timerTextFontColor
+    // All of the properties
+    val properties = it.properties
+ 
+    // Following methods will report the interaction to Redfast:
+    // Invoke when inline prompt is shown to user
+    it.impression()
+    // Invoke when user dismisses prompt
+    it.dismiss()
+    // Invoke when user declines prompt (Button 3)
+    it.decline()
+    // Invoke when timerSeconds expire and prompt is dismissed
+    it.timeout()
+    // Invoke if the "holdout" property is "true". This is normally automatically invoked.
+    it.holdout()
+    // Invoke when Button 1 is pressed
+    it.click()
+    // Invoke when Button 2 is pressed
+    it.click2()
+  }
+}
+```
+
+## Deep Link to a Media Asset
+
+You can insert deeplink key-value pairs in Pulse. When the user invokes the CTA, you can utilize these key-value pairs to send the user to a specific media asset within the app.
+
+The deeplink value is saved in the completion callback from your `setScreenName`, `buttonClick`, and `getInlines`
+
+## Access Custom Metadata
+
+Custom key-value pairs can be added to an item via Pulse. These values may be used to perform an action that is not the typical media asset deep link, like sending the user to a registration screen.
+
+The meta data json is saved in the completion callback from your `setScreenName`, `buttonClick`, and `getInlines`
+
+## Send Usage Tracking Event
+
+Use this to send custom events using the SDK. If configured as a tracker within Pulse, these custom events can be used to target prompts at specific sets of users.
+
+```kotlin
+PromotionManager.customTrack("[customTrackId]")
+```
+
+## Set UserId
+
+You may change the userid after the SDK has been initialized, for example, when the user authenticates mid session. Note that it may take several seconds for the user's prompts to refresh.
+
+```kotlin
+PromotionManager.setUserId("[New userID]")
+```
+
+## Debug View
+
+The SDK provides a debug view modal, in which you can use the onscreen keyboard to either reset the current user or set a new user id.
+
+To trigger the debug view for a specific screen, you can call the `PromotionManager.showDebugView` function. 
+
+## External libraries
+
+Common
+
+```
+    com.squareup.moshi:moshi-kotlin:1.9.2
+    com.squareup.moshi:moshi-kotlin-codegen:1.9.2
+    com.squareup.retrofit2:retrofit:2.6.2
+    com.squareup.retrofit2:converter-moshi:2.6.2
+    com.squareup.okhttp3:okhttp:4.2.2
+    com.squareup.okhttp3:logging-interceptor:4.2.2
+    org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1
+    org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1
+    com.squareup.picasso:picasso:2.71828
+    com.google.code.gson:gson:2.8.9
+```
+
+Conditional
+
+```
+Google IAP: 
+    com.android.billingclient:billing:6.0.1
+    com.android.billingclient:billing-ktx:6.0.1
+    
+Amazon IAP:
+    amazon/in-app-purchasing-2.0.76.jar
+```
