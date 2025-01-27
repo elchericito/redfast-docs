@@ -25,19 +25,19 @@ Adding a dynamic variable to your prompt is as simple as clicking the **“+ Ins
 
 * [ ] Go to **Prompts** and select your prompt.
 
-  <Image align="center" className="border" border={`{true}`} src="https://files.readme.io/309a30e-image.png" />
+  <Image align="center" className="border" border="true" src="https://files.readme.io/309a30e-image.png" />
 * [ ] Select **Edit prompt design**
 
-  <Image align="center" className="border" border={`{true}`} src="https://files.readme.io/f2e4389-image.png" />
+  <Image align="center" className="border" border="true" src="https://files.readme.io/f2e4389-image.png" />
 * [ ] Click **Insert variable**
 
-  <Image align="center" className="border" border={`{true}`} src="https://files.readme.io/7915a13-image.png" />
+  <Image align="center" className="border" border="true" src="https://files.readme.io/7915a13-image.png" />
 * [ ] Select **Dynamic variables**
 
-  <Image align="center" className="border" border={`{true}`} src="https://files.readme.io/9f84933-image.png" />
+  <Image align="center" className="border" border="true" src="https://files.readme.io/9f84933-image.png" />
 * [ ] Open the select box and choose a variable
 
-  <Image align="center" className="border" border={`{true}`} src="https://files.readme.io/f845d05-image.png" />
+  <Image align="center" className="border" border="true" src="https://files.readme.io/f845d05-image.png" />
 * [ ] Hit **Insert variable**
 
   ![](https://files.readme.io/69cd32e-image.png)
@@ -45,4 +45,4 @@ Adding a dynamic variable to your prompt is as simple as clicking the **“+ Ins
 
   ![](https://files.readme.io/3e79ce8-image.png)
 
-<br />
+<br />  
