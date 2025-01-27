@@ -26,23 +26,9 @@ The Redfast console, called Pulse, is the management console where you can confi
 
 The heart of the platform is the real time stream data processor that dynamically segments incoming traffic into manageable user segments and cohorts based on rules or machine learning. These real time user segments can be targeted with personalized in-app prompts to drive actions beneficial to the business.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2a163da-image.png",
-        null,
-        "Redfast Platform"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Redfast Platform"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Redfast Platform" align="center" border={true} src="https://files.readme.io/2a163da-image.png">
+  Redfast Platform
+</Image>
 
 <br />
 
