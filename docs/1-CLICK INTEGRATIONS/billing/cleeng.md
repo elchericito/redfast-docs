@@ -26,21 +26,9 @@ next:
 
 It is recommended to schedule an automated data sync with Cleeng from the admin console.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/217df5b-Screenshot_2024-06-02_at_10.08.45_PM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" src="https://files.readme.io/217df5b-Screenshot_2024-06-02_at_10.08.45_PM.png" />
+
+
 
 **Steps:**
 
