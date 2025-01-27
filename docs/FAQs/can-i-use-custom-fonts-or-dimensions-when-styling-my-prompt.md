@@ -10,25 +10,10 @@ metadata:
 next:
   description: ''
 ---
-Sure, you can apply your custom font to any of your prompt elements using the Custom CSS section of the Editor.  
+Sure, you can apply your custom font to any of your prompt elements using the Custom CSS section of the Editor.\
 Refer to this [article](styling-fine-tuning-css-selectors) for a list of CSS style classes that may be used to modify the default styling of any Redfast prompt.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/396ca85-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/396ca85-image.png" />
 
 ```
 .rfmodal-content-wrapper {
