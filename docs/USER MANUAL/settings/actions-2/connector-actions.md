@@ -18,27 +18,27 @@ These functions are performed when a invokes the CTA on a personalization (altho
 
 Each connector has user data dependencies that must be satisfied. The integrations section has more information on importing user data. Select a specific connector for data dependencies and additional information.
 
-- Billing
-  - [Recurly](recurly)
-  - [Stripe](stripe)
-  - [Zuora](zuora)
-  - [Braintree](braintree)
-  - [Chargify](chargify)
-  - [Vindicia](vindicia)
-  - [In-App Purchase](app-stores) (Apple, Google, Amazon, Roku)
-  - [Shopify](shopify)
-  - [Cleeng](cleeng)
-- CRM
-  - [Salesforce Marketing Cloud](salesforce-marketing-cloud)
-  - [Segment](segmentio-twilio)
-  - [Braze](braze)
-  - [Sendgrid](sendgrid)
-  - [ActiveCampaign](activecampaign)
-  - [Freshdesk](freshdesk)
-  - [Zendesk](zendesk)
-  - Adobe (AEP, AJO)
-- Analytics
-  - [Google Analytics](google-analytics)
-  - [Mixpanel](mixpanel)
-  - [mParticle](mparticle)
-  - Heap
+* Billing
+  * [Recurly](recurly)
+  * [Stripe](stripe)
+  * [Zuora](zuora)
+  * [Braintree](braintree)
+  * [Chargify](chargify)
+  * [Vindicia](vindicia)
+  * [In-App Purchase](app-stores) (Apple, Google, Amazon, Roku)
+  * [Shopify](shopify)
+  * [Cleeng](cleeng)
+* CRM
+  * [Salesforce Marketing Cloud](salesforce-marketing-cloud)
+  * [Segment](segmentio-twilio)
+  * [Braze](braze)
+  * [Sendgrid](sendgrid)
+  * [ActiveCampaign](activecampaign)
+  * [Freshdesk](freshdesk)
+  * [Zendesk](zendesk)
+  * Adobe (AEP, AJO)
+* Analytics
+  * [Google Analytics](google-analytics)
+  * [Mixpanel](mixpanel)
+  * [mParticle](mparticle)
+  * Heap
