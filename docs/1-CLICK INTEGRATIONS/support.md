@@ -10,6 +10,6 @@ metadata:
 next:
   description: ''
 ---
-- GA
-- Mixpanel
-- Heap
+* GA
+* Mixpanel
+* Heap
