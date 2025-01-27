@@ -14,58 +14,14 @@ The **Live** view displays near-realtime prompt interactions and exceptions for 
 
 The Live feture can be used to:
 
-- ensure that recently launched prompts are working properly;
-- monitor live prompts during critical events;
-- debug end user support issues.
+* ensure that recently launched prompts are working properly;
+* monitor live prompts during critical events;
+* debug end user support issues.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c308d679aa03b9f70862664b088bb55718dc605a0fedaa1202edac91d4fd5c9f-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/c308d679aa03b9f70862664b088bb55718dc605a0fedaa1202edac91d4fd5c9f-image.png" />
 
 <br />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c11da48e14ad0d0fdf7007f45bffdd246785856d3086a9656e8d222a9fb737a2-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" border={true} src="https://files.readme.io/c11da48e14ad0d0fdf7007f45bffdd246785856d3086a9656e8d222a9fb737a2-image.png" />
 
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e8a73effbc0b15960ef1b03db283395b7e209e4608737f9b31dc694523a665b0-image.png",
-        null,
-        null
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" border={true} src="https://files.readme.io/e8a73effbc0b15960ef1b03db283395b7e209e4608737f9b31dc694523a665b0-image.png" />
