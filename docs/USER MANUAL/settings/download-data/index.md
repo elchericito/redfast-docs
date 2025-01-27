@@ -25,20 +25,7 @@ Data from all user activity relating to running prompts are continuously saved t
 1. Go to Settings &gt; User Traits
 2. Select “Click here for AWS S3 credentials”
 
-<block:image>
-  {
-    "images": [
-      {
-        "image": [
-          "https://files.readme.io/60d5733d567e8ebe61eeef8a39345ccf6c7c78e00d792a40bf4f185f6db46108-aws-creds.png",
-          "",
-          ""
-        ],
-        "align": "center"
-      }
-    ]
-  }
-</block:image>
+<Image align="center" src="https://files.readme.io/60d5733d567e8ebe61eeef8a39345ccf6c7c78e00d792a40bf4f185f6db46108-aws-creds.png" />
 
 3. You will need to copy the AWS Bucket, Access Key and Secret Key to login. Replace `ingest` with `exports` within the Upload Location path. All filenames will start with the activities prefix.
 
