@@ -14,9 +14,9 @@ Admin users may override certain behaviors of the Redfast Javascript SDK. Upon d
 
 You may need to work with your developers to determine the best method to identify users. The most common methods to retrieve a User ID are:
 
-- localStorage or sessionStorage item
-- browser cookie
-- accessing an item stored in the browser's dataLayer
+* localStorage or sessionStorage item
+* browser cookie
+* accessing an item stored in the browser's dataLayer
 
 Reach out to Redfast Support if you need assistance.
 
