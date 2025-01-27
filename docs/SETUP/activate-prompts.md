@@ -20,7 +20,7 @@ Activation of prompts has two phases:
 
 Prompts can be placed on your site in one of two ways:
 
-1. **Using the Redfast [Live tool](live)**. Your support contact can demonstrate how you can use the interactive point-and-click tool to place prompts in the desired area on your site (web only).
+1. **Using the Redfast[Live tool](live)**. Your support contact can demonstrate how you can use the interactive point-and-click tool to place prompts in the desired area on your site (web only).
 
 2. **Adding class identifiers to your site**. With assistance from your development team, you can add Redfast ids to specific areas of your site.
 
