@@ -14,30 +14,30 @@ The Redfast Salesforce connector integrates with Support Cloud as well as Market
 
 ## Support Cloud Credentials
 
-- username
-- password
-- security token
-- client id
-- client secret
+* username
+* password
+* security token
+* client id
+* client secret
 
 ## Marketing Cloud Credentials
 
-- client id
-- client secret
-- from email address
-- base url
-- auth base url
-- soap base url
+* client id
+* client secret
+* from email address
+* base url
+* auth base url
+* soap base url
 
 ## Supported Connector Actions
 
-| Action                                                        | Description                                                                                                                                 | User Dependencies              | Additional Instructions                                                                                   | Form Inputs |
-| ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ | --------------------------------------------------------------------------------------------------------- | ----------- |
-| Create a Case (Support)                                       | Creates a support case within Salesforce with information about the user and prompt                                                         | n/a                            | n/a                                                                                                       | n/a         |
-| Post offer acceptance to feed of all existing cases (Support) | Adds a feed item with information about the user and prompt to all support cases within Salesforce that have the user listed as the Contact | salesforce_id or email_address | n/a                                                                                                       | n/a         |
-| Triggered Send (Marketing Cloud)                              | Sends a templated email to the user                                                                                                         | email_address (optional)       | Select the email template on the prompt screen. Set up dynamic templates in the Marketing Cloud dashboard | optional    |
-| Add Subscriber to List (Marketing Cloud)                      | Adds an existing subscriber to the specified list                                                                                           | n/a                            | Select the list on the prompt screen. Set up lists in the Marketing Cloud dashboard                       | n/a         |
-| Add User to List with form input (Marketing Cloud)            | Creates a subscriber based on the input email address and adds them to the specified list                                                   | n/a                            | Select the list on the prompt screen. Set up lists in the Marketing Cloud dashboard                       | required    |
+| Action                                                        | Description                                                                                                                                 | User Dependencies                | Additional Instructions                                                                                   | Form Inputs |
+| ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- | --------------------------------------------------------------------------------------------------------- | ----------- |
+| Create a Case (Support)                                       | Creates a support case within Salesforce with information about the user and prompt                                                         | n/a                              | n/a                                                                                                       | n/a         |
+| Post offer acceptance to feed of all existing cases (Support) | Adds a feed item with information about the user and prompt to all support cases within Salesforce that have the user listed as the Contact | salesforce\_id or email\_address | n/a                                                                                                       | n/a         |
+| Triggered Send (Marketing Cloud)                              | Sends a templated email to the user                                                                                                         | email\_address (optional)        | Select the email template on the prompt screen. Set up dynamic templates in the Marketing Cloud dashboard | optional    |
+| Add Subscriber to List (Marketing Cloud)                      | Adds an existing subscriber to the specified list                                                                                           | n/a                              | Select the list on the prompt screen. Set up lists in the Marketing Cloud dashboard                       | n/a         |
+| Add User to List with form input (Marketing Cloud)            | Creates a subscriber based on the input email address and adds them to the specified list                                                   | n/a                              | Select the list on the prompt screen. Set up lists in the Marketing Cloud dashboard                       | required    |
 
 ## Installing Journey Builder Activity
 
@@ -51,5 +51,5 @@ Once completed, Redfast will appear as a Message activity within Journey Builder
 
 ## Additional Information
 
-- [Salesforce Credentials](https://developer.salesforce.com/forums/?id=906F0000000AfcgIAC)
-- [Salesforce Client ID and Secret](https://salesforce.stackexchange.com/questions/40346/where-do-i-find-the-client-id-and-client-secret-of-an-existing-connected-app/224659#224659)
+* [Salesforce Credentials](https://developer.salesforce.com/forums/?id=906F0000000AfcgIAC)
+* [Salesforce Client ID and Secret](https://salesforce.stackexchange.com/questions/40346/where-do-i-find-the-client-id-and-client-secret-of-an-existing-connected-app/224659#224659)
