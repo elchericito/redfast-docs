@@ -58,5 +58,5 @@ In December 2020, Apple introduced new requirements for app developers to outlin
 
 Data collected by default: 
 
-- Identifiers: Redfast does not create a user identifier. A User ID created by your system is passed on to the Redfast SDK. Please note that your system may be using Apple's IDFV identifier and passing that to the Redfast SDK. Consult with your engineer for specific details. 
-- Usage Data: Session related information. Optionally, additional user events that you elect to be tracked using Redfast.
+* Identifiers: Redfast does not create a user identifier. A User ID created by your system is passed on to the Redfast SDK. Please note that your system may be using Apple's IDFV identifier and passing that to the Redfast SDK. Consult with your engineer for specific details. 
+* Usage Data: Session related information. Optionally, additional user events that you elect to be tracked using Redfast.
