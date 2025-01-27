@@ -14,26 +14,26 @@ You can include up to three input fields or up to five survey options in your pr
 
 ## Step-by-step
 
-- [ ] Go to **Prompts** and select your prompt
+* [ ] Go to **Prompts** and select your prompt
 
-  [block:image]{"images":[{"image":["https://files.readme.io/ce4a893-image.png",null,""],"align":"center","border":true}]}[/block]
-- [ ] Click **Edit prompt design**
+  <Image align="center" className="border" border={true} src="https://files.readme.io/ce4a893-image.png" />
+* [ ] Click **Edit prompt design**
 
-  [block:image]{"images":[{"image":["https://files.readme.io/5477d38-image.png",null,""],"align":"center","border":true}]}[/block]
+  <Image align="center" className="border" border={true} src="https://files.readme.io/5477d38-image.png" />
 
 ### Adding an input field
 
-- [ ] Select **Forms** and check **Enable Inputs** 
-- [ ] Configure the input. The changes are reflected in the preview 
+* [ ] Select **Forms** and check **Enable Inputs** 
+* [ ] Configure the input. The changes are reflected in the preview 
 
-  [block:image]{"images":[{"image":["https://files.readme.io/70ea517-image.png",null,""],"align":"center","border":true}]}[/block]
+  <Image align="center" className="border" border={true} src="https://files.readme.io/70ea517-image.png" />
 
 ### Adding a survey
 
-- [ ] Select **Forms** and toggle on **Survey** 
-- [ ] Configure the options. The changes are reflected in the preview
+* [ ] Select **Forms** and toggle on **Survey** 
+* [ ] Configure the options. The changes are reflected in the preview
 
-  [block:image]{"images":[{"image":["https://files.readme.io/bb79ff4-image.png",null,""],"align":"center","border":true}]}[/block]
+  <Image align="center" className="border" border={true} src="https://files.readme.io/bb79ff4-image.png" />
 
 ## Set up Actions
 
