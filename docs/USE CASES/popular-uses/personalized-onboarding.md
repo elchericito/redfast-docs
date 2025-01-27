@@ -22,22 +22,7 @@ Even before a new user arrives on the site, a Redfast guide is configured with l
 
 <br />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8e77a00-Screenshot_2024-04-19_at_1.33.00_PM.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/8e77a00-Screenshot_2024-04-19_at_1.33.00_PM.png" />
 
 <br />
 
@@ -47,16 +32,16 @@ Even before a new user arrives on the site, a Redfast guide is configured with l
 
 ## Step-by-step
 
-- [ ] Follow these instructions to [Create a Guide](guides) and set the type to **Journey**
-- [ ] Set the first prompt to be a popup prompt to be shown to first-time users
-- [ ] Set the CTA for this prompt to either 1-click trigger the feature/content or redirect
-- [ ] Set the second prompt in the guide to show on the next visit
-- [ ] Set the third prompt to show on the subsequent (or later) visit
-- [ ] Set the segment to **Test Users**.
-- [ ] Set the trigger to activate on one or more page URLs of your site
-- [ ] Start the Guide
-- [ ] Add your user ID to the Test Users segment (Settings > Users > Test Users)
-- [ ] Confirm that the Guide is triggered as configured
+* [ ] Follow these instructions to [Create a Guide](guides) and set the type to **Journey**
+* [ ] Set the first prompt to be a popup prompt to be shown to first-time users
+* [ ] Set the CTA for this prompt to either 1-click trigger the feature/content or redirect
+* [ ] Set the second prompt in the guide to show on the next visit
+* [ ] Set the third prompt to show on the subsequent (or later) visit
+* [ ] Set the segment to **Test Users**.
+* [ ] Set the trigger to activate on one or more page URLs of your site
+* [ ] Start the Guide
+* [ ] Add your user ID to the Test Users segment (Settings > Users > Test Users)
+* [ ] Confirm that the Guide is triggered as configured
 
 <br />
 
