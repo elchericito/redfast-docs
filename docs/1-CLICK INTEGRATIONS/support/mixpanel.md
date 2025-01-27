@@ -20,7 +20,7 @@ Events and user traits are sent to Mixpanel if the connector is activated
 
 ## Required Settings
 
-- service account username
-- service account password 
-- project token
-- project id
+* service account username
+* service account password 
+* project token
+* project id
