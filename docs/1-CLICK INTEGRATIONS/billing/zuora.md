@@ -37,7 +37,8 @@ Steps to configure a one-click subscription within a personalization
 
 1. Go to Personalization. Select "Add Action"
 2. Select Zuora → Subscribe Plan
-3. Select product rate plan from dropdown  
+3. Select product rate plan from dropdown
+
    ![subscribe-plan](https://files.readme.io/f6b632e-Zuora_action.png)
 
 ## Additional References
