@@ -18,35 +18,8 @@ For example, say you want to tell the user "Get 1 month off" but the actual disc
 
 In this example, you can upload a csv with various coupon attributes.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6a1c972-Capture-2024-05-20-182307.png",
-        "",
-        ""
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/6a1c972-Capture-2024-05-20-182307.png" />
 
 and reference just the value in the prompt by inserting dynamic content. This eliminated errors and allows you to import structured data from external sources into the system.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/cbfa10c-Capture-2024-05-20-182358.png",
-        "",
-        ""
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
+<Image align="center" src="https://files.readme.io/cbfa10c-Capture-2024-05-20-182358.png" />
