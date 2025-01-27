@@ -15,10 +15,10 @@ next:
 [block:embed]
 {
   "html": false,
-  "url": "https://www.loom.com/embed/46bc074c2ae84fcd8fd55d7b342859d2?sid=e0016d71-fd55-4097-99fc-af43e548f7d8\"",
+  "url": "https://www.loom.com/embed/46bc074c2ae84fcd8fd55d7b342859d2?sid=e0016d71-fd55-4097-99fc-af43e548f7d8",
   "title": "iframe",
   "provider": "loom.com",
-  "href": "https://www.loom.com/embed/46bc074c2ae84fcd8fd55d7b342859d2?sid=e0016d71-fd55-4097-99fc-af43e548f7d8\"",
+  "href": "https://www.loom.com/embed/46bc074c2ae84fcd8fd55d7b342859d2?sid=e0016d71-fd55-4097-99fc-af43e548f7d8",
   "typeOfEmbed": "iframe",
   "height": "400px",
   "width": "100%",
@@ -26,10 +26,9 @@ next:
 }
 [/block]
 
-
 ## Activation
 
-Generate an API key from the Recurly console and paste it in to the Settings > Integrations > Recurly modal. If your application references its own User IDs for Recurly accounts/subscriptions, make sure to toggle the "Use Account Code" to On (this should be the case most of the time). Finally, make sure to toggle Active to On.
+Generate an API key from the Recurly console and paste it in to the Settings &gt; Integrations &gt; Recurly modal. If your application references its own User IDs for Recurly accounts/subscriptions, make sure to toggle the "Use Account Code" to On (this should be the case most of the time). Finally, make sure to toggle Active to On.
 
 - API Key ([Instructions](https://docs.recurly.com/docs/api-keys))
 
