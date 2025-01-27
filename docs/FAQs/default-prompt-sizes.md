@@ -25,30 +25,13 @@ next:
         Recommended Width x Height (DESKTOP)
       </th>
 
-      <th>
-        <span style="display: inline-block; width:300px">
-
-        CSS Controls (DESKTOP)
-
-        </span>
-      </th>
+      <th>`CSS Controls (DESKTOP)` </th>
 
       <th>
         Recommended Width x Height (MOBILE BROWSER)
       </th>
 
-      <th>
-        <span style="display: inline-block; width:300px">
-
-        CSS Controls
-
-        \
-
-
-        (MOBILE BROWSER)
-
-        </span>
-      </th>
+      <th>`CSS Controls (MOBILE BROWSER)`</th>
     </tr>
   </thead>
 
@@ -331,4 +314,4 @@ next:
       </td>
     </tr>
   </tbody>
-</Table>
+</Table> 
