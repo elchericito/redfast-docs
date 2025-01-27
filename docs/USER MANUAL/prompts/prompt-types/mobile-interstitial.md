@@ -16,21 +16,20 @@ next:
 
 Redfast supports the creation and delivery of a full screen prompt for use on mobile devices such as iPhones and Android phones.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/fb9833de82d86aafb60d172d84d67b7c7b2d7d361dbecf2bd8419825736f7e54-Screenshot_2024-10-01_at_3.36.35_PM.png",
-        "",
-        ""
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<block:image>
+  {`
+    "images": [
+      {
+        "image": [
+          "https://files.readme.io/fb9833de82d86aafb60d172d84d67b7c7b2d7d361dbecf2bd8419825736f7e54-Screenshot_2024-10-01_at_3.36.35_PM.png",
+          "",
+          ""
+        ],
+        "align": "center"
+      }
+    ]
+  `}
+</block:image>
 
 ## UI Elements
 
