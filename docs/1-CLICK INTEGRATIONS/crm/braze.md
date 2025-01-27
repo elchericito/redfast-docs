@@ -12,8 +12,8 @@ next:
 ---
 ## Required Settings
 
-- Base URL
-- API Key
+* Base URL
+* API Key
 
 ## Supported Actions
 
