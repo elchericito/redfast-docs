@@ -12,22 +12,7 @@ next:
 ---
 Yes, you can set custom prompt dimensions in the Custom CSS section of the Editor.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e357b8c-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/e357b8c-image.png" />
 
 ```
 .outer-modal {
