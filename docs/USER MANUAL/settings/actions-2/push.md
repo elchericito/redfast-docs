@@ -26,7 +26,7 @@ This CSV can be used as a one time to do an initial load of endpoint information
 
 Registration API details: 
 
-**POST** \<base_url>/ingest/update_push_endpoint 
+**POST** \<base\_url>/ingest/update\_push\_endpoint 
 
 Body: 
 
@@ -41,9 +41,9 @@ Body:
 
 Headers: 
 
-Rf-App: \<app_slug> 
+Rf-App: \<app\_slug> 
 
-User-Id: \<user_id> 
+User-Id: \<user\_id> 
 
 Content-Type: application/json
 
@@ -61,7 +61,7 @@ Required information: `Apple Push Notifications Service Bundle ID`, `Apple Push 
 
 Steps: 
 
-1. Log in to <https://developer.apple.com/account> 
+1. Log in to [https://developer.apple.com/account](https://developer.apple.com/account) 
 2. Retrieve the bundle id by navigating to Certificates, Ids & Profiles -> Identifiers. Click on the desired app and view the bundle id.
 3. Retrieve the team id by navigating to Membership Details 
 4. Create (or retrieve) the token key and token key id by navigating to Certificates, Ids & Profiles -> Keys. Create a new key with APNs authorized. View the key name and key id
@@ -74,7 +74,7 @@ Required information: `FCM service json`
 
 Steps:
 
-1. Select your project from <https://console.firebase.google.com/>, and click the gear icon on the top of the sidebar.
+1. Select your project from [https://console.firebase.google.com/](https://console.firebase.google.com/), and click the gear icon on the top of the sidebar.
 2. Navigate to Project Settings -> Service Account tab 
 3. Generate New Private Key
 4. Download the JSON file 
