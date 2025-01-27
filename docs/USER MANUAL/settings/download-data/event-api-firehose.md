@@ -14,21 +14,7 @@ next:
 
 Usage tracking data that has been enabled in Redfast can be pushed to external systems. This means anything that is added to the Usage Tracker section will be sent out as an event once the integration is setup.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d7f9c3c-Event_Export_1.png",
-        null,
-        "event-export"
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/d7f9c3c-Event_Export_1.png" />
 
 There are two ways to receive usage data. You must provide each the following values to your account manager for integration.
 
