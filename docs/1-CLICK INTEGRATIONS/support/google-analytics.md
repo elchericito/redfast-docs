@@ -14,22 +14,7 @@ next:
 
 Follow the steps to create an API action. This action should be a POST request. The required url is listed here.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ebf7cc4-Google_Analytics_Custom_Action.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "sizing": "650px"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" width="650px" src="https://files.readme.io/ebf7cc4-Google_Analytics_Custom_Action.png" />
 
 ### Specify the payload
 
