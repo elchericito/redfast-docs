@@ -74,8 +74,8 @@ Promo code
 
 The following actions require the following to be configured with your Pulse instance:
 
-- Piano Publisher API Token / API Key
-- `aid` - Piano Application ID
+* Piano Publisher API Token / API Key
+* `aid` - Piano Application ID
 
 ### Resubscribe
 
@@ -91,8 +91,8 @@ The subscription term upgrade may take some time to be fulfilled, so it is sugge
 
 While there is currently no API to apply a promo code via 1-click action, the following integrations are available to support this use case.
 
-- List and select from available promo codes
-- Setup user segments targeting audiences for specific types of promo codes
-- Auto-fill promo code during checkout process
-- Conversion tracking from successful checkout process
-- A/B testing performance across different promo codes
+* List and select from available promo codes
+* Setup user segments targeting audiences for specific types of promo codes
+* Auto-fill promo code during checkout process
+* Conversion tracking from successful checkout process
+* A/B testing performance across different promo codes
