@@ -12,41 +12,151 @@ next:
 ---
 The following outlines the most popular uses of Redfast across the customer lifecycle. Churn-related uses are a popular starting point for most customers.
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "Acquisition",
-    "h-1": "Engagement",
-    "h-2": "Upsell",
-    "h-3": "Churn",
-    "0-0": "[**Abandon Cart**](abandon-cart)  \n  \nPrompt exiting and return visitors who started signup to finish/resume checkout",
-    "0-1": "[**Personalized Onboarding**](personalized-onboarding)  \n  \nOnboard new users with prompts only showing unused features",
-    "0-2": "[**Premium Plan Adoption**](premium-plan-upsell)  \n  \nPrompt users with high engagement to upgrade with an incentive",
-    "0-3": "**[Cancel Save](cancel-save)**  \n  \nReduce cancellations by using a survey response to serve a dynamic save offer to canceling users",
-    "1-0": "**[1-Click Resubscribe](one-click-resubscribe)**  \nCustomize MLP, site experience for churned users to resubscribe",
-    "1-1": "**Boost App Installs**  \n  \nUse a survey to guide users to install and activate on other platforms",
-    "1-2": "**Personalize Add Ons**  \n  \nPersonalize one time purchase items for each user",
-    "1-3": "**[Involuntary Churn](failed-rebill)**  \n  \nActive remediation via Redfast guide for failed payments",
-    "2-0": "**Increase Registration**  \n  \nPrompt engaged users to provide email, mobile info contextually",
-    "2-1": "**Increase Feature Adoption**  \n  \nPersonalize feature adoption based on usage",
-    "2-2": "**Shorten Trials**  \n  \nTarget engaged trialists with an incentive to subscribe",
-    "2-3": "**Calm Renewal Anxiety**  \n  \nPrompt users with declining usage and upcoming renewals",
-    "3-0": "**Personalize by Source**  \n  \nCustomize site experience for SEM, SEO, partner, organic visitors",
-    "3-1": "**Increase Editorial Impact**  \n  \nEnable editorial team to place content recommendation in active user path",
-    "3-2": "**1-Click Upsell Paywalls**  \n  \nPrompts triggered by usage meters like concurrency, device, location",
-    "3-3": "**Dynamic Downgrade**  \n  \nMatch user with lower tier plan based on churn events or consumption",
-    "4-0": "",
-    "4-1": "**Improve Error Experience**  \n  \nPrompt users experiencing site errors with acknowledgement or an offer",
-    "4-2": "",
-    "4-3": "**Win Back Guide**  \n  \nGuide dunning users or save offer users to engagement building actions"
-  },
-  "cols": 4,
-  "rows": 5,
-  "align": [
-    "left",
-    "left",
-    "left",
-    "left"
-  ]
-}
-[/block]
+<Table align={["left","left","left","left"]}>
+  <thead>
+    <tr>
+      <th style={{ textAlign: "left" }}>
+        Acquisition
+      </th>
+
+      <th style={{ textAlign: "left" }}>
+        Engagement
+      </th>
+
+      <th style={{ textAlign: "left" }}>
+        Upsell
+      </th>
+
+      <th style={{ textAlign: "left" }}>
+        Churn
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        [**Abandon Cart**](abandon-cart)  
+
+        Prompt exiting and return visitors who started signup to finish/resume checkout
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        [**Personalized Onboarding**](personalized-onboarding)  
+
+        Onboard new users with prompts only showing unused features
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        [**Premium Plan Adoption**](premium-plan-upsell)  
+
+        Prompt users with high engagement to upgrade with an incentive
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        **[Cancel Save](cancel-save)**  
+
+        Reduce cancellations by using a survey response to serve a dynamic save offer to canceling users
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        **[1-Click Resubscribe](one-click-resubscribe)**\
+        Customize MLP, site experience for churned users to resubscribe
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        **Boost App Installs**  
+
+        Use a survey to guide users to install and activate on other platforms
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        **Personalize Add Ons**  
+
+        Personalize one time purchase items for each user
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        **[Involuntary Churn](failed-rebill)**  
+
+        Active remediation via Redfast guide for failed payments
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        **Increase Registration**  
+
+        Prompt engaged users to provide email, mobile info contextually
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        **Increase Feature Adoption**  
+
+        Personalize feature adoption based on usage
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        **Shorten Trials**  
+
+        Target engaged trialists with an incentive to subscribe
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        **Calm Renewal Anxiety**  
+
+        Prompt users with declining usage and upcoming renewals
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        **Personalize by Source**  
+
+        Customize site experience for SEM, SEO, partner, organic visitors
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        **Increase Editorial Impact**  
+
+        Enable editorial team to place content recommendation in active user path
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        **1-Click Upsell Paywalls**  
+
+        Prompts triggered by usage meters like concurrency, device, location
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        **Dynamic Downgrade**  
+
+        Match user with lower tier plan based on churn events or consumption
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        **Improve Error Experience**  
+
+        Prompt users experiencing site errors with acknowledgement or an offer
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        **Win Back Guide**  
+
+        Guide dunning users or save offer users to engagement building actions
+      </td>
+    </tr>
+  </tbody>
+</Table>
