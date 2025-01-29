@@ -12,24 +12,48 @@ next:
 ---
 ## Required Settings
 
-- API URL
-- Client ID
-- Client Secret
+* API URL
+* Client ID
+* Client Secret
 
 ## Data Integration
 
-- Billing traits are automatically ingested when connector is activated
-- Product Rate Plans are refreshed periodically
-- Zuora account number must be synced to Redfast
+### 1-Click Actions
+
+Once Activation is complete, Zuora product rate plans are refreshed periodically for use in the Redfast Console. In order to utilize 1-Click actions, the Zuora account number must be synced to Redfast.
+
+### Automated Data Sync
+
+Contact your customer success manager to activate an automated data sync of the following traits.
+
+| Trait Name                | Values                                                                                                                                                   |
+| :------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| account\_number           | \<Zuora account number>                                                                                                                                  |
+| status                    | Active, Canceled, Draft                                                                                                                                  |
+| payment\_term             | \<configured payment term>                                                                                                                               |
+| balance                   | \<outstanding account balance>                                                                                                                           |
+| total\_invoice\_balance   | \<invoice balance>                                                                                                                                       |
+| credit\_balance           | \<credit balance>                                                                                                                                        |
+| contracted\_mrr           | \<contracted MRR>                                                                                                                                        |
+| term\_type                | TERMED, EVERGREEN                                                                                                                                        |
+| subscription\_start\_date | \<date when the subscription term starts>                                                                                                                |
+| subscription\_end\_date   | \<date when the subscription term starts>                                                                                                                |
+| term\_start\_date         | \<The date when the subscription term begins. If this is a renewal subscription, then this date is different from the subscription start date.>          |
+| term\_end\_date           | \<The date when the subscription term ends. If the subscription is evergreen, the TermEndDate value is null or is the cancelation date, as appropriate.> |
+| auto\_renew               | true, false                                                                                                                                              |
+| rate\_plan\_name          | \<name of most recent rate plan>                                                                                                                         |
+
+<br />
 
 ## Supported Actions
 
-| Action               | Description                                                     | User Dependencies | Additional Instructions                |
-| -------------------- | --------------------------------------------------------------- | ----------------- | -------------------------------------- |
-| Subscribe Plan       | Creates subscription associated with selected product rate plan | Account Number    | Select Product Rate Plan from dropdown |
-| Cancel Subscription  | Cancels the active subscription on the account                  | Account Number    |                                        |
-| Suspend Subscription | Suspends the active subscription on the account                 | Account Number    |                                        |
-| Resume Subscription  | Resumes the suspended subscription on the account               | Account Number    |                                        |
+| Action               | Description                                                     | Additional Instructions                                                                                         |
+| -------------------- | --------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| Subscribe Plan       | Creates subscription associated with selected product rate plan | Select Product Rate Plan from dropdown                                                                          |
+| Cancel Subscription  | Cancels the active subscription on the account                  | Select Cancellation Policy (EndOfCurrentTerm, EndOfLastInvoicePeriod, SpecificDate), Apply Credit (true, false) |
+| Suspend Subscription | Suspends the active subscription on the account                 | Specify Suspend Policy (Today, EndOfLastInvoicePeriod, SpecificDate, FixedPeriodsFromToday)                     |
+| Resume Subscription  | Resumes the suspended subscription on the account               | Select Resume Policy (Today, FixedPeriodsFromSuspendDate, FixedPeriodsFromToday, SpecificDate, suspendDate)     |
+| Change Auto Renewal  | Update whether subscription automatically renews                | Select Auto Renwal (true, false)                                                                                |
 
 ## Step by Step
 
