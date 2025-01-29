@@ -47,13 +47,15 @@ Contact your customer success manager to activate an automated data sync of the 
 
 ## Supported Actions
 
-| Action               | Description                                                     | Additional Instructions                                                                                         |
-| -------------------- | --------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| Subscribe Plan       | Creates subscription associated with selected product rate plan | Select Product Rate Plan from dropdown                                                                          |
-| Cancel Subscription  | Cancels the active subscription on the account                  | Select Cancellation Policy (EndOfCurrentTerm, EndOfLastInvoicePeriod, SpecificDate), Apply Credit (true, false) |
-| Suspend Subscription | Suspends the active subscription on the account                 | Specify Suspend Policy (Today, EndOfLastInvoicePeriod, SpecificDate, FixedPeriodsFromToday)                     |
-| Resume Subscription  | Resumes the suspended subscription on the account               | Select Resume Policy (Today, FixedPeriodsFromSuspendDate, FixedPeriodsFromToday, SpecificDate, suspendDate)     |
-| Change Auto Renewal  | Update whether subscription automatically renews                | Select Auto Renwal (true, false)                                                                                |
+| Action               | Description                                       | Additional Instructions                                                                                         |
+| -------------------- | ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| Add Plan             | Add selected product rate plan                    | Select Product Rate Plan from dropdown                                                                          |
+| Remove Plan          | Remove selected product rate plan                 | Select Product Rate Plan from dropdown                                                                          |
+| Cancel Subscription  | Cancels the active subscription on the account    | Select Cancellation Policy (EndOfCurrentTerm, EndOfLastInvoicePeriod, SpecificDate), Apply Credit (true, false) |
+| Suspend Subscription | Suspends the active subscription on the account   | Specify Suspend Policy (Today, EndOfLastInvoicePeriod, SpecificDate, FixedPeriodsFromToday)                     |
+| Resume Subscription  | Resumes the suspended subscription on the account | Select Resume Policy (Today, FixedPeriodsFromSuspendDate, FixedPeriodsFromToday, SpecificDate, suspendDate)     |
+| Change Auto Renewal  | Update whether subscription automatically renews  | Select Auto Renwal (true, false)                                                                                |
+| Create Subscription  | Create new subscription with specified rate plan  | Select contractEffectiveDate, renewalTerm, ratePlan and termType                                                |
 
 ## Step by Step
 
