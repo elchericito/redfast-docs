@@ -36,7 +36,7 @@ If 'Not using it' was selected, offer to pause the subscription for three months
 
 Every path must include the option to 'Cancel anyway'.
 
-### [Segment](/segments#)
+### [Segment](/docs/segments#)
 
 Describe the characteristics of the target users who should receive this experience.
 
