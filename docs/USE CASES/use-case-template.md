@@ -74,8 +74,6 @@ Optional. Specify a start and end date for this campaign.
   </Tab>
 </Tabs>
 
-<Image align="center" src="https://files.readme.io/2c031af673cbff888d076c3ed8aeaa3f338d2e4c167d696471a4fe91785f13ca-Screenshot_2025-02-02_at_2.26.19_PM.png" />
-
 Optional:
 
 * Legal disclaimer text
