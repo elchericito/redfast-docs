@@ -82,6 +82,7 @@ Optional:
 
 * Legal disclaimer text
 * Timer
+* Customize the CSS to match your look and feel
 
 ### [Experiment](/docs/create-an-experiment#/)
 
