@@ -36,6 +36,12 @@ Every path must include the option to 'Cancel anyway'.
 
 Example. Members on the monthly plan with a non-IAP payment method and at least three months of successful rebills.
 
+Required User Traits (attributes) :
+
+* Plan type
+* Payment method
+* Lifetime (in months) or Member since (date)
+
 ### Trigger
 
 Example. When the member clicks on the 'Cancel' link on the /accounts page.
