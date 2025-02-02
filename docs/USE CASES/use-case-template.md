@@ -48,7 +48,9 @@ Required User Traits (attributes) :
 * Payment method
 * Lifetime (in months) or Member since (date)
 
-### Trigger
+### [Trigger](/docs/triggers#/)
+
+Describe the end user action that will initiate the prompt or guide.
 
 Example. When the member clicks on the 'Cancel' link on the /accounts page.
 
