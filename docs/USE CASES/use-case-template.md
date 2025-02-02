@@ -58,25 +58,25 @@ Example. When the member clicks on the 'Cancel' link on the /accounts page.
 
 Optional. Specify a start and end date for this campaign.
 
+![Test](https://files.readme.io/5f3cdf7ddf0bef60fdadc8bc7ebd9975d57dd5745a134e0c1551753179b3f354-Screenshot_2025-02-02_at_2.25.59_PM.png)
+
+<br />
+
 ### Design
 
-<Cards columns={4}>
-  <Card title="First Card" href="https://files.readme.io/5f3cdf7ddf0bef60fdadc8bc7ebd9975d57dd5745a134e0c1551753179b3f354-Screenshot_2025-02-02_at_2.25.59_PM.png" icon="fa-home" target="_blank">
-    [Step 1]("https://files.readme.io/5f3cdf7ddf0bef60fdadc8bc7ebd9975d57dd5745a134e0c1551753179b3f354-Screenshot_2025-02-02_at_2.25.59_PM.png)
-  </Card>
+<Tabs>
+  <Tab title="First Tab">
+    Welcome to the content that you can only see inside the first Tab.
+  </Tab>
 
-  <Card title="Second Card" icon="fa-user">
-    *Lorem ipsum dolor sit amet, consectetur adipiscing elit*
-  </Card>
+  <Tab title="Second Tab">
+    Here's content that's only inside the second Tab.
+  </Tab>
 
-  <Card title="Third Card" icon="fa-star">
-    > Ut enim ad minim veniam, quis nostrud ullamco
-  </Card>
-
-  <Card title="Fourth Card" icon="fa-question">
-    **Excepteur sint occaecat cupidatat non proident**
-  </Card>
-</Cards>
+  <Tab title="Third Tab">
+    Here's content that's only inside the third Tab.
+  </Tab>
+</Tabs>
 
 <Image align="center" className="border" border={true} width="50% " src="https://files.readme.io/5f3cdf7ddf0bef60fdadc8bc7ebd9975d57dd5745a134e0c1551753179b3f354-Screenshot_2025-02-02_at_2.25.59_PM.png" />
 
