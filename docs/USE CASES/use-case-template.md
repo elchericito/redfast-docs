@@ -1,6 +1,6 @@
 ---
 title: Use Case Template
-excerpt: A simple template to document your desired use
+excerpt: A sample document to outline a use case
 deprecated: false
 hidden: true
 metadata:
