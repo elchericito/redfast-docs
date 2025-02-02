@@ -70,13 +70,11 @@ Optional. Specify a start and end date for this campaign.
   </Tab>
 
   <Tab title="Third Step">
-    Here's content that's only inside the third Tab.
+    ![Step 3](https://files.readme.io/2c031af673cbff888d076c3ed8aeaa3f338d2e4c167d696471a4fe91785f13ca-Screenshot_2025-02-02_at_2.26.19_PM.png)
   </Tab>
 </Tabs>
 
-<br />
-
-<Image align="center" src="https://files.readme.io/1c73d7f4c305e7898d4bd404c03cb1647a5b94e88cb25b48980bac630bdcaf64-Screenshot_2025-02-02_at_2.26.41_PM.png" />
+<Image align="center" src="https://files.readme.io/2c031af673cbff888d076c3ed8aeaa3f338d2e4c167d696471a4fe91785f13ca-Screenshot_2025-02-02_at_2.26.19_PM.png" />
 
 Optional:
 
