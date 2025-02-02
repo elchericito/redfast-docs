@@ -26,6 +26,12 @@ The second step is conditional on the option selected.
 
 If 'Too expensive' was selected, offer next month at no cost. Experiment between next month free, 50% off for two months.
 
+If 'Not enough content' was selected, display upcoming new releases.
+
+If 'Not using it' was selected, offer to pause the subscription for three months. Experiment between one, two, and three months.
+
+Every path must include the option to 'Cancel anyway'.
+
 ### Segment
 
 Example. Members on the monthly plan with a non-IAP payment method and at least three months of successful rebills.
@@ -33,3 +39,42 @@ Example. Members on the monthly plan with a non-IAP payment method and at least 
 ### Trigger
 
 Example. When the member clicks on the 'Cancel' link on the /accounts page.
+
+### Schedule
+
+Optional. Specify a start and end date for this campaign.
+
+### Design
+
+<Cards columns={4}>
+  <Card title="First Card" href="https://readme.com" icon="fa-home" target="_blank">
+    Neque porro quisquam est qui dolorem ipsum quia
+  </Card>
+
+  <Card title="Second Card" icon="fa-user">
+    *Lorem ipsum dolor sit amet, consectetur adipiscing elit*
+  </Card>
+
+  <Card title="Third Card" icon="fa-star">
+    > Ut enim ad minim veniam, quis nostrud ullamco
+  </Card>
+
+  <Card title="Fourth Card" icon="fa-question">
+    **Excepteur sint occaecat cupidatat non proident**
+  </Card>
+</Cards>
+
+Optional:
+
+* Legal disclaimer text
+* Timer
+
+### Actions
+
+Reasons for cancellations prompt: Select Option, Cancel Anyway.
+
+Too expensive prompt: Accept Offer, Cancel Anyway
+
+Not enough content prompt: See more, Cancel Anyway
+
+Not using prompt: Pause my subscription, Cancel Anyway
