@@ -54,7 +54,7 @@ Describe the end user action that will initiate the prompt or guide.
 
 Example. When the member clicks on the 'Cancel' link on the /accounts page.
 
-### Schedule
+### [Schedule](/docs/schedule-1#/)
 
 Optional. Specify a start and end date for this campaign.
 
