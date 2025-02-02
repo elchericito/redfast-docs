@@ -2,7 +2,7 @@
 title: Use Case Template
 excerpt: A sample document to outline a use case
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
