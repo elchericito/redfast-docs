@@ -61,22 +61,22 @@ Optional. Specify a start and end date for this campaign.
 ### Design
 
 <Tabs>
-  <Tab title="First Tab">
+  <Tab title="First Step">
     ![Step 1](https://files.readme.io/5f3cdf7ddf0bef60fdadc8bc7ebd9975d57dd5745a134e0c1551753179b3f354-Screenshot_2025-02-02_at_2.25.59_PM.png)
   </Tab>
 
-  <Tab title="Second Tab">
-    Here's content that's only inside the second Tab.
+  <Tab title="Second Step">
+    ![Step 2](https://files.readme.io/1c73d7f4c305e7898d4bd404c03cb1647a5b94e88cb25b48980bac630bdcaf64-Screenshot_2025-02-02_at_2.26.41_PM.png)
   </Tab>
 
-  <Tab title="Third Tab">
+  <Tab title="Third Step">
     Here's content that's only inside the third Tab.
   </Tab>
 </Tabs>
 
 <br />
 
-<br />
+<Image align="center" src="https://files.readme.io/1c73d7f4c305e7898d4bd404c03cb1647a5b94e88cb25b48980bac630bdcaf64-Screenshot_2025-02-02_at_2.26.41_PM.png" />
 
 Optional:
 
