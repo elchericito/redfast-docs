@@ -83,7 +83,9 @@ Optional:
 * Legal disclaimer text
 * Timer
 
-### Actions
+### [Experiment](/docs/create-an-experiment#/)
+
+### [Call to Action](/docs/actions-1#/)
 
 Reasons for cancellations prompt: Select Option, Cancel Anyway.
 
