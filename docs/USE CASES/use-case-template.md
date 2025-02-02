@@ -58,15 +58,11 @@ Example. When the member clicks on the 'Cancel' link on the /accounts page.
 
 Optional. Specify a start and end date for this campaign.
 
-![Test](https://files.readme.io/5f3cdf7ddf0bef60fdadc8bc7ebd9975d57dd5745a134e0c1551753179b3f354-Screenshot_2025-02-02_at_2.25.59_PM.png)
-
-<br />
-
 ### Design
 
 <Tabs>
   <Tab title="First Tab">
-    Welcome to the content that you can only see inside the first Tab.
+    ![Step 1](https://files.readme.io/5f3cdf7ddf0bef60fdadc8bc7ebd9975d57dd5745a134e0c1551753179b3f354-Screenshot_2025-02-02_at_2.25.59_PM.png)
   </Tab>
 
   <Tab title="Second Tab">
