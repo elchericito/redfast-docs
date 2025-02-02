@@ -61,9 +61,7 @@ Optional. Specify a start and end date for this campaign.
 ### Design
 
 <Cards columns={4}>
-  <Card title="First Card" href="https://readme.com" icon="fa-home" target="_blank">
-    Neque porro quisquam est qui dolorem ipsum quia
-  </Card>
+  <Card title="First Prompt" href="https://readme.com" icon="fa-home" target="_blank" />
 
   <Card title="Second Card" icon="fa-user">
     *Lorem ipsum dolor sit amet, consectetur adipiscing elit*
@@ -88,10 +86,11 @@ Optional:
 
 ### [Call to Action](/docs/actions-1#/)
 
-Reasons for cancellations prompt: Select Option, Cancel Anyway.
+A call to action is a button click presented to the end user within the prompt. CTAs in Redfast are typically 1-click because the end outcome is directly connected to the button via an integration such as [Stripe](/docs/stripe#/) .
 
-Too expensive prompt: Accept Offer, Cancel Anyway
+Example:
 
-Not enough content prompt: See more, Cancel Anyway
-
-Not using prompt: Pause my subscription, Cancel Anyway
+* Reasons for cancellations prompt: Select Option, Cancel Anyway.
+* Too expensive prompt: Accept Offer, Cancel Anyway
+* Not enough content prompt: See more, Cancel Anyway
+* Not using prompt: Pause my subscription, Cancel Anyway
