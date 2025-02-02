@@ -10,9 +10,13 @@ This document may be used to create a structured definition of the use case you 
 
 ### Business Objective
 
+Describe the primary outcome desired from the implementation of this use case.
+
 Example. Reduce cancellations from monthly subscribers
 
 ### Outline
+
+In a few sentences describe the end user experience that will achieve the desired outcome.
 
 Example. When a member clicks on the 'Cancel' button on the Account page, show a multi-step guide to understand and mediate their reason for canceling.
 
@@ -32,7 +36,9 @@ If 'Not using it' was selected, offer to pause the subscription for three months
 
 Every path must include the option to 'Cancel anyway'.
 
-### Segment
+### [Segment](/segments#)
+
+Describe the characteristics of the target users who should receive this experience.
 
 Example. Members on the monthly plan with a non-IAP payment method and at least three months of successful rebills.
 
