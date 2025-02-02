@@ -82,6 +82,10 @@ Optional:
 
 ### [Experiment](/docs/create-an-experiment#/)
 
+Optionally you may decide to experiment with the right call to action for a given segment.
+
+Example. 50% of the users get 'Next Month Free' and the other 50% get '50% OFF for Two Months'
+
 ### [Call to Action](/docs/actions-1#/)
 
 A call to action is a button click presented to the end user within the prompt. CTAs in Redfast are typically 1-click because the end outcome is directly connected to the button via an integration such as [Stripe](/docs/stripe#/) .
