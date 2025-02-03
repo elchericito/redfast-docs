@@ -167,6 +167,7 @@ func foo() async {
       // Prompt properties
       let id = prompt.id
       let deviceMeta = prompt?.deviceMeta
+      // Can also access via: prompt?.deviceMeta?.decodeValue(to: Meta.self)
       let deepLink = prompt?.deepLink
       let button1Color = prompt?.button1Color
       let button2Color = prompt?.button2Color
