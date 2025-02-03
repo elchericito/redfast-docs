@@ -211,9 +211,9 @@ The deeplink value is saved in the completion callback for `setScreenName`, `but
 
 ## Access Custom Metadata
 
-Custom key-value pairs can be added to an item via Pulse. These values may be used to perform an action that is not the typical media asset deep link, like sending the user to a registration screen.
+Custom key-value pairs can be added to an item via Pulse. These values may be used to perform an action that is not the typical media asset deep link, like sending the user to a registration screen or performing an operation on behalf of the user..
 
-The custom metadata is saved in the completion callback for `setScreenName`, `buttonClick`, and `getInlines`.
+The custom metadata is available in the completion callback for `setScreenName()`, `buttonClick()`, and `getInlines()`. You may access the custom metadata from  `getTriggerablePromptsA()` return objects with this example code:  `prompt?.deviceMeta?.decodeValue(to: Meta.self)`.
 
 ## Send Usage Tracking Event
 
