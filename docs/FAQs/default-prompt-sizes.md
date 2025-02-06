@@ -25,7 +25,7 @@ next:
         <div style={{width:"290px"}}>Recommended Width x Height (DESKTOP)</div>
       </th>
 
-      <th style={{ textAlign: "left" }}>
+      <th style={{ textAlign: "left" },{width:"290px"}}>
         CSS Controls (DESKTOP)
       </th>
 
