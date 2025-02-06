@@ -22,7 +22,7 @@ next:
       </th>
 
       <th style={{ textAlign: "left" }}>
-        <div>Recommended Width x Height (DESKTOP)</div>
+        <div style={{width:"290px"}}>Recommended Width x Height (DESKTOP)</div>
       </th>
 
       <th style={{ textAlign: "left" }}>
