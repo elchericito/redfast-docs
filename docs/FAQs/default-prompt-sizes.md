@@ -22,10 +22,10 @@ next:
       </th>
 
       <th style={{ textAlign: "left" }}>
-        Recommended Width x Height (DESKTOP)
+        Recommended Width x Height (DESKTOP) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
       </th>
 
-      <th style={{ width: "300px" }}>
+      <th style={{ textAlign: "left" }}>
         CSS Controls (DESKTOP)
       </th>
 
