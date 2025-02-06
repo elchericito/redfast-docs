@@ -29,8 +29,8 @@ next:
         Recommended Width x Height (MOBILE BROWSER)
       </th>
 
-      <th style={{ textAlign: "left", width:"auto" }}>
-        CSS Controls (DESKTOP)
+      <th style={{ textAlign: "left" }}>
+        <span style={{width:"290px"}}>CSS Controls (DESKTOP)</span>
       </th>
 
       <th style={{ textAlign: "left" }}>
