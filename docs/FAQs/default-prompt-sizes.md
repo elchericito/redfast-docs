@@ -21,7 +21,7 @@ next:
         Supported Aspect Ratios (DESKTOP)
       </th>
 
-      <th style={{ textAlign: "left" }}>
+      <th style={{ textAlign: "left" , width: "300px"}}>
         Recommended Width x Height (DESKTOP)
       </th>
 
