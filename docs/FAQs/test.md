@@ -49,7 +49,7 @@ metadata:
       </td>
 
       <td style={{ textAlign: "left" }}>
-
+        960 x 300 px
       </td>
 
       <td style={{ textAlign: "left" }}>
