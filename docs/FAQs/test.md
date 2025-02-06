@@ -5,13 +5,9 @@ hidden: false
 metadata:
   robots: index
 ---
-<Table align={["left","left","left","left","left","left","left"]}>
+<Table align={["left","left","left","left","left","left"]}>
   <thead>
     <tr>
-      <th style={{ textAlign: "left" }}>
-
-      </th>
-
       <th style={{ textAlign: "left" }}>
 
       </th>
@@ -41,7 +37,7 @@ metadata:
   <tbody>
     <tr>
       <td style={{ textAlign: "left" }}>
-
+        Horizontal
       </td>
 
       <td style={{ textAlign: "left" }}>
@@ -64,19 +60,12 @@ metadata:
       </td>
 
       <td style={{ textAlign: "left" }}>
-
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-
+        .rtile-mweb-content-msg - Text Container\\
+        .rtile-mweb-content-footer - Buttons Container
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-
-      </td>
-
       <td style={{ textAlign: "left" }}>
 
       </td>
