@@ -53,8 +53,8 @@ metadata:
       </td>
 
       <td style={{ textAlign: "left" }}>
-        .tile-header-msg-wrp - Text Container\\
-        .promo-tile-wrapper-header - Prompt title
+        .tile-header-msg-wrp - Text Container
+        .promo-tile-wrapper-headerPrompt title
         .promo-tile-wrapper-body - Prompt message
         .promo-tile-wrapper-footer - Buttons Container
       </td>
@@ -62,32 +62,6 @@ metadata:
       <td style={{ textAlign: "left" }}>
         .rtile-mweb-content-msg - Text Container\\
         .rtile-mweb-content-footer - Buttons Container
-      </td>
-    </tr>
-
-    <tr>
-      <td style={{ textAlign: "left" }}>
-
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-
       </td>
     </tr>
   </tbody>
