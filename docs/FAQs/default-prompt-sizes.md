@@ -25,12 +25,12 @@ next:
         Recommended Width x Height (DESKTOP)
       </th>
 
-      <th style={{ textAlign: "left", width:"400px" }}>
-        CSS Controls (DESKTOP)
-      </th>
-
       <th style={{ textAlign: "left" }}>
         Recommended Width x Height (MOBILE BROWSER)
+      </th>
+
+      <th style={{ textAlign: "left", width:"auto" }}>
+        CSS Controls (DESKTOP)
       </th>
 
       <th style={{ textAlign: "left" }}>
@@ -54,14 +54,14 @@ next:
       </td>
 
       <td style={{ textAlign: "left" }}>
+        300 x 200 px
+      </td>
+
+      <td style={{ textAlign: "left" }}>
         .tile-header-msg-wrp - Text Container
         .promo-tile-wrapper-header - Prompt title
         .promo-tile-wrapper-body - Prompt message
         .promo-tile-wrapper-footer - Buttons Container
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        300 x 200 px
       </td>
 
       <td style={{ textAlign: "left" }}>
@@ -84,14 +84,14 @@ next:
       </td>
 
       <td style={{ textAlign: "left" }}>
+        200 x 300 px
+      </td>
+
+      <td style={{ textAlign: "left" }}>
         .tile-header-msg-wrp - Text Container
         .promo-tile-wrapper-header - Prompt title
         .promo-tile-wrapper-body - Prompt message
         .promo-tile-wrapper-footer - Buttons Container
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        200 x 300 px
       </td>
 
       <td style={{ textAlign: "left" }}>
@@ -114,14 +114,14 @@ next:
       </td>
 
       <td style={{ textAlign: "left" }}>
+        375 x 205 px
+      </td>
+
+      <td style={{ textAlign: "left" }}>
         .tile-header-msg-wrp - Text Container
         .promo-tile-wrapper-header - Prompt title
         .promo-tile-wrapper-body - Prompt message
         .promo-tile-wrapper-footer - Buttons Container
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        375 x 205 px
       </td>
 
       <td style={{ textAlign: "left" }}>
@@ -144,13 +144,13 @@ next:
       </td>
 
       <td style={{ textAlign: "left" }}>
-        .promo-text-wrapper-container - Text Container
-        .promo-text-title - Prompt Title
-        .promo-text-message - Prompt message
+        100% x auto
       </td>
 
       <td style={{ textAlign: "left" }}>
-        100% x auto
+        .promo-text-wrapper-container - Text Container
+        .promo-text-title - Prompt Title
+        .promo-text-message - Prompt message
       </td>
 
       <td style={{ textAlign: "left" }}>
@@ -172,14 +172,14 @@ next:
       </td>
 
       <td style={{ textAlign: "left" }}>
+        100% x 120 px
+      </td>
+
+      <td style={{ textAlign: "left" }}>
         .rfmodal-text-container - Text Container
         .rfmodal-header - Prompt title
         .rfmodal-message - Prompt message
         .rfmodal-footer - Buttons Container
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        100% x 120 px
       </td>
 
       <td style={{ textAlign: "left" }}>
@@ -204,14 +204,14 @@ next:
       </td>
 
       <td style={{ textAlign: "left" }}>
+
+      </td>
+
+      <td style={{ textAlign: "left" }}>
         .rfmodal-text-container - Text Container
         .rfmodal-header - Prompt title
         .rfmodal-message - Prompt message
         .rfmodal-footer - Buttons Container
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-
       </td>
 
       <td style={{ textAlign: "left" }}>
@@ -236,14 +236,14 @@ next:
       </td>
 
       <td style={{ textAlign: "left" }}>
+        500 x 800 px
+      </td>
+
+      <td style={{ textAlign: "left" }}>
         .rfmodal-text-container - Text Container
         .rfmodal-header - Prompt title
         .rfmodal-message - Prompt message
         .rfmodal-footer - Buttons Container
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        500 x 800 px
       </td>
 
       <td style={{ textAlign: "left" }}>
@@ -268,14 +268,14 @@ next:
       </td>
 
       <td style={{ textAlign: "left" }}>
+
+      </td>
+
+      <td style={{ textAlign: "left" }}>
         .rfmodal-text-container - Text Container
         .rfmodal-header - Prompt title
         .rfmodal-message - Prompt message
         .rfmodal-footer - Buttons Container
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-
       </td>
 
       <td style={{ textAlign: "left" }}>
@@ -300,14 +300,14 @@ next:
       </td>
 
       <td style={{ textAlign: "left" }}>
+        100% x 120 px
+      </td>
+
+      <td style={{ textAlign: "left" }}>
         .rfmodal-text-container - Text Container
         .rfmodal-header - Prompt title
         .rfmodal-message - Prompt message
         .rfmodal-footer - Buttons Container
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        100% x 120 px
       </td>
 
       <td style={{ textAlign: "left" }}>
