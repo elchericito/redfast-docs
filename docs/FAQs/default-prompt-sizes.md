@@ -26,7 +26,7 @@ next:
       </th>
 
       <th style={{ textAlign: "left" }}>
-        <div>CSS Controls (DESKTOP)</div>
+        CSS Controls (DESKTOP)
       </th>
 
       <th style={{ textAlign: "left" }}>
