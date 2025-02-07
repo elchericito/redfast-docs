@@ -60,7 +60,7 @@ metadata:
       </td>
 
       <td style={{ textAlign: "left" }}>
-        .rtile-mweb-content-msg - Text Container\\
+        .rtile-mweb-content-msg - Text Container
         .rtile-mweb-content-footer - Buttons Container
       </td>
     </tr>
