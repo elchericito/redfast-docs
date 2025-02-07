@@ -1,7 +1,7 @@
 ---
 title: test
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
@@ -9,27 +9,27 @@ metadata:
   <thead>
     <tr>
       <th style={{ textAlign: "left" }}>
-
+        Prompt Type
       </th>
 
       <th style={{ textAlign: "left" }}>
-
+        Supported Aspect Ratios (DESKTOP)
       </th>
 
       <th style={{ textAlign: "left" }}>
-
+        Recommended Width x Height (DESKTOP)
       </th>
 
       <th style={{ textAlign: "left" }}>
-
+        Recommended Width x Height (MOBILE BROWSER)
       </th>
 
       <th style={{ textAlign: "left" }}>
-
+        <span style={{width:"290px"}}>CSS Controls (DESKTOP)</span>
       </th>
 
       <th style={{ textAlign: "left" }}>
-
+        `CSS Controls (MOBILE BROWSER)`
       </th>
     </tr>
   </thead>
