@@ -36,7 +36,7 @@ Each connector has user data dependencies that must be satisfied. The integratio
   * [ActiveCampaign](activecampaign)
   * [Freshdesk](freshdesk)
   * [Zendesk](zendesk)
-  * Adobe (AEP, AJO)
+  * [Adobe (AEP AJO)](adobe-aep-ajo)
 * Analytics
   * [Google Analytics](google-analytics)
   * [Mixpanel](mixpanel)
