@@ -25,7 +25,7 @@ Configure the following objects within AEP
   * promo\_id (String). The id of the Redfast prompt
   * promo\_name (String). The name of the Redfast prompt
   * variation\_id (String). The id of the Redfast experiment variation (if applicable)
-  * variation\name (String). The name of the Redfast experiment variation (if applicable)
+  * variation\_name (String). The name of the Redfast experiment variation (if applicable)
 * Data stream. Add the schema to the data stream
 * [Dataset](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) . Add the schema to the dataset. Enable the Profile toggle to view incoming data in real time from the Profiles section.
 
