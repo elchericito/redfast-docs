@@ -10,7 +10,7 @@ metadata:
 next:
   description: ''
 ---
-**Adobe Experience Platform (AEP)**
+### Adobe Experience Platform (AEP)
 
 The Redfast AEP connector pushes Redfast prompt interaction events to an Adobe [Data Stream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview). Events include impressions, goals, declines, dismisses, timeouts, custom\_goals, holdouts.
 
