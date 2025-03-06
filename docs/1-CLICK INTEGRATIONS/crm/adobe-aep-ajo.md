@@ -27,7 +27,7 @@ Configure the following objects within AEP
   * variation\_id (String). The id of the Redfast experiment variation (if applicable)
   * variation\_name (String). The name of the Redfast experiment variation (if applicable)
 * Data stream. Add the schema to the data stream
-* [Dataset](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) . Add the schema to the dataset. Enable the Profile toggle to view incoming data in real time from the Profiles section.
+* [Dataset](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) . Select the schema from the previous step. Enable the Profile toggle to view incoming data in real time from the Profiles section.
 
 <br />
 
@@ -35,5 +35,11 @@ Input the following information within Pulse -> Settings -> Integrations -> Exte
 
 * Identity Map Symbol
 * [Event Type](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) . Use a known event type or create a new one.
-* Adobe Instance Name. The name of your Adobe Instance, for example `_exchangesandboxcharlie`. Viewable in the details of the schema
+* Adobe Instance Name. The name of your Adobe Instance, for example `_production`. Viewable in the details of the schema
 * Data Stream Id
+
+<br />
+
+Sample Schema with required fields, Adobe Instance Name, and profile toggle
+
+<Image align="center" src="https://files.readme.io/6fb869da2965a8f79d20ef00ec618c6537524de444351e992c8df3bcd0fbbe46-Screenshot_2025-03-06_at_9.56.33_AM.png" />
