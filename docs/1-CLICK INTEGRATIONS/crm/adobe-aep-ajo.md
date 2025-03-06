@@ -12,7 +12,7 @@ next:
 ---
 **Adobe Experience Platform (AEP)**
 
-The Redfast AEP connector pushes events to an Adobe [Data Stream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)
+The Redfast AEP connector pushes Redfast prompt interaction events to an Adobe [Data Stream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview). Events include impressions, goals, declines, dismisses, timeouts, custom\_goals, holdouts.
 
 Configure the following objects within AEP
 
