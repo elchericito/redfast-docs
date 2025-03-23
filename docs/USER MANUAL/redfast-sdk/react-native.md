@@ -27,7 +27,7 @@ npm install @redfast/react-native-redfast
 
 or using yarn
 
-```json shell
+```shell
 yarn add @redfast/redfast-core
 yarn add @redfast/react-native-redfast
 ```
