@@ -91,8 +91,6 @@ if (path) {
 
 ```
 
-<br />
-
 ## Render Inline Prompts
 
 You may utilize the `RedfastInline` view to render an inline prompt, if one is available for the current user.
