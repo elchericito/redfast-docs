@@ -72,7 +72,7 @@ You may change the userID after the SDK has been initialized, for example, when 
 promptMgr.setUserId(userId)
 ```
 
-## Trigger Modals
+## Render Modal Prompts
 
 Interstitial (mobile only), Popup and Bottom Banner modals may be triggered upon entering a screen and/or the user registering a click on an element. Add the following code to screens that are eligible to show a modal.
 
@@ -128,6 +128,23 @@ You may utilize the `RedfastInline` view to render an inline prompt, if one is a
   onEvent={(result) =>}
 />
 
+```
+
+## Render Custom Prompts
+
+You may opt to retrieve prompt metadata in order to render the Prompt yourself. This
+
+```javascript
+/* Supported PathTypes
+  PathType.ALL
+  PathType.MODAL
+  PathType.HORIZONTAL
+  PathType.TEXT
+  PathType.VERTICAL
+  PathType.TILE
+  PathType.INTERSTITIAL
+  PathType.BOTTOM_BANNER
+*/
 ```
 
 ## Actions
