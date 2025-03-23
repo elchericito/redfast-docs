@@ -12,11 +12,11 @@ The Redfast React Native SDK provides the ability to render Redfast configured p
 Add the following to your `.npmrc` or `.yarnrc.yml` file. Contact your Customer Success Manager for the AUTHTOKEN.
 
 ```
--- .npmrc --
+# .npmrc
 @redfast:registry=https://npm.pkg.github.com
 //npm.pkg.github.com/:_authToken=AUTHTOKEN
 
--- .yarnyc.yml --
+# .yarnyc.yml
 npmAuthToken: "AUTHTOKEN"
 ```
 
