@@ -2,7 +2,7 @@
 title: Adobe
 excerpt: ''
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
@@ -10,7 +10,7 @@ metadata:
 next:
   description: ''
 ---
-### Adobe Experience Platform (AEP)
+## Adobe Experience Platform (AEP)
 
 The Redfast AEP connector pushes Redfast prompt interaction events to an Adobe [Data Stream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview). Events include impressions, goals, declines, dismisses, timeouts, custom\_goals, holdouts.
 
@@ -43,3 +43,26 @@ The Redfast AEP connector pushes Redfast prompt interaction events to an Adobe [
 **Sample Schema with required fields, Adobe Instance Name, and profile toggle**
 
 <Image align="center" src="https://files.readme.io/6fb869da2965a8f79d20ef00ec618c6537524de444351e992c8df3bcd0fbbe46-Screenshot_2025-03-06_at_9.56.33_AM.png" />
+
+## Adobe Journey Optimizer (AJO)
+
+Your journey can sync updates to Redfast via a custom HTTP request, which allows you to update audience information as well as trigger in-app prompts for your targeted audience.
+
+Before proceeding, consult with your Customer Success Manager with your intended set of use cases so that Redfast can provide guidance on the necessary endpoints and params to be configured within the custom HTTP request.
+
+Once provided the endpoint information, you may create the custom action as follows:
+
+1. Navigate to **Actions** within Adobe Journey Optimizer
+2. Click **Create Action** and choose **Custom HTTP Action**
+3. Provide a Name and Description for the action
+4. In the Endpoint Configuration section:
+   1. Select the appropriate HTTP method (GET, POST, PUT, DELETE)
+   2. Enter the API endpoint
+   3. Configure the query params which include one or more property names along with their associated values
+5. Test the Custom HTTP Action - your Customer Success Manager will confirm that the action processed successfully
+6. Deploy the Action in AJO
+   1. Save the Action
+   2. Add it to your customer journey
+   3. Monitor incoming requests to verify successful integration
+
+Once the Custom HTTP Action is running within your journeys, the specified property name and values will be synced in real-time with Redfast for the specified user. This allows you to create user segments utilizing these properties and target specific prompts to be triggered when users are within your apps.
