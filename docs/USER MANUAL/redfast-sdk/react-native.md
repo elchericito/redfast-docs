@@ -112,6 +112,12 @@ displayPrompt(showModal, path, (result) => {
   setShowModal(false);
 })
 
+// Data schema of the result callback
+interface PromptResult {
+  code: PromptResultCode;
+  value?: { [key: string]: any };
+  meta?: { [key: string]: any };
+}
 ```
 
 ## Render Inline Prompts
