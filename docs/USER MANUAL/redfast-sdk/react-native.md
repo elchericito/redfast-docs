@@ -9,23 +9,27 @@ The Redfast React Native SDK provides the ability to render Redfast configured p
 
 ## Install the SDK
 
-Add the following to your .npmrc file. Contact your Customer Success Manager for the AUTHTOKEN.
+Add the following to your `.npmrc` or `.yarnrc.yml` file. Contact your Customer Success Manager for the AUTHTOKEN.
 
 ```
+-- .npmrc --
 @redfast:registry=https://npm.pkg.github.com
 //npm.pkg.github.com/:_authToken=AUTHTOKEN
+
+-- .yarnyc.yml --
+npmAuthToken: "AUTHTOKEN"
 ```
 
 ### Install the package
 
-using npm
+Using npm
 
 ```shell
 npm install @redfast/redfast-core
 npm install @redfast/react-native-redfast
 ```
 
-or using yarn
+or yarn
 
 ```shell
 yarn add @redfast/redfast-core
