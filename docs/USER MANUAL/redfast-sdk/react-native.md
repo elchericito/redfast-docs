@@ -102,10 +102,10 @@ if (path) {
   }, delaySeconds);
 }
 
-// Display the UI for the path object returned above.
+// Display the modal UI for the path object returned above.
 // params:
 //   - showModal: a boolean to stipulate showing or hiding a Prompt
-//   - path: a prompt object returned from one of the trigger calls above
+//   - path: a path object returned from one of the trigger calls above
 //   - result: a callback returning PromptResult
 displayPrompt(showModal, path, (result) => {
   console.log(JSON.stringify({ ...result, source: 'modal' }, null, 2));
@@ -139,13 +139,21 @@ You may utilize the `RedfastInline` view to render an inline prompt, if one is a
 
 ## Actions
 
-The following can be utilized to perform client-side actions when the main prompt CTA is selected.
+When a user interacts with the main prompt CTA, a result callback includes various metadata associated with the Prompt to determine the client-side action that should take place.
 
 ### Deeplink
 
-You can insert deeplink key-value pairs in Pulse. When the user invokes the CTA, you can utilize these key-value pairs to send the user to a specific media asset within the app.
+You can add a Deeplink to a Prompt within Pulse.. When the user invokes the CTA, you can utilize the Deeplink to send the user to a specific location within the app.
 
-TODO: Code example
+```javascript
+{
+  "code": 0,
+  "meta": {
+    "meta": {},
+    "deeplink": "redflix://test123"
+  },
+}
+```
 
 ### In-App Purchase
 
@@ -157,7 +165,18 @@ TODO: Code example
 
 Custom key-value pairs can be added to an item via Pulse. These values may be used to perform an action that is not the typical media asset deep link, like sending the user to a registration screen or performing an operation on behalf of the user.
 
-TODO: Code example
+```javascript
+{
+  "code": 0,
+  "meta": {
+    "meta": {
+      "keyName1": "foo",
+      "keyName2": "bar",
+      "differentKey": "baz"
+    },
+  },
+}
+```
 
 ## Send Usage Tracking Event
 
