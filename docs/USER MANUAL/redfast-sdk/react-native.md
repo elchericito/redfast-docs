@@ -30,8 +30,6 @@ Add the SDK dependency to your package.json
   }
 ```
 
-<br />
-
 ## Initialize Redfast
 
 Initialize the SDK in your AppRoot.
@@ -69,6 +67,31 @@ promptMgr.setUserId(userId)
 ```
 
 ## Trigger Modals
+
+Interstitial (mobile only), Popup and Bottom Banner modals may be triggered upon entering a screen and/or the user registering a click on an element. Add the following code to screens that are eligible to show a modal.
+
+```javascript
+// Trigger when entering the "home" screen
+const { path, delaySeconds } = await promptMgr.onScreenChanged("home");
+if (path) {
+  setTimeout(() => {
+    setPathItem(path);
+    setShowModal(true);
+  }, delaySeconds);
+}
+
+// Trigger when "clickId" is clicked
+const { path, delaySeconds } = await promptMgr.onButtonClicked("clickId");
+if (path) {
+  setTimeout(() => {
+    setPathItem(path);
+    setShowModal(true);
+  }, delaySeconds);
+}
+
+```
+
+<br />
 
 ## Render Inline Prompts
 
