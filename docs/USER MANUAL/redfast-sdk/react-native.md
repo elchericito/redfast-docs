@@ -111,13 +111,6 @@ displayPrompt(showModal, path, (result) => {
   console.log(JSON.stringify({ ...result, source: 'modal' }, null, 2));
   setShowModal(false);
 })
-
-// Data schema of the result callback
-interface PromptResult {
-  code: PromptResultCode;
-  value?: { [key: string]: any };
-  meta?: { [key: string]: any };
-}
 ```
 
 ## Render Inline Prompts
@@ -139,7 +132,32 @@ You may utilize the `RedfastInline` view to render an inline prompt, if one is a
 
 ## Actions
 
-When a user interacts with the main prompt CTA, a result callback includes various metadata associated with the Prompt to determine the client-side action that should take place.
+When a user interacts with the primary prompt CTA, a result callback includes various metadata associated with the Prompt to determine the client-side action that should take place.
+
+```javascript
+// Data schema of the result callback
+interface PromptResult {
+  code: PromptResultCode;
+  value?: { [key: string]: any };
+  meta?: { [key: string]: any };
+}
+
+// PromotResultCode values
+enum PromptResultCode {
+  TIME_EXPIRED = -1,
+  DECLINED = -2,
+  ABORT = -3,
+  ACCEPT = 0,
+  NOT_APPLICABLE = -4,
+  DISABLED = -5,
+  HOLDOUT = -6,
+  SUPPRESSED = -7,
+  ERROR = -8,
+  OK = 0,
+  LAUNCHING_PROMPT = 1,
+  VIEWED = 2,
+}
+```
 
 ### Deeplink
 
