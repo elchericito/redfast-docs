@@ -89,7 +89,7 @@ if (path) {
   }, delaySeconds);
 }
 
-// Trigger when "clickId" is clicked
+// Or, trigger when "clickId" is clicked
 const { path, delaySeconds } = await promptMgr.onButtonClicked("clickId");
 if (path) {
   setTimeout(() => {
@@ -97,6 +97,16 @@ if (path) {
     setShowModal(true);
   }, delaySeconds);
 }
+
+// Display the UI for the path object returned above.
+// params:
+//   - showModal: boolean - stipulate to show or hide a Prompt
+//   - path: a path object retruned from one of the trigger calls above
+//   - result: a callback to return the result of how a user interacts with a Redfast Prompt
+displayPrompt(showModal, path, (result) => {
+  console.log(JSON.stringify({ ...result, source: 'modal' }, null, 2));
+  setShowModal(false);
+})
 
 ```
 
