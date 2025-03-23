@@ -46,7 +46,7 @@ React.useEffect(() => {
   if (dispatch) {
     const promptMgr = new PromptManager(
       'YOUR_APP_ID',
-      'INITIAL_USER_ID'
+      'INITIAL_USER_ID' // or null
     );
     const intervalId = setInterval(() => {
       if (promptMgr.isInitialized()) {
@@ -79,7 +79,7 @@ Interstitial (mobile only), Popup and Bottom Banner modals may be triggered upon
 ```javascript
 // Import from Redfast SDK
 import {
-  usePrompt,
+  usePrompt, // Prompt state management
   displayPrompt, // Modal prompts
   RedfastInline, // Inline prompts
 } from '@redfast/react-native-redfast';
@@ -105,8 +105,8 @@ if (path) {
 // Display the UI for the path object returned above.
 // params:
 //   - showModal: a boolean to stipulate showing or hiding a Prompt
-//   - path: a path object retruned from one of the trigger calls above
-//   - result: a callback to return the result of how a user interacts with a Redfast Prompt
+//   - path: a prompt object returned from one of the trigger calls above
+//   - result: a callback returning PromptResult
 displayPrompt(showModal, path, (result) => {
   console.log(JSON.stringify({ ...result, source: 'modal' }, null, 2));
   setShowModal(false);
