@@ -12,7 +12,7 @@ next:
 ---
 ## Adobe Experience Platform (AEP)
 
-The Redfast AEP connector pushes Redfast prompt interaction events to an Adobe [Data Stream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview). Events include impressions, goals, declines, dismisses, timeouts, custom\_goals, holdouts.
+The Redfast AEP connector pushes Redfast prompt interaction events to an Adobe [Data Stream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview). Events include impressions, goals, declines, dismisses, timeouts, custom\_goals, and holdouts.
 
 **Configure the following objects within AEP**
 
@@ -66,3 +66,7 @@ Once provided the endpoint information, you may create the custom action as foll
    3. Monitor incoming requests to verify successful integration
 
 Once the Custom HTTP Action is running within your journeys, the specified property name and values will be synced in real-time with Redfast for the specified user. This allows you to create user segments utilizing these properties and target specific prompts to be triggered when users are within your apps.
+
+## Adobe Analytics
+
+Redfast can send prompt interaction events via the Adobe Experience Platform Web SDK (alloy.js) for users on your web platforms. These events include impressions, goals, declines, dismisses, timeouts, custom\_goals, and holdouts. Contact your Customer Success Manager for instructions to enable this feature, as there is some configuration required before events can be sent to your data stream.
