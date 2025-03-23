@@ -16,7 +16,7 @@ Add the following to your .npmrc file. Contact your Customer Success Manager for
 //npm.pkg.github.com/:_authToken=AUTHTOKEN
 ```
 
-Install the package
+### Install the package
 
 using npm
 
