@@ -37,42 +37,76 @@ Add the SDK dependency to your package.json
 Initialize the SDK in your AppRoot.
 
 ```javascript
-  React.useEffect(() => {
-    if (dispatch) {
-      const promptMgr = new PromptManager(
-        'YOUR_APP_ID',
-        'INITIAL_USER_ID'
-      );
-      const intervalId = setInterval(() => {
-        if (promptMgr.isInitialized()) {
-          dispatch({
-            type: PromptAction_Init,
-            data: promptMgr,
-          });
-          setReady(true);
-          clearInterval(intervalId);
-        }
-      }, 1000);
-      return () => clearInterval(intervalId);
-    }
-    return () => {};
-  }, [dispatch]);
+// Initialize the SDK, polling until init is complete
+React.useEffect(() => {
+  if (dispatch) {
+    const promptMgr = new PromptManager(
+      'YOUR_APP_ID',
+      'INITIAL_USER_ID'
+    );
+    const intervalId = setInterval(() => {
+      if (promptMgr.isInitialized()) {
+        dispatch({
+          type: PromptAction_Init,
+          data: promptMgr,
+        });
+        setReady(true);
+        clearInterval(intervalId);
+      }
+    }, 1000);
+    return () => clearInterval(intervalId);
+  }
+  return () => {};
+}, [dispatch]);
 ```
 
-<br />
-
 ## Set UserId
+
+You may change the userID after the SDK has been initialized, for example, when the user authenticates mid session. Note that it may take several seconds for the user's prompts to refresh.
+
+```javascript
+promptMgr.setUserId(userId)
+```
 
 ## Trigger Modals
 
 ## Render Inline Prompts
 
+You may utilize the `RedfastInline` view to render an inline prompt, if one is available for the current user.
+
+```javascript
+<RedfastInline
+  zoneId="myZoneId" // ZoneID as specified in Pulse
+  closeButtonColor="#000000" // Hex color for close button, if enabled
+  closeButtonBgColor="#FFFFFF" // Hex background color for close button
+  closeButtonSize="20" // Close button height and width, in pixels
+  timerFontSize="14" // Countdown timer font size, if enabled
+  timerFontColor="#FFFFFF" // Countdown timer font hex color
+  onEvent={(result) =>}
+/>
+
+```
+
 ## Actions
+
+The following can be utilized to perform client-side actions when the main prompt CTA is selected.
 
 ### Deeplink
 
+You can insert deeplink key-value pairs in Pulse. When the user invokes the CTA, you can utilize these key-value pairs to send the user to a specific media asset within the app.
+
 ### In-App Purchase
+
+An In-App Purchase product SKU may be configured on the prompt, which indicates that the user should be sent to the In-App Purchase flow for the specified SKU  once the primary CTA has been selected.
 
 ### Custom Metadata
 
+Custom key-value pairs can be added to an item via Pulse. These values may be used to perform an action that is not the typical media asset deep link, like sending the user to a registration screen or performing an operation on behalf of the user.
+
 ## Send Usage Tracking Event
+
+Your app can send custom track events using the SDK. If configured as a tracker within Pulse, these custom events can be used to target prompts at specific sets of users.
+
+```javascript
+promptMgr.customTrack(customFieldId)
+```
