@@ -100,7 +100,7 @@ if (path) {
 
 // Display the UI for the path object returned above.
 // params:
-//   - showModal: boolean - stipulate to show or hide a Prompt
+//   - showModal: a boolean to stipulate showing or hiding a Prompt
 //   - path: a path object retruned from one of the trigger calls above
 //   - result: a callback to return the result of how a user interacts with a Redfast Prompt
 displayPrompt(showModal, path, (result) => {
