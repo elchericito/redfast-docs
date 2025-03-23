@@ -100,7 +100,7 @@ if (path) {
 
 ## Render Inline Prompts
 
-You may utilize the `RedfastInline` view to render an inline prompt, if one is available for the current user.
+You may utilize the `RedfastInline` view to render an inline prompt, if one is available for the current user. Note the inline prompt will scale to fit within its container.
 
 ```javascript
 <RedfastInline
@@ -123,13 +123,19 @@ The following can be utilized to perform client-side actions when the main promp
 
 You can insert deeplink key-value pairs in Pulse. When the user invokes the CTA, you can utilize these key-value pairs to send the user to a specific media asset within the app.
 
+TODO: Code example
+
 ### In-App Purchase
 
 An In-App Purchase product SKU may be configured on the prompt, which indicates that the user should be sent to the In-App Purchase flow for the specified SKU  once the primary CTA has been selected.
 
+TODO: Code example
+
 ### Custom Metadata
 
 Custom key-value pairs can be added to an item via Pulse. These values may be used to perform an action that is not the typical media asset deep link, like sending the user to a registration screen or performing an operation on behalf of the user.
+
+TODO: Code example
 
 ## Send Usage Tracking Event
 
@@ -137,4 +143,12 @@ Your app can send custom track events using the SDK. If configured as a tracker 
 
 ```javascript
 promptMgr.customTrack(customFieldId)
+```
+
+## Debugging
+
+You may reset the current user's prompt status, such that previously suppressed prompts will now be made available.
+
+```javascript
+promptMgr.resetGoal()
 ```
