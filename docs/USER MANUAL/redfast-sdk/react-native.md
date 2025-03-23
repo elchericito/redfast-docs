@@ -71,6 +71,13 @@ promptMgr.setUserId(userId)
 Interstitial (mobile only), Popup and Bottom Banner modals may be triggered upon entering a screen and/or the user registering a click on an element. Add the following code to screens that are eligible to show a modal.
 
 ```javascript
+// Import from Redfast SDK
+import {
+  usePrompt,
+  displayPrompt, // Modal prompts
+  RedfastInline, // Inline prompts
+} from '@redfast/react-native-redfast';
+
 // Trigger when entering the "home" screen
 const { path, delaySeconds } = await promptMgr.onScreenChanged("home");
 if (path) {
