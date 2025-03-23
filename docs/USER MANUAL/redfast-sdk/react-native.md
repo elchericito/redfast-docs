@@ -18,16 +18,18 @@ Add the following to your .npmrc file. Contact your Customer Success Manager for
 
 Install the package
 
+using npm
+
 ```shell
+npm install @redfast/redfast-core
 npm install @redfast/react-native-redfast
 ```
 
-Add the SDK dependency to your package.json
+or using yarn
 
-```json
-  "dependencies": {
-    "@redfast/react-native-redfast": "^1.0.0"
-  }
+```json shell
+yarn add @redfast/redfast-core
+yarn add @redfast/react-native-redfast
 ```
 
 ## Initialize Redfast
