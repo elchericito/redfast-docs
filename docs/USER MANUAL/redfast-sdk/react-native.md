@@ -132,7 +132,7 @@ You may utilize the `RedfastInline` view to render an inline prompt, if one is a
 
 ## Custom Prompt Rendering
 
-You may opt to render prompts utilizing the prompt metadata in cases where the rendering desired is different than that produced by the Redfast SDK.
+You may opt to render prompts utilizing the prompt metadata in cases where the desired rendering is different than that produced by the Redfast SDK.
 
 The app should report Prompt interactions via the provided functions on the prompt object.
 
