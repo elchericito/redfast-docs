@@ -132,18 +132,82 @@ You may utilize the `RedfastInline` view to render an inline prompt, if one is a
 
 ## Render Custom Prompts
 
-You may opt to retrieve prompt metadata in order to render the Prompt yourself. This
+You may opt to retrieve prompt metadata in order to render the Prompt yourself. Prompt interactions are reported via the provided functions on the prompt object.
 
 ```javascript
-/* Supported PathTypes
-  PathType.ALL
-  PathType.MODAL
-  PathType.HORIZONTAL
-  PathType.TEXT
-  PathType.VERTICAL
-  PathType.TILE
-  PathType.INTERSTITIAL
-  PathType.BOTTOM_BANNER
+// Example: Retrieve all available prompts of specified type. See PathType values below.
+let prompts = promptMgr.getPrompts(PathType.ALL);
+
+// Example: Retrieve all available prompts of specified type and trigger criteria (screenName `homeScreen`)
+let prompts = promptMgr.getTriggerablePrompts('home_screen','*', PathType.ALL );
+
+// Example: Retrieve all available prompts of specified type and trigger criteria (screenName `homeScreen` and clickId `add_to_watchlist`)
+let prompts = promptMgr.getTriggerablePrompts('home_screen','add_to_watchlist', PathType.ALL );
+
+// Report prompt interactions
+prompt.impression() // prompt shown to user
+prompt.goal() // user clicks on primary CTA
+prompt.goal2() // user clicks on secondary CTA
+prompt.decline() // user clicks on decline (3rd) button
+prompt.dismiss() // user dismisses prompt by clicking on "x" close button
+prompt.timeout() // prompt is dismissed via countdown timer
+promot.holdout() // prompt is triggered, however the user is in the Control group so prompt should not be shown
+
+
+/* 
+PathType values:
+  PathType.ALL = -1
+  PathType.MODAL = 2 // Referenced as Popup within Pulse
+  PathType.HORIZONTAL = 5
+  PathType.TEXT = 7
+  PathType.VERTICAL = 8
+  PathType.TILE = 9
+  PathType.INTERSTITIAL = 10
+  PathType.BOTTOM_BANNER = 13
+  
+PromptResultCode values:
+  TIME_EXPIRED = -1,
+  DECLINED = -2,
+  ABORT = -3,
+  ACCEPT = 0,
+  NOT_APPLICABLE = -4,
+  DISABLED = -5,
+  HOLDOUT = -6,
+  SUPPRESSED = -7,
+  ERROR = -8,
+  OK = 0,
+  LAUNCHING_PROMPT = 1,
+  VIEWED = 2,
+
+Prompt Interface:
+interface Prompt {
+  id: string;
+  type: PathType;
+  actions: Action;
+  actionGroupId?: string;
+  inAppSku?: string;
+  deviceMeta?: { [key: string]: any };
+  deeplink?: { [key: string]: any };
+  button1?: ModalButton;
+  button2?: ModalButton;
+  button3?: ModalButton;
+  buttonBorderRadius: number;
+  buttonBorderColor: string;
+  buttonBorderThickness: number;
+  countDownPrompt: string;
+  countDownPromptColor: string;
+  countDownPromptFontSize: number;
+  countDownPromptInvisible: boolean;
+  countDown: number;
+  horizontalPoster?: string;
+  impression: () => Promise<PromptResult>;
+  dismiss: () => Promise<PromptResult>;
+  timeout: () => Promise<PromptResult>;
+  holdout: () => Promise<PromptResult>;
+  goal: () => Promise<PromptResult>;
+  goal2: () => Promise<PromptResult>;
+  decline: () => Promise<PromptResult>;
+}
 */
 ```
 
@@ -157,22 +221,6 @@ interface PromptResult {
   code: PromptResultCode;
   value?: { [key: string]: any };
   meta?: { [key: string]: any };
-}
-
-// PromotResultCode values
-enum PromptResultCode {
-  TIME_EXPIRED = -1,
-  DECLINED = -2,
-  ABORT = -3,
-  ACCEPT = 0,
-  NOT_APPLICABLE = -4,
-  DISABLED = -5,
-  HOLDOUT = -6,
-  SUPPRESSED = -7,
-  ERROR = -8,
-  OK = 0,
-  LAUNCHING_PROMPT = 1,
-  VIEWED = 2,
 }
 ```
 
