@@ -130,12 +130,14 @@ You may utilize the `RedfastInline` view to render an inline prompt, if one is a
 
 ```
 
-## Render Custom Prompts
+## Custom Prompt Rendering
 
-You may opt to retrieve prompt metadata in order to render the Prompt yourself. Prompt interactions are reported via the provided functions on the prompt object.
+You may opt to render prompts utilizing the prompt metadata in cases where the rendering desired is different than that produced by the Redfast SDK.
+
+The app should report Prompt interactions via the provided functions on the prompt object.
 
 ```javascript
-// Example: Retrieve all available prompts of specified type. See PathType values below.
+// Example: Retrieve all available prompts of specified type. See PathType values below. Use this if trigger criteria is to be ignored.
 let prompts = promptMgr.getPrompts(PathType.ALL);
 
 // Example: Retrieve all available prompts of specified type and trigger criteria (screenName `homeScreen`)
@@ -143,6 +145,27 @@ let prompts = promptMgr.getTriggerablePrompts('home_screen','*', PathType.ALL );
 
 // Example: Retrieve all available prompts of specified type and trigger criteria (screenName `homeScreen` and clickId `add_to_watchlist`)
 let prompts = promptMgr.getTriggerablePrompts('home_screen','add_to_watchlist', PathType.ALL );
+
+// Access prompt properties (See below for Prompt interface details)
+prompt.button1
+prompt.button2
+prompt.button3
+prompt.titleText
+prompt.titleFontSize
+prompt.titleFontColor
+prompt.messageText
+prompt.messageFontSize
+prompt.messageFontColor
+prompt.legalText
+prompt.closeTimerSeconds
+prompt.closeButtonEnabled
+prompt.zoneId
+prompt.bgImage
+prompt.compositeImage
+prompt.bgColor
+prompt.inAppSku
+promot.deeplink
+prompt.deviceMeta
 
 // Report prompt interactions
 prompt.impression() // prompt shown to user
@@ -152,7 +175,6 @@ prompt.decline() // user clicks on decline (3rd) button
 prompt.dismiss() // user dismisses prompt by clicking on "x" close button
 prompt.timeout() // prompt is dismissed via countdown timer
 promot.holdout() // prompt is triggered, however the user is in the Control group so prompt should not be shown
-
 
 /* 
 PathType values:
@@ -179,7 +201,6 @@ PromptResultCode values:
   LAUNCHING_PROMPT = 1,
   VIEWED = 2,
 
-Prompt Interface:
 interface Prompt {
   id: string;
   type: PathType;
@@ -207,6 +228,13 @@ interface Prompt {
   goal: () => Promise<PromptResult>;
   goal2: () => Promise<PromptResult>;
   decline: () => Promise<PromptResult>;
+}
+
+interface ModalButton {
+  label?: string;
+  textColor?: string;
+  textHightlightColor?: string;
+  bgColor?: string;
 }
 */
 ```
