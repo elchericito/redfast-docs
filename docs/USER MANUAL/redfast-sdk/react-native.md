@@ -150,19 +150,6 @@ let prompts = promptMgr.getTriggerablePrompts('home_screen','add_to_watchlist', 
 prompt.button1
 prompt.button2
 prompt.button3
-prompt.titleText
-prompt.titleFontSize
-prompt.titleFontColor
-prompt.messageText
-prompt.messageFontSize
-prompt.messageFontColor
-prompt.legalText
-prompt.closeTimerSeconds
-prompt.closeButtonEnabled
-prompt.zoneId
-prompt.bgImage
-prompt.compositeImage
-prompt.bgColor
 prompt.inAppSku
 promot.deeplink
 prompt.deviceMeta
@@ -269,8 +256,6 @@ You can add a Deeplink to a Prompt within Pulse.. When the user invokes the CTA,
 ### In-App Purchase
 
 An In-App Purchase product SKU may be configured on the prompt, which indicates that the user should be sent to the In-App Purchase flow for the specified SKU  once the primary CTA has been selected.
-
-TODO: Code example
 
 ### Custom Metadata
 
