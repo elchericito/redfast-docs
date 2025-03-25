@@ -16,7 +16,7 @@ When procurred with an application, Redfast will set up an admin user account(s)
 
 ### Company admin
 
- **Company admins** can **create and change** all of a specific company's apps and add new apps (i.e., staging environment app) within the same company.
+**Company admins** can **create and change** all of a specific company's apps and add new apps (i.e., staging environment app) within the same company.
 
 ### App admin
 
@@ -26,7 +26,7 @@ When procurred with an application, Redfast will set up an admin user account(s)
 
 ### App Member
 
-**App Members** cannot access the app "Settings" section, however, they can still see the dashboard and modify prompts and segments.
+**App Members** can see the dashboard and modify prompts and segments, but they cannot edit the app "Settings" section.
 
 ### Read only
 
