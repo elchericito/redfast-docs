@@ -5,7 +5,7 @@ hidden: false
 metadata:
   robots: index
 ---
-The Redfast React Native SDK provides the ability to render Redfast configured prompts within your React Native apps. The SDK automatically handles display of modals (popups, bottom banners, mobile interstitials) and the related user interaction events. Inline prompts can be rendered using a prebuilt view. A demo app with example SDK integration is available at [https://github.com/redfast/redfast-sdk-react-native](https://github.com/redfast/redfast-sdk-react-native).
+The Redfast React Native SDK provides the ability to render Redfast configured prompts within your React Native apps. The SDK automatically handles display of modals (popups, bottom banners, mobile interstitials) and the related user interaction events. Inline prompts can be rendered using a prebuilt view. A demo app with example SDK implementation is available at [https://github.com/redfast/redfast-sdk-react-native](https://github.com/redfast/redfast-sdk-react-native).
 
 ## Install the SDK
 
