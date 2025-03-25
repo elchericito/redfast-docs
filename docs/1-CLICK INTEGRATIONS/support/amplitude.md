@@ -5,13 +5,11 @@ hidden: true
 metadata:
   robots: index
 ---
-## Activation
-
-<br />
-
 ## Outbound Events
 
-For web based devices, Redfast utilizes the running instance of the Amplitude JS SDK to report client-side events. This ensures that session and user data context is maintained while reporting real-time Redfast prompt events. Contact your Customer Success Manager to confirm the details of your Amplitude JS SDK config and to enable the integration.
+For web based devices, Redfast utilizes the running instance of the Amplitude JS SDK. This ensures that session and user data context is maintained while reporting real-time Redfast prompt events. Contact your Customer Success Manager to confirm the details of your Amplitude JS SDK config and to enable the integration.
+
+**Event Details**
 
 | Event Name                 | Description                                                                                                                                    |
 | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -44,3 +42,7 @@ Depending on use case, Event as well as User data may be synced via one of the f
 One-off report exports can be downloaded from Amplitude and uploaded to Pulse. Please ensure that the User ID is the first column of the CSV export.
 
 ### Webhook
+
+### Export API
+
+For CSV export that require automation, Redfast uses the Export API to run scheduled exports and initiate syncs with Redfast.
