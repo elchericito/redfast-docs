@@ -9,9 +9,7 @@ metadata:
 
 <br />
 
-## Events
-
-### Outbound Events
+## Outbound Events
 
 For web based devices, Redfast utilizes the running instance of the Amplitude JS SDK to report client-side events. This ensures that session and user data context is maintained while reporting real-time Redfast prompt events. Contact your Customer Success Manager to confirm the details of your Amplitude JS SDK config and to enable the integration.
 
@@ -36,3 +34,13 @@ The following attributes (if applicable) are sent with each custom event.
 | variation\_id    | A unique identifier of a prompt variation running within an experiment                                   |
 | variation\_name  | The name of the prompt variation running within an experiment                                            |
 | survey\_value    | A survey option value that has been selected and submitted (exists only if survey defined within prompt) |
+
+## Data Sync
+
+Depending on use case, Event as well as User data may be synced via one of the following methods. We recommend discussing with your Customer Success Integration Specialist to determine the best integration method.
+
+### CSV Export
+
+One-off report exports can be downloaded from Amplitude and uploaded to Pulse. Please ensure that the User ID is the first column of the CSV export.
+
+### Webhook
