@@ -33,7 +33,7 @@ The following attributes (if applicable) are sent with each custom event.
 | variation\_name  | The name of the prompt variation running within an experiment                                            |
 | survey\_value    | A survey option value that has been selected and submitted (exists only if survey defined within prompt) |
 
-## Data Sync
+## Inbound Data Sync
 
 Depending on use case, Event as well as User data may be synced via one of the following methods. We recommend discussing with your Customer Success Integration Specialist to determine the best integration method.
 
@@ -43,6 +43,13 @@ One-off report exports can be downloaded from Amplitude and uploaded to Pulse. P
 
 ### Webhook
 
+You may want to report certain events to be synced in real-time, for example, user activity like new signups, user property updates or cohort assignments.
+
+1. Add a new Webhook destination from your Data Catalog
+2. Your Customer Success Integration Specialist will provide the endpoint details. In most cases the default Amplitude Event payload is sufficient
+3. Configure the webhook to filter for only events that are necessary to power your intended use cases
+4. Click on "Test Connection" to validate the configuration
+
 ### Export API
 
-For CSV export that require automation, Redfast uses the Export API to run scheduled exports and initiate syncs with Redfast.
+For recurring CSV exports that require automation, Redfast uses the Export API to run scheduled exports and initiate syncs with Redfast. Please ensure that you share an API key with appropriate permissions and work with our Customer Success team to setup the automation.
