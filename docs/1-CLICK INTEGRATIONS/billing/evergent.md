@@ -12,7 +12,7 @@ next:
 ---
 ## Activation
 
-Provider the following to activate the Evergent integration. Note the integration utilizes the Evergent REST API - contact your Customer Success Manager if you utilize legacy platforms such as the SOAP API.
+Provide the following to activate the Evergent integration. Note the integration utilizes the Evergent REST API - contact your Customer Success Manager if you utilize legacy platforms such as the SOAP API.
 
 * Domain
 * apiKey
