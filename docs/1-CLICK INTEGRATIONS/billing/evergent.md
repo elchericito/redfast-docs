@@ -47,7 +47,7 @@ Evergent can be configured to sync a daily CSV report with Redfast, which includ
 
 ## Supported Actions
 
-? DISCLAIMER HERE ? - what about user specific packages/products due to the way Evergent is setup?
+> 📘 Evergent configuration varies from one instance to another. Not all of the below mentioned actions may be supported with your instance.
 
 | Action                  | Description                                                                   | API Integration        |
 | :---------------------- | :---------------------------------------------------------------------------- | :--------------------- |
