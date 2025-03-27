@@ -61,9 +61,9 @@ Once provided the endpoint information, you may create the custom action as foll
 2. Click **Create Action** and choose **Custom HTTP Action**
 3. Provide a Name and Description for the action
 4. In the Endpoint Configuration section:
-   1. Set HTTP method to GET
+   1. Set HTTP method to **GET**
    2. Enter the API endpoint
-   3. Configure the query params which include one or more property key names along with their associated values. The convention is: properties\[**keyName**]=**value**\`
+   3. Configure the query params which include one or more property key names along with their associated values. The convention is: properties\[**keyName**]=**value**\\
    4. Specify the `USER-ID` HTTP header
 5. Test the Custom HTTP Action - your Customer Success Manager will confirm that the action processed successfully
 6. Deploy the Action in AJO
