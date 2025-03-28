@@ -1,0 +1,260 @@
+---
+title: Partner Provisioning
+deprecated: false
+hidden: true
+metadata:
+  robots: index
+---
+# Introduction
+
+The Provision API allows for the creation and modification of a Redfast tenant via server-side integration with partners. Please work with your partnership manager if you require access to this API.
+
+## Endpoint Info
+
+<br />
+
+**Base URL**: `https://<subdomain>.redfast.com`
+
+<br />
+
+# Get Tenant
+
+<br />
+
+This API should be invoked to retrieve an existing tenant.
+
+<br />
+
+## Endpoint
+
+<br />
+
+**GET /v1/tenants/\<external\_tenant\_id>**
+
+<br />
+
+## Headers
+
+<br />
+
+* **Content-Type**: `application/json`
+* **rf-secret**: Shared secret provided by Redfast (separate secrets for Test and Production)
+  <br />
+
+## Query Params
+
+<br />
+
+The request should include the following query params:
+
+* **partner\_code**: Partner Code assigned by Redfast
+  <br />
+
+## Response
+
+<br />
+
+```Text json
+{
+  "success": true,
+  "external_tenant_id": "<external_tenant_id>",
+  "app_id": "<app_id>",
+  "tag_url": "https://<app_id>.redfastlabs.com/assets/redfast.js",
+  "user_first_name": "John",
+  "user_last_name": "Smith",
+  "user_email": "jsmith@myemail.com",
+  "app_name": "My App",
+  "company_name": "My Company",
+  "app_domain": "myco.com",
+  "
+```
+
+<br />
+
+# Create Tenant
+
+<br />
+
+This API should be invoked to create a new tenant on the Redfast platform.
+
+<br />
+
+## Endpoint
+
+<br />
+
+**POST /v1/tenants**
+
+<br />
+
+## Headers
+
+<br />
+
+* **Content-Type**: `application/json`
+  * **rf-secret**: Shared secret provided by Redfast (separate secrets for Test and Production)
+    <br />
+
+## Body
+
+<br />
+
+The request body should be a JSON including the following properties (all required):
+
+* **company\_name**: Company name
+* **external\_tenant\_id**: Unique Partner Tenant ID
+* **app\_name**: Name of the app/site utilizing Redfast platform
+* **app\_domain**: Top level domain
+* **user\_email**: Email address of initial Admin user
+* **user\_first\_name**: First name of Admin user
+* **user\_last\_name**: Last name of Admin user
+* **partner\_code**: Partner Code assigned by Redfast
+* **api\_key**: API key utilized for integration with partner for the tenant
+  <br />
+
+## Response
+
+<br />
+
+```
+{
+  "success": true,
+  "status": "provisioning_started",
+  "external_tenant_id": "<external_tenant_id>",
+  "app_id": "<app_id>",
+  "tag_url": "https://<app_id>.redfastlabs.com/assets/redfast.js",
+  "test_mode": false
+}
+```
+
+<br />
+
+# Update Tenant
+
+<br />
+
+This API should be invoked to update an existing tenant on the Redfast platform.
+
+<br />
+
+## Endpoint
+
+<br />
+
+**PATCH /v1/tenants**
+
+<br />
+
+## Headers
+
+<br />
+
+* **Content-Type**: `application/json`
+  * **rf-secret**: Shared secret provided by Redfast (separate secrets for Test and Production)
+    <br />
+
+## Body
+
+<br />
+
+The request body should be a JSON including the following properties:
+
+* **external\_tenant\_id**: Unique Partner Tenant ID
+* **partner\_code**: Partner Code assigned by Redfast
+* **app\_domain**: (optional) Top level domain
+* **api\_key**: (optional) API key utilized for integration with partner for the tenant
+  <br />
+
+## Response
+
+<br />
+
+```
+{
+  "success": true,
+  "status": "updated",
+  "external_tenantId": "<external_tenant_id>",
+  "app_id": "<app_id>",
+  "tag_url": "https://<app_id>.redfastlabs.com/assets/redfast.js",
+  "test_mode": false
+}
+```
+
+<br />
+
+# Testing
+
+<br />
+
+Authentication utilizes a shared secret (both Test and Production secrets will be provided). When utilizing the Test secret, a valid API response is returned but a new tenant will not be provisioned.
+
+<br />
+
+# Error Responses
+
+<br />
+
+Redfast uses conventional HTTP response codes indicating success or failure of an API request. Codes in the 2xx range indicate success while codes in the 4xx or 5xx ranges indicate an error.
+
+<br />
+
+* 200 OK - Normal response
+* 401 Unauthorized - Shared secret is incorrect
+
+<br />
+
+```
+{
+  "success": false,
+  "status": "invalid_secret"
+}
+```
+
+<br />
+
+* 404 Not Found - Requested resource was not found
+
+<br />
+
+```
+{
+  "success": false,
+  "status": "not_found",
+  "message": "resource not found"
+}
+```
+
+<br />
+
+<br />
+
+* 409 Conflict - Tenant has already been provisioned
+
+<br />
+
+```
+{
+  "success": false,
+  "status": "already_provisioned",
+  "external_tenant_id": "<external_tenant_id>"
+}
+```
+
+<br />
+
+* 422 Unprocessable Entity - Invalid or missing information
+
+<br />
+
+```
+{
+  "success": false,
+  "status": "missing_or_invalid_info",
+  "message": "partner_code missing"
+  "external_tenant_id": "<external_tenant_id>"
+}
+```
+
+<br />
+
+* 5xx - Something went wrong with the Redfast endpoint (rare)
