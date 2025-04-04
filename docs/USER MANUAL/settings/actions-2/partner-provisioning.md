@@ -29,7 +29,7 @@ This API should be invoked to retrieve an existing tenant.
 
 <br />
 
-**GET /v1/tenants/\<external\_tenant\_id>**
+\*\*GET /v1/tenants/\<external\_tenant\_id>\*\*
 
 <br />
 
