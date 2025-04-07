@@ -179,7 +179,7 @@ The request body should be a JSON including the following properties:
 {
   "success": true,
   "status": "updated",
-  "external_tenantId": "<external_tenant_id>",
+  "external_tenant_id": "<external_tenant_id>",
   "app_id": "<app_id>",
   "tag_url": "https://<app_id>.redfastlabs.com/assets/redfast.js",
   "test_mode": false,
@@ -217,6 +217,19 @@ The request should include the following query params:
   "exp": 1712800000,                                  // Expiry 
   "iat": 1712796400,                                  // Issued at
   "iss": "<partner_code>"                             // Partner Code
+}
+```
+
+<br />
+
+## Response when not redirecting
+
+```json
+{
+  "success": true,
+  "external_tenant_id": "<external_tenant_id>",
+  "jwt_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+  "jwt_token_expires_at": "2025-02-18T17:02:26.000Z"
 }
 ```
 
