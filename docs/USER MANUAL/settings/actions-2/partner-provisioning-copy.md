@@ -17,7 +17,7 @@ The Partner APIs allows for the creation and modification of Redfast prompts via
 
 <br />
 
-# Get Prompt by Tag
+# Get Prompts by Tag Name
 
 <br />
 
@@ -26,8 +26,6 @@ This API should be invoked to retrieve prompts based on tag name.
 <br />
 
 ## Endpoint
-
-<br />
 
 \*\*GET /v1/apps/\<app\_id>/paths?tag\_name=involuntary\_churn\*\*
 
@@ -40,11 +38,9 @@ This API should be invoked to retrieve prompts based on tag name.
 
 ## Query Params
 
-<br />
-
 The request should include the following query params:
 
-* **partner\_code**: Partner Code assigned by Redfast
+* **tag\_name**: (optional) Get prompts by tag\_name
   <br />
 
 ## Response
