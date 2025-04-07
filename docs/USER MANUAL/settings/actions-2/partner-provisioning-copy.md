@@ -17,11 +17,11 @@ The Partner APIs allows for the creation and modification of Redfast prompts via
 
 <br />
 
-# Get Tenant
+# Get Prompt by Tag
 
 <br />
 
-This API should be invoked to retrieve an existing tenant.
+This API should be invoked to retrieve prompts based on tag name.
 
 <br />
 
@@ -29,17 +29,14 @@ This API should be invoked to retrieve an existing tenant.
 
 <br />
 
-\*\*GET /v1/tenants/\<external\_tenant\_id>\*\*
+\*\*GET /v1/apps/\<app\_id>/paths?tag\_name=involuntary\_churn\*\*
 
 <br />
 
 ## Headers
 
-<br />
-
 * **Content-Type**: `application/json`
-* **rf-secret**: Shared secret provided by Redfast (separate secrets for Test and Production)
-  <br />
+* \*\*Authorization\*\*: Bearer \<jwt\_token>
 
 ## Query Params
 
