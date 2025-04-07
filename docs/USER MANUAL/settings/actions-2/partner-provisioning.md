@@ -54,7 +54,7 @@ The request should include the following query params:
 
 <br />
 
-```Text json
+```json json
 {
   "success": true,
   "external_tenant_id": "<external_tenant_id>",
@@ -66,7 +66,9 @@ The request should include the following query params:
   "app_name": "My App",
   "company_name": "My Company",
   "app_domain": "myco.com",
-  "
+  "test_mode": false,
+  "jwt_public_key_updated_at": "2025-02-18T17:02:26.000Z"
+}
 ```
 
 <br />
@@ -110,6 +112,7 @@ The request body should be a JSON including the following properties (all requir
 * **user\_last\_name**: Last name of Admin user
 * **partner\_code**: Partner Code assigned by Redfast
 * **api\_key**: API key utilized for integration with partner for the tenant
+* **jwt\_public\_key**: Public key utilized for provisioning and authenticating users. Must be an RSA public key in PEM format, between 2048–4096 bits. The PEM string must be under 2 KB in size.
   <br />
 
 ## Response
@@ -123,7 +126,9 @@ The request body should be a JSON including the following properties (all requir
   "external_tenant_id": "<external_tenant_id>",
   "app_id": "<app_id>",
   "tag_url": "https://<app_id>.redfastlabs.com/assets/redfast.js",
-  "test_mode": false
+  "test_mode": false,
+  "jwt_public_key: "-----BEGIN PUBLIC KEY-----\n...",
+  "jwt_public_key_updated_at": "2025-02-18T17:02:26.000Z"
 }
 ```
 
@@ -150,8 +155,8 @@ This API should be invoked to update an existing tenant on the Redfast platform.
 <br />
 
 * **Content-Type**: `application/json`
-  * **rf-secret**: Shared secret provided by Redfast (separate secrets for Test and Production)
-    <br />
+* **rf-secret**: Shared secret provided by Redfast (separate secrets for Test and Production)
+  <br />
 
 ## Body
 
@@ -163,6 +168,7 @@ The request body should be a JSON including the following properties:
 * **partner\_code**: Partner Code assigned by Redfast
 * **app\_domain**: (optional) Top level domain
 * **api\_key**: (optional) API key utilized for integration with partner for the tenant
+* **jwt\_public\_key**: (optional) Public key utilized for provisioning and authenticating users. Must be an RSA public key in PEM format, between 2048–4096 bits. The PEM string must be under 2 KB in size. Only displayed if updated.
   <br />
 
 ## Response
@@ -176,7 +182,9 @@ The request body should be a JSON including the following properties:
   "external_tenantId": "<external_tenant_id>",
   "app_id": "<app_id>",
   "tag_url": "https://<app_id>.redfastlabs.com/assets/redfast.js",
-  "test_mode": false
+  "test_mode": false,
+  "jwt_public_key: "-----BEGIN PUBLIC KEY-----\n...",
+  "jwt_public_key_updated_at": "2025-02-18T17:02:26.000Z"
 }
 ```
 
