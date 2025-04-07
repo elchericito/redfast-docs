@@ -7,7 +7,7 @@ metadata:
 ---
 # Introduction
 
-The Partner APIs allows for the creation and modification of Redfast prompts via server-side integration with partners. In order to use the
+The Partner APIs allows for the creation and modification of Redfast prompts via server-side integration with partners.
 
 ## Endpoint Info
 
@@ -554,7 +554,7 @@ Redfast uses conventional HTTP response codes indicating success or failure of a
 ```
 {
   "success": false,
-  "status": "invalid_secret"
+  "status": "invalid_token"
 }
 ```
 
@@ -576,20 +576,6 @@ Redfast uses conventional HTTP response codes indicating success or failure of a
 
 <br />
 
-* 409 Conflict - Tenant has already been provisioned
-
-<br />
-
-```
-{
-  "success": false,
-  "status": "already_provisioned",
-  "external_tenant_id": "<external_tenant_id>"
-}
-```
-
-<br />
-
 * 422 Unprocessable Entity - Invalid or missing information
 
 <br />
@@ -598,8 +584,7 @@ Redfast uses conventional HTTP response codes indicating success or failure of a
 {
   "success": false,
   "status": "missing_or_invalid_info",
-  "message": "partner_code missing"
-  "external_tenant_id": "<external_tenant_id>"
+  "message": "id missing"
 }
 ```
 
