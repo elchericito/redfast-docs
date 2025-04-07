@@ -211,7 +211,7 @@ The request should include the following query params:
 
 ```json
 {
-  "sub": "user123",                                   // Unique user ID
+  "sub": "<partner_user_id>,                          // Unique partner user ID
   "external_tenant_id": "<external_tenant_id>",       // Tenant they belong to
   "role": "admin",                                    // "admin" or "member"
   "exp": 1712800000,                                  // Expiry 
