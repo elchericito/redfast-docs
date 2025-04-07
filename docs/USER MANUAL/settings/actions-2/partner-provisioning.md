@@ -119,7 +119,7 @@ The request body should be a JSON including the following properties (all requir
 
 <br />
 
-```
+```json
 {
   "success": true,
   "status": "provisioning_started",
@@ -175,7 +175,7 @@ The request body should be a JSON including the following properties:
 
 <br />
 
-```
+```json
 {
   "success": true,
   "status": "updated",
@@ -224,7 +224,7 @@ Redfast uses conventional HTTP response codes indicating success or failure of a
 
 <br />
 
-```
+```json
 {
   "success": false,
   "status": "not_found",
@@ -240,7 +240,7 @@ Redfast uses conventional HTTP response codes indicating success or failure of a
 
 <br />
 
-```
+```json
 {
   "success": false,
   "status": "already_provisioned",
@@ -254,7 +254,7 @@ Redfast uses conventional HTTP response codes indicating success or failure of a
 
 <br />
 
-```
+```json
 {
   "success": false,
   "status": "missing_or_invalid_info",
