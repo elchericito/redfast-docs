@@ -369,31 +369,37 @@ The request should include the following query params:
 
 <br />
 
-# Get Prompts by Tag Name
+# Update Prompt
 
-This API should be invoked to retrieve a list of prompts based on tag name.
+This API should be invoked to update an existing prompt. Omitted attributes will be ignored.
 
 ## Endpoint
 
-\*\*GET /v1/apps/\<app\_id>/paths?tag\_name=involuntary\_churn\*\*
+\\\*\\\*GET /v1/apps/\\\<app\\\_id>/paths/\<path\_id>\\\*\\\*
 
 ## Headers
 
 * **Content-Type**: `application/json`
 * \*\*Authorization\*\*: Bearer \<jwt\_token>
 
-## Query Params
+<br />
 
-The request should include the following query params:
+## Body
 
-* **tag\_name**: (optional) Get prompts by tag\_name
-  <br />
+The request body should be a JSON including the following properties. All fields are optional except for actions:
+
+* **id**: (required) Prompt id
+* **name**: Prompt name
+* **description**: Prompt description
+* **start\_date**: Start date
+* **end\_date**: Start date
+* **is\_enabled**: Enable prompt
+* **actions**: Prompt attributes. All attributes are strings.
 
 ## Response
 
 ```json json
-[
- {
+{
   "id": "c6e948dd-06ec-4d10-acc9-a6b4ba2823ff",
   "slug": "c6e948dd-06ec-4d10-acc9-a6b4ba2823ff",
   "name": "Sample Prompt",
@@ -405,57 +411,6 @@ The request should include the following query params:
   "is_enabled": false,
   "is_expired": false,
   "path_group_id": "54ca9f57-f764-4595-b8bc-f7df5fb1905f",
-  "filter": {
-    "schedule": [],
-    "traffic": {
-      "limit": 0,
-      "is_limited": false
-    },
-    "supply": {
-      "budget": 0,
-      "budget_decrementer": 1,
-      "is_budgeted": false,
-      "availability": null,
-      "support_agents": null
-    },
-    "frequency_cap": {
-      "cap": 60,
-      "cap_seconds": 2592000,
-      "is_capped": false
-    },
-    "sequence_options": {
-      "skip_filter": {
-        "interaction_types": []
-      },
-      "exclusion_filter": {
-        "interaction_types": [
-          "accepted"
-        ]
-      },
-      "continue_filter": {
-        "interaction_types": [],
-        "order": 0,
-        "interval_minutes": 0
-      }
-    },
-    "users": {
-      "limit": 0,
-      "is_limited": false
-    },
-    "deliveries": {
-      "limit": 0,
-      "is_limited": false
-    },
-    "is_translated": false,
-    "connectors": {
-      "pinpoint": {
-        "campaign_id": null
-      },
-      "settings": {
-        "synchronous": false
-      }
-    }
-  },
   "actions": {
     "rf_retention_title": "Movies without limits",
     "rf_retention_message": "Download New Episodes. Brand new full length episodes you can watch while offline. Free for 1 month.",
@@ -569,146 +524,8 @@ The request should include the following query params:
     "rf_settings_bg_image_ios_iphone_composite": "",
     "rf_settings_bg_image_ios_iphone_2x_composite": "",
     "rf_settings_custom_css_scoped": ""
-  },
-  "custom_devices": [],
-  "data": {
-    "goals": {
-      "tz_offset": -7,
-      "last_seven_days": {
-        "name": "Last 7 days",
-        "data": [
-          {
-            "date": "20250401",
-            "count": 0
-          },
-          {
-            "date": "20250402",
-            "count": 0
-          },
-          {
-            "date": "20250403",
-            "count": 0
-          },
-          {
-            "date": "20250404",
-            "count": 0
-          },
-          {
-            "date": "20250405",
-            "count": 0
-          },
-          {
-            "date": "20250406",
-            "count": 0
-          },
-          {
-            "date": "20250407",
-            "count": 0
-          }
-        ],
-        "uniques": 0
-      }
-    },
-    "uimpressions": {
-      "tz_offset": -7,
-      "last_seven_days": {
-        "name": "Last 7 days",
-        "data": [
-          {
-            "date": "20250401",
-            "count": 0
-          },
-          {
-            "date": "20250402",
-            "count": 0
-          },
-          {
-            "date": "20250403",
-            "count": 0
-          },
-          {
-            "date": "20250404",
-            "count": 0
-          },
-          {
-            "date": "20250405",
-            "count": 0
-          },
-          {
-            "date": "20250406",
-            "count": 0
-          },
-          {
-            "date": "20250407",
-            "count": 0
-          }
-        ],
-        "uniques": 0
-      }
-    },
-    "impressions": {
-      "tz_offset": -7,
-      "last_seven_days": {
-        "name": "Last 7 days",
-        "data": [
-          {
-            "date": "20250401",
-            "count": 0
-          },
-          {
-            "date": "20250402",
-            "count": 0
-          },
-          {
-            "date": "20250403",
-            "count": 0
-          },
-          {
-            "date": "20250404",
-            "count": 0
-          },
-          {
-            "date": "20250405",
-            "count": 0
-          },
-          {
-            "date": "20250406",
-            "count": 0
-          },
-          {
-            "date": "20250407",
-            "count": 0
-          }
-        ],
-        "uniques": 0
-      }
-    }
-  },
-  "creator": {
-    "id": "7a3347c6-9a9d-4a10-aa0d-9f8206467c49",
-    "name": "J L",
-    "email": "jlo@redfast.com",
-    "is_redfast": true
-  },
-  "sequence_id": null,
-  "custom_filter": {},
-  "curr_limit": 0,
-  "curr_deliveries": 0,
-  "curr_users": 0,
-  "curr_budget": 0,
-  "sequence": {},
-  "pipeline": {},
-  "segments": [],
-  "tags": [
-    {
-      "id": "49efbd0d-8710-4948-8fc0-fe3a2e10a084",
-      "title": "descr",
-      "color": "#FFDDEF"
-    }
-  ],
-  "experiment": null
+  }
 }
-]
 ```
 
 <br />
