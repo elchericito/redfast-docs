@@ -1,5 +1,5 @@
 ---
-title: Partner Prompt APIs
+title: Partner APIs
 deprecated: false
 hidden: true
 metadata:
@@ -7,7 +7,7 @@ metadata:
 ---
 # Introduction
 
-The Provision API allows for the creation and modification of a Redfast tenant via server-side integration with partners. Please work with your partnership manager if you require access to this API.
+The Partner APIs allows for the creation and modification of Redfast prompts via server-side integration with partners. Please work with your partnership manager if you require access to this API.
 
 ## Endpoint Info
 
