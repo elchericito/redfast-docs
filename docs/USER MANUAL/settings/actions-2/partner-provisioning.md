@@ -211,7 +211,7 @@ Redfast uses conventional HTTP response codes indicating success or failure of a
 
 <br />
 
-```
+```json
 {
   "success": false,
   "status": "invalid_secret"
