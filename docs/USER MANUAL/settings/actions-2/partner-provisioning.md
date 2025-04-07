@@ -192,7 +192,7 @@ The request body should be a JSON including the following properties:
 
 <br />
 
-# User provisioning, session creation and redirect.
+# User provisioning, session creation, and redirect.
 
 This API should be invoked to redirect a user to pulse.redfast.com. If a user does not already exist, they will be provisioned first, session created upon JWT validation, and then redirected.
 
