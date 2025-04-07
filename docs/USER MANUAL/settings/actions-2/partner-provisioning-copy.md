@@ -25,7 +25,7 @@ This API should be invoked to retrieve a list of prompts based on tag name.
 
 ## Endpoint
 
-\*\*GET /v1/apps/\<app\_id>/paths?tag\_name=involuntary\_churn\*\*
+**GET /v1/apps/\<app\_id>/paths?tag\_name=involuntary\_churn**
 
 <br />
 
