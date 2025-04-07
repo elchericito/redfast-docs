@@ -375,7 +375,7 @@ This API should be invoked to update an existing prompt. Omitted attributes will
 
 ## Endpoint
 
-**GET /v1/apps/\<app\_id>/paths/\<path\_id>**
+**PUT /v1/apps/\<app\_id>/paths/\<path\_id>**
 
 ## Headers
 
