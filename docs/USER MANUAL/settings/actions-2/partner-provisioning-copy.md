@@ -32,7 +32,7 @@ This API should be invoked to retrieve a list of prompts based on tag name.
 ## Headers
 
 * **Content-Type**: `application/json`
-* \*\*Authorization\*\*: Bearer \<jwt\_token>
+* **Authorization**: Bearer \<jwt\_token>
 
 ## Query Params
 
