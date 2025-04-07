@@ -1,5 +1,5 @@
 ---
-title: Partner Provisioning (COPY)
+title: Partner Prompt APIs
 deprecated: false
 hidden: true
 metadata:
