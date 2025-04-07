@@ -7,7 +7,7 @@ metadata:
 ---
 # Introduction
 
-The Provision API allows for the creation and modification of a Redfast tenant via server-side integration with partners. Please work with your partnership manager if you require access to this API.
+The Provisioning API allows for the creation and modification of a Redfast tenant via server-side integration with partners. It also allows you to provision users just in time (JIT) and redirect them into pulse.redfast.com with a logged  in session. Please work with your partnership manager if you require access to this API.
 
 ## Endpoint Info
 
@@ -185,6 +185,38 @@ The request body should be a JSON including the following properties:
   "test_mode": false,
   "jwt_public_key: "-----BEGIN PUBLIC KEY-----\n...",
   "jwt_public_key_updated_at": "2025-02-18T17:02:26.000Z"
+}
+```
+
+<br />
+
+<br />
+
+# User provisioning, session creation and redirect.
+
+This API should be invoked to redirect a user to pulse.redfast.com. If a user does not already exist, they will be provisioned first, session created upon JWT validation, and then redirected.
+
+## Endpoint
+
+**GET /v1/jwt\_session**
+
+## Query Params
+
+The request should include the following query params:
+
+* **redirect\_url**: Pulse URL to redirect the user to. Only requires the relative path, the domain pulse.redfast.com is optional.
+* **jwt\_token**: A jwt token that will be used to verify and create the user session. Below is the payload
+
+<br />
+
+```json
+{
+  "sub": "r123",                                      // Unique user ID
+  "external_tenant_id": "<external_tenant_id>",       // Tenant they belong to
+  "role": "admin",                                    // "admin" or "member"
+  "exp": 1712800000,                                  // Expiry 
+  "iat": 1712796400,                                  // Issued at
+  "iss": "<partner_code>"                             // Partner Code
 }
 ```
 
