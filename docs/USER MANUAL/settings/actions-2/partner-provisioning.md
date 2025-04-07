@@ -29,7 +29,7 @@ This API should be invoked to retrieve an existing tenant.
 
 <br />
 
-\*\*GET /v1/tenants/\<external\_tenant\_id>\*\*
+**GET /v1/tenants/\<external\_tenant\_id>**
 
 <br />
 
@@ -94,8 +94,8 @@ This API should be invoked to create a new tenant on the Redfast platform.
 <br />
 
 * **Content-Type**: `application/json`
-  * **rf-secret**: Shared secret provided by Redfast (separate secrets for Test and Production)
-    <br />
+* **rf-secret**: Shared secret provided by Redfast (separate secrets for Test and Production)
+  <br />
 
 ## Body
 
