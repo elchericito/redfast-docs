@@ -14,7 +14,7 @@ The Redfast Roku SDK provides the ability to monitor consumption and show prompt
 
 ## Install the SDK
 
-Download the latest Roku SDK (v1.0.24) with Roku Pay support [here](https://assets.redfastlabs.com/sdk/roku-sdk-1.0.24.zip) and without Roku Pay support [here](https://assets.redfastlabs.com/sdk/roku-sdk-noiap-1.0.24.zip). A demo app featuring an example integration can be provided by request.
+Download the latest Roku SDK (v1.0.25) with Roku Pay support [here](https://assets.redfastlabs.com/sdk/roku-sdk-1.0.25.zip) and without Roku Pay support [here](https://assets.redfastlabs.com/sdk/roku-sdk-noiap-1.0.25.zip). A demo app featuring an example integration can be provided by request.
 
 To build a project using the RedFast SDK for Roku, your project must have been built with the Scenegraph SDK.\
 Unzip the SDK into the app `components` directory.
