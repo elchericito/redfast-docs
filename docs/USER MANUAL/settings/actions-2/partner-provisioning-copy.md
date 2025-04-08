@@ -551,10 +551,13 @@ The request body should be a JSON including the following properties. All fields
 
 * **session\_id**: Prompt session ID to persist chat.
 * **type**: headline, sub\_heading, cta1, cta2, cta3.
-* **type**: headline, sub\_heading, cta1, cta2, cta3.
 * **custom\_content**: Additional context for the AI agent. If session\_id is set previously submitted content will be kept as part of the overall context.
 
 ## Response
+
+```
+["Your credit card has expired!"]
+```
 
 # Testing
 
