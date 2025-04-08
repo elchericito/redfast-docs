@@ -190,21 +190,18 @@ The request body should be a JSON including the following properties:
 
 <br />
 
-<br />
+# User provisioning and session token
 
-# User provisioning and login
-
-This API should be invoked to redirect a user to pulse.redfast.com. If a user does not already exist, they will be provisioned first, session created upon JWT validation, and then redirected.
+This API should be invoked to redirect a user to pulse.redfast.com. If a user does not already exist, they will be provisioned first and then a session will be created upon JWT validation.
 
 ## Endpoint
 
-**GET /v1/jwt\_session**
+**POST /v1/jwt\_session**
 
-## Query Params
+## Body
 
-The request should include the following query params:
+The request body should be a JSON including the following properties:
 
-* **redirect\_url**:  (optional) Pulse URL to redirect the user to. Only requires the relative path, the domain pulse.redfast.com is optional. If not included will redirect the user to pulse.redfast.com.
 * **jwt\_token**: A jwt token that will be used to verify and create the user session. Below is the payload
 
 <br />
@@ -232,6 +229,22 @@ The request should include the following query params:
   "jwt_token_expires_at": "2025-02-18T17:02:26.000Z"
 }
 ```
+
+<br />
+
+# User redirect
+
+This API should be invoked to redirect a user to pulse.redfast.com.
+
+## Endpoint
+
+**GET /v1/session/redirect**
+
+## Query Params
+
+The request should include the following query params:
+
+* **redirect\_url**:  Pulse URL to redirect the user to. Only requires the relative path, the domain pulse.redfast.com is optional. If not included will redirect the user to pulse.redfast.com.
 
 <br />
 
