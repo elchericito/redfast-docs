@@ -530,6 +530,32 @@ The request body should be a JSON including the following properties. All fields
 
 <br />
 
+# GenAI Description Generator
+
+This API should be invoked to generate prompt titles and descriptions.
+
+<br />
+
+## Endpoint
+
+**POST /v1/apps/\<app\_id>/ai/inference**
+
+## Headers
+
+* **Content-Type**: `application/json`
+* **Authorization**: Bearer \<jwt\_token>
+
+## Body
+
+The request body should be a JSON including the following properties. All fields are optional except for actions:
+
+* **session\_id**: Prompt session ID to persist chat.
+* **type**: headline, sub\_heading, cta1, cta2, cta3.
+* **type**: headline, sub\_heading, cta1, cta2, cta3.
+* **custom\_content**: Additional context for the AI agent. If session\_id is set previously submitted content will be kept as part of the overall context.
+
+## Response
+
 # Testing
 
 <br />
