@@ -79,7 +79,7 @@ This API should be invoked to update an existing prompt. Omitted attributes will
 ## Headers
 
 * **Content-Type**: `application/json`
-* \*\*Authorization\*\*: Bearer \<jwt\_token>
+* **Authorization**: Bearer \<jwt\_token>
 
 <br />
 
