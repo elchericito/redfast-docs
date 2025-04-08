@@ -245,6 +245,7 @@ This API should be invoked to redirect a user to pulse.redfast.com.
 The request should include the following query params:
 
 * **redirect\_url**: (optional) Pulse URL to redirect the user to. Only requires the relative path, the domain pulse.redfast.com is optional. If not included will redirect the user to pulse.redfast.com.
+* **session\_token**: A Redfast session token that will be used to redirect the user to a logged in page.
 
 <br />
 
