@@ -139,7 +139,7 @@ This API should be invoked to generate prompt titles and descriptions.
 
 ## Body
 
-The request body should be a JSON including the following properties. All fields are optional except for actions:
+The request body should be a JSON including the following properties. All fields are optional except for type:
 
 * **session\_id**: Prompt session ID to persist chat.
 * **type**: headline, sub\_heading, cta1, cta2.
