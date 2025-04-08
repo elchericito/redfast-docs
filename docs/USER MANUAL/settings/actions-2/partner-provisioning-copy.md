@@ -530,7 +530,7 @@ The request body should be a JSON including the following properties. All fields
 
 <br />
 
-# GenAI Description Generator
+# GenAI Generator
 
 This API should be invoked to generate prompt titles and descriptions.
 
