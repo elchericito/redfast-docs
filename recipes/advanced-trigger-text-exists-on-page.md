@@ -3,7 +3,7 @@ title: Advanced Trigger - Text exists on page
 description: >-
   This recipe will help you to configure a trigger that will look for a specific
   text on the page.
-hidden: true
+hidden: false
 recipe:
   color: '#018FF4'
   icon: 🦉
