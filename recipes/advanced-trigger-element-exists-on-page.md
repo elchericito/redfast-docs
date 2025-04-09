@@ -1,7 +1,7 @@
 ---
 title: Advanced Trigger - Element exists on page
 description: Recipe Description
-hidden: true
+hidden: false
 recipe:
   color: '#018FF4'
   icon: 🦉
