@@ -127,7 +127,7 @@ The request body should be a JSON including the following properties (all requir
   "app_id": "<app_id>",
   "tag_url": "https://<app_id>.redfastlabs.com/assets/redfast.js",
   "test_mode": false,
-  "jwt_public_key: "-----BEGIN PUBLIC KEY-----\n...",
+  "jwt_public_key": "-----BEGIN PUBLIC KEY-----\n...",
   "jwt_public_key_updated_at": "2025-02-18T17:02:26.000Z"
 }
 ```
@@ -183,7 +183,7 @@ The request body should be a JSON including the following properties:
   "app_id": "<app_id>",
   "tag_url": "https://<app_id>.redfastlabs.com/assets/redfast.js",
   "test_mode": false,
-  "jwt_public_key: "-----BEGIN PUBLIC KEY-----\n...",
+  "jwt_public_key": "-----BEGIN PUBLIC KEY-----\n...",
   "jwt_public_key_updated_at": "2025-02-18T17:02:26.000Z"
 }
 ```
