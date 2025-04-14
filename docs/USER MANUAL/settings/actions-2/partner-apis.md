@@ -144,7 +144,7 @@ The request body should be a JSON including the following properties. All fields
 * **session\_id**: Prompt session ID to persist chat.
 * **type**: headline, sub\_heading, cta1, cta2.
 * **type**: title, description, accept\_button, cancel\_button.
-* **type**: rf\_retention\_title, rf\_retention\_message, rf\_retention\_button1\_text, rf\_retention\_button2\_text, rf\_retention\_button3\_text
+* **type**: rf\_retention\_title, rf\_retention\_message, rf\_retention\_button1\_text, rf\_retention\_button2\_text, rf\_retention\_button3\_text, rf\_mobile\_title, rf\_mobile\_message
 * **custom\_content**: Additional context for the AI agent. If session\_id is set previously submitted content will be kept as part of the overall context.
 
 ## Response
