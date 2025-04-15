@@ -210,7 +210,7 @@ The request body should be a JSON including the following properties:
 {
   "sub": "<partner_user_id>,                          // Unique partner user ID
   "external_tenant_id": "<external_tenant_id>",       // Tenant they belong to
-  "role": "admin",                                    // "admin" or "member"
+  "role": "admin",                                    // "admin" or "member", defaults to "member"
   "exp": 1712800000,                                  // Expiry 
   "iat": 1712796400,                                  // Issued at
   "iss": "<partner_code>"                             // Partner Code
