@@ -214,6 +214,9 @@ The request body should be a JSON including the following properties:
   "exp": 1712800000,                                  // Expiry 
   "iat": 1712796400,                                  // Issued at
   "iss": "<partner_code>"                             // Partner Code
+  "email": "<email>",
+  "first_name": "<first_name>",
+  "last_name": "<last_name>"
 }
 ```
 
