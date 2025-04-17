@@ -126,7 +126,7 @@ The SDK provides a method to retrieve inline prompts within the specified Zone I
 inlineItems = m.promoMgr.callFunc("getInlines", {type: "myZoneId"})
 ```
 
-The following is example code demonstrating accessing attributes of the prompt for rendering. A full list of attributes can be found [here](/advanced/platforms/promo-types-actions.html).
+The following is example code demonstrating accessing attributes of the prompt for rendering. A full list of attributes can be found [here](/reference/prompt-attributes#/).
 
 ```
 featured = createObject("RoSGNode", "ContentNode")
