@@ -175,18 +175,21 @@ PathType values:
   PathType.BOTTOM_BANNER = 13
   
 PromptResultCode values:
-  TIME_EXPIRED = -1,
-  DECLINED = -2,
-  ABORT = -3,
-  ACCEPT = 0,
-  NOT_APPLICABLE = -4,
-  DISABLED = -5,
-  HOLDOUT = -6,
-  SUPPRESSED = -7,
-  ERROR = -8,
-  OK = 0,
-  LAUNCHING_PROMPT = 1,
-  VIEWED = 2,
+  // Success codes
+  OK = 1,
+  // Error codes
+  ERROR = -100,
+  NOT_APPLICABLE = -101,
+  DISABLED = -102,
+  SUPPRESSED = -103,
+  // Interactions
+  IMPRESSION = 100,
+  BUTTON1 = 101, // CLICK
+  BUTTON2 = 102, // CLICK2
+  BUTTON3 = 103, // DECLINE
+  DISMISS = 110,
+  TIMEOUT = 111,
+  HOLDOUT = 120
 
 interface Prompt {
   id: string;
