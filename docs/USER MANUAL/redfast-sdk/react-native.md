@@ -243,7 +243,7 @@ interface PromptResult {
 }
 ```
 
-**Analytics Callback Example:**
+### Analytics Callback Example
 
 ```javascript
 <RedfastInline
