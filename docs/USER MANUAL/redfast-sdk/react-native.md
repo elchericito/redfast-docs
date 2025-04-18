@@ -286,7 +286,7 @@ interface PromptResult {
   }}
 />
 
-// Do the same for modals
+// Perform the same for modals
 {displayPrompt(showModal, pathItem, (result) => {
   // utilize same analytics code above
   setShowModal(false);
