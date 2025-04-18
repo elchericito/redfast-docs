@@ -243,7 +243,7 @@ interface PromptResult {
 }
 ```
 
-Analytics Call Example:
+**Analytics Callback Example:**
 
 ```javascript
 <RedfastInline
@@ -285,6 +285,13 @@ Analytics Call Example:
     // Send Payload to Analytics
   }}
 />
+
+// Do the same for modals
+{displayPrompt(showModal, pathItem, (result) => {
+  // utilize same analytics code above
+  setShowModal(false);
+})}
+
 
 ```
 
