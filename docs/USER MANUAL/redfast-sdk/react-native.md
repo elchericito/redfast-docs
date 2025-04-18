@@ -239,8 +239,56 @@ interface PromptResult {
   code: PromptResultCode;
   value?: { [key: string]: any };
   meta?: { [key: string]: any };
+  promptMeta?: { [key: string]: any };
 }
 ```
+
+Analytics Call Example:
+
+```javascript
+<RedfastInline
+  zoneId="myZoneId" // ZoneID as specified in Pulse
+  closeButtonColor="#000000" // Hex color for close button, if enabled
+  closeButtonBgColor="#FFFFFF" // Hex background color for close button
+  closeButtonSize="20" // Close button height and width, in pixels
+  timerFontSize="14" // Countdown timer font size, if enabled
+  timerFontColor="#FFFFFF" // Countdown timer font hex color
+  onEvent={(result) => {
+    const getEventName = (code: PromptResultCode) => {
+      switch (code) {
+        case PromptResultCode.IMPRESSION:
+          return 'Redfast Impression';
+        case PromptResultCode.BUTTON1:
+          return 'Redfast Click';
+        case PromptResultCode.BUTTON2:
+          return 'Redfast Click2';
+        case PromptResultCode.BUTTON3:
+          return 'Redfast Decline';
+        case PromptResultCode.DISMISS:
+          return 'Redfast Dismiss';
+        case PromptResultCode.TIMEOUT:
+          return 'Redfast Timeout';
+        case PromptResultCode.HOLDOUT:
+          return 'Redfast Holdout';
+        default:
+          return 'Redfast Event';
+      }
+    };
+
+    const analyticsData = {
+      name: getEventName(result.code),
+      data: {
+        ...result.promptMeta,
+        timestamp: new Date().toISOString()
+      }
+    };
+    // Send Payload to Analytics
+  }}
+/>
+
+```
+
+<br />
 
 ### Deeplink
 
