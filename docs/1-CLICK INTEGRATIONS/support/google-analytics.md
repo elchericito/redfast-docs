@@ -14,6 +14,28 @@ next:
 
 <br />
 
+**Event Details**
+
+| Event Name                | Description                                                                                                                                    |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| Redfast Prompt Impression | A user has seen the prompt                                                                                                                     |
+| Redfast Prompt Dismiss    | A user has dismissed the prompt by clicking on the 'close'('X') button or outside the prompt view (if the 'Click outside to close' is enabled) |
+| Redfast Prompt Timeout    | The prompt has been closed automatically due to close timer timeout (if set)                                                                   |
+| Redfast Prompt Decline    | A user has declined the prompt by clicking on the decline button (Button 3)                                                                    |
+| Redfast Prompt Click      | A user has accepted the prompt by clicking on the primary CTA button (Button 1)                                                                |
+
+The following attributes (if applicable) are sent with each custom event.
+
+| Event Property  | Description                                                                           |
+| --------------- | ------------------------------------------------------------------------------------- |
+| app\_name       | The name of the application in your Pulse account                                     |
+| promo\_id       | A unique prompt identifier that can be found in the 'Prompt ID' field under 'Details' |
+| promo\_name     | The name of the prompt                                                                |
+| variation\_id   | A unique identifier of a prompt variation running within an experiment                |
+| variation\_name | The name of the prompt variation running within an experiment                         |
+
+##
+
 <br />
 
 # Server Integration
