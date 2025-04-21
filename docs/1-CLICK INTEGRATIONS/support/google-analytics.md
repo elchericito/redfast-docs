@@ -12,7 +12,7 @@ next:
 ---
 # Client Integration
 
-<br />
+For web based devices, Redfast utilizes the running instance of the Google Analytics JS SDK. This ensures that session and user data context is maintained while reporting real-time Redfast prompt events. Enter your [GA Tag ID](https://support.google.com/analytics/answer/9539598?hl=en)  within Settings -> Integrations -> External within Pulse
 
 **Event Details**
 
