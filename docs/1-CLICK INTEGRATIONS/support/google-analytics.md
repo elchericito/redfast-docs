@@ -10,6 +10,14 @@ metadata:
 next:
   description: ''
 ---
+# Client Integration
+
+<br />
+
+<br />
+
+# Server Integration
+
 ## Create an action
 
 Follow the steps to create an API action. This action should be a POST request. The required url is listed here.
