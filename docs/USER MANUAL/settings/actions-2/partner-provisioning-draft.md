@@ -229,8 +229,8 @@ The request body should be a JSON including the following properties:
 {
   "success": true,
   "external_tenant_id": "<external_tenant_id>",
-  "jwt_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
-  "jwt_token_expires_at": "2025-02-18T17:02:26.000Z"
+  "session_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+  "session_token_expires_at": "2025-02-18T17:02:26.000Z"
 }
 ```
 
