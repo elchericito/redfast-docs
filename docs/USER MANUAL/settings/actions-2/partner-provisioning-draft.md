@@ -112,7 +112,7 @@ The request body should be a JSON including the following properties (all requir
 * **user\_last\_name**: Last name of Admin user
 * **partner\_code**: Partner Code assigned by Redfast
 * **api\_key**: API key utilized for integration with partner for the tenant
-* **jwt\_public\_key**: Public key utilized for provisioning and authenticating users. Must be an RSA public key in PEM format, between 2048–4096 bits. The PEM string must be under 2 KB in size.
+* **jwt\_public\_key**: Public key utilized for provisioning and authenticating users. Must be an RSA public key in PEM format, between 2048–4096 bits. Use newline characters for each line.
   <br />
 
 ## Response
@@ -168,7 +168,7 @@ The request body should be a JSON including the following properties:
 * **partner\_code**: Partner Code assigned by Redfast
 * **app\_domain**: (optional) Top level domain
 * **api\_key**: (optional) API key utilized for integration with partner for the tenant
-* **jwt\_public\_key**: (optional) Public key utilized for provisioning and authenticating users. Must be an RSA public key in PEM format, between 2048–4096 bits. The PEM string must be under 2 KB in size. Only displayed if updated. Use newline characters for each line.
+* **jwt\_public\_key**: (optional) Public key utilized for provisioning and authenticating users. Must be an RSA public key in PEM format, between 2048–4096 bits. Only displayed if updated. Use newline characters for each line.
   <br />
 
 ## Response
