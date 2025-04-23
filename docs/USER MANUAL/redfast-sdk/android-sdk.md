@@ -16,17 +16,63 @@ The Redfast Android SDK brings the ability to monitor consumption and show Redfa
 
 The Redfast Android SDK includes support for mobile, tablet and TV devices. The latest SDK version as well as the source code of an example app is available [here](https://github.com/redfast/redfast-sdk-android/releases). Please reach out to your customer success manager if you would like the keys needed to run the example app.
 
+There are two options with installing the SDK: Add a dependency to an existing Gradle/Maven config, or add the local SDK packages.
+
+### Gradle/Maven Config
+
+**Gradle**
+
+```java
+// settings.grade
+dependencyResolutionManagement {
+  repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+  repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+  }
+}
+
+// dependency
+dependencies {
+  implementation 'com.github.redfast.redfast-sdk-android-build:redfast-sdk-amazon:v2.2.1'
+}
+```
+
+**Maven**
+
+```java
+// Maven pom.xml
+<repositories>
+  <repository>
+    <id>jitpack.io</id>
+    <url>https://jitpack.io</url>
+  </repository>
+</repositories>
+
+// dependency
+<dependency>
+  <groupId>com.github.redfast.redfast-sdk-android-build</groupId>
+  <artifactId>redfast-sdk-amazon</artifactId>
+  <version>v2.2.1</version>
+</dependency>
+```
+
+<br />
+
+### Local Package
+
 **Steps:**
 
 1. Create folder “libs” under “src/main”
 2. Add “.aar” library to “libs” folder
-3. Add library as a dependency in “build.gradle”. Example: 
+3. Add library as a dependency in “build.gradle”. Example:
 
 ```kotlin
-"implementation"(files("src/main/libs/google-sdk.aar"))
+"implementation"(files("src/main/libs/redfast-google-release.aar"))
+"implementation"(files("src/main/libs/redfast-amazon-release.aar"))
 ```
 
-4. For the`google-sdk.aar`library, it is also required to add the Android billing library dependency. Example: 
+4. For the`google-sdk.aar`library, it is also required to add the Android billing library dependency. Example:
 
 ```kotlin
 "implementation"("com.android.billingclient:billing:6.0.1")
@@ -173,7 +219,7 @@ PromotionManager.setUserId("[New userID]")
 
 The SDK provides a debug view modal, in which you can use the onscreen keyboard to either reset the current user or set a new user id.
 
-To trigger the debug view for a specific screen, you can call the `PromotionManager.showDebugView` function. 
+To trigger the debug view for a specific screen, you can call the `PromotionManager.showDebugView` function.
 
 ## External libraries
 
