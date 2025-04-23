@@ -231,9 +231,9 @@ Common
     com.squareup.retrofit2:converter-moshi:2.6.2
     com.squareup.okhttp3:okhttp:4.2.2
     com.squareup.okhttp3:logging-interceptor:4.2.2
-    org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1
-    org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1
-    com.squareup.picasso:picasso:2.71828
+    org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1
+    org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1
+    com.github.bumptech.glide:glide:4.16.0
     com.google.code.gson:gson:2.8.9
 ```
 
