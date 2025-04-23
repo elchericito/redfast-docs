@@ -34,7 +34,7 @@ dependencyResolutionManagement {
 
 // dependency
 dependencies {
-  implementation 'com.github.redfast.redfast-sdk-android-build:redfast-sdk-amazon:v2.2.1'
+  implementation 'com.github.redfast.redfast-sdk-android-build:redfast-sdk-amazon:v2.2.1.2'
 }
 ```
 
@@ -53,7 +53,7 @@ dependencies {
 <dependency>
   <groupId>com.github.redfast.redfast-sdk-android-build</groupId>
   <artifactId>redfast-sdk-amazon</artifactId>
-  <version>v2.2.1</version>
+  <version>v2.2.1.2</version>
 </dependency>
 ```
 
@@ -63,9 +63,10 @@ dependencies {
 
 **Steps:**
 
-1. Create folder “libs” under “src/main”
-2. Add “.aar” library to “libs” folder
-3. Add library as a dependency in “build.gradle”. Example:
+1. Download the latest .aar files from [here](https://github.com/redfast/redfast-sdk-android/releases)
+2. Create folder “libs” under “src/main”
+3. Add .aar libraries to “libs” folder
+4. Add library as a dependency in “build.gradle”. Example:
 
 ```kotlin
 "implementation"(files("src/main/libs/redfast-google-release.aar"))
