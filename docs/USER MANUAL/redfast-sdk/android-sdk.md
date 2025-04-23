@@ -57,8 +57,6 @@ dependencies {
 </dependency>
 ```
 
-<br />
-
 ### Local Package
 
 **Steps:**
