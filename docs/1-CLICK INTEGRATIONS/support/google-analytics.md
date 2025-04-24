@@ -23,6 +23,8 @@ For web based devices, Redfast utilizes the running instance of the Google Analy
 | Redfast Prompt Timeout    | The prompt has been closed automatically due to close timer timeout (if set)                                                                   |
 | Redfast Prompt Decline    | A user has declined the prompt by clicking on the decline button (Button 3)                                                                    |
 | Redfast Prompt Click      | A user has accepted the prompt by clicking on the primary CTA button (Button 1)                                                                |
+| Redfast Prompt Holdout    | A holdout user has triggered the prompt                                                                                                        |
+| Redfast Prompt Click 2    | A user has accepted the prompt by clicking on the secondary CTA button (Button 2)                                                              |
 
 The following attributes (if applicable) are sent with each custom event.
 
