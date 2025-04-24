@@ -19,6 +19,18 @@ For web based devices, Redfast utilizes the running instance of [Alloy.js](https
 | Redfast Prompt Holdout    | A holdout user has triggered the prompt                                                                                                        |
 | Redfast Prompt Click 2    | A user has accepted the prompt by clicking on the secondary CTA button (Button 2)                                                              |
 
+<br />
+
+The following attributes (if applicable) are sent with each custom event.
+
+| Event Property   | Description                                                                           |
+| ---------------- | ------------------------------------------------------------------------------------- |
+| promo\_id        | A unique prompt identifier that can be found in the 'Prompt ID' field under 'Details' |
+| promo\_name      | The name of the prompt                                                                |
+| variation\_id    | A unique identifier of a prompt variation running within an experiment                |
+| variation\_name  | The name of the prompt variation running within an experiment                         |
+| event\_timestamp | The time when the activity occurred                                                   |
+
 ## Setup
 
 Within Adobe, create a Datastream. This may require a report suite, schema, and field group. Enter the ID of the datastream within Settings -> Integrations -> External -> Adobe Analytics. Also enter the [org ID](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/orgid)
