@@ -16,7 +16,7 @@ For web based devices, Redfast utilizes the running instance of the Google Analy
 
 **Event Details**
 
-| Event Name                | Description                                                                                                                                    |
+| Activity                  | Description                                                                                                                                    |
 | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | Redfast Prompt Impression | A user has seen the prompt                                                                                                                     |
 | Redfast Prompt Dismiss    | A user has dismissed the prompt by clicking on the 'close'('X') button or outside the prompt view (if the 'Click outside to close' is enabled) |
@@ -26,13 +26,13 @@ For web based devices, Redfast utilizes the running instance of the Google Analy
 
 The following attributes (if applicable) are sent with each custom event.
 
-| Event Property  | Description                                                                           |
-| --------------- | ------------------------------------------------------------------------------------- |
-| app\_name       | The name of the application in your Pulse account                                     |
-| promo\_id       | A unique prompt identifier that can be found in the 'Prompt ID' field under 'Details' |
-| promo\_name     | The name of the prompt                                                                |
-| variation\_id   | A unique identifier of a prompt variation running within an experiment                |
-| variation\_name | The name of the prompt variation running within an experiment                         |
+| Event Property   | Description                                                                           |
+| ---------------- | ------------------------------------------------------------------------------------- |
+| promo\_id        | A unique prompt identifier that can be found in the 'Prompt ID' field under 'Details' |
+| promo\_name      | The name of the prompt                                                                |
+| variation\_id    | A unique identifier of a prompt variation running within an experiment                |
+| variation\_name  | The name of the prompt variation running within an experiment                         |
+| event\_timestamp | The time when the activity occurred                                                   |
 
 ##
 
