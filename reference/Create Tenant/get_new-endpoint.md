@@ -1,5 +1,5 @@
 ---
-title: Create Tenant w/ App
+title: Create Tenant
 api:
   file: create-tenant.json
   operationId: get_new-endpoint
