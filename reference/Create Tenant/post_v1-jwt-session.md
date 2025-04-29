@@ -1,5 +1,5 @@
 ---
-title: Provision user and create session
+title: Create user session
 excerpt: >
   Creates a Redfast user session after verifying a partner-signed JWT. If the
   user does not exist, they will be provisioned automatically.
