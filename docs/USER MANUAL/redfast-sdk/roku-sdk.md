@@ -67,7 +67,9 @@ m.promoMgr.callFunc("setUserId", {userId: "[new user id]"})
 
 ## Trigger Popup via Screen Name
 
-Allow the Redfast SDK to display a popup on the specified screen. Add the following line in the screen init function:
+Allow the Redfast SDK to display a popup on the specified screen. If the prompt also requires a button click, the trigger will not occur until the associated `onButtonClicked` function is called.
+
+Add the following line in the screen init function:
 
 ```
 sub init()
@@ -94,13 +96,16 @@ The sample code below demonstrates:
 1. Tracking a button click event
 2. Displaying a popup if applicable to the button.
 
+Note that a previous `onScreenChanged` call is required if the prompt trigger is configured to be invoked only when the button click occurs on a specified screen name.
+
 ```
 sub onButtonClicked()
-  m.promoMgr.callFunc("onButtonClicked", {root: m.viewRoot //the root component of the screen, id: "[Optional button ID]"}) 
+  m.promoMgr.callFunc("onButtonClicked", {root: m.viewRoot 'the root component of the screen, id: "[Optional button ID]"}) 
 end sub
-// Note: If the prompt is displayed and dismissed, the result will be passed back to:
+                                          
+'Note: If the prompt is displayed and dismissed, the result will be passed back to:
 sub onModalDismissed()
-  if m.promoMgr.result.value = 0 'accepted
+  if m.promoMgr.result.value = 101 'button1
     dialog = createObject("roSGNode", "Dialog")
     dialog.title = "Thank you"
     dialog.optionsDialog = true
