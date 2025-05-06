@@ -110,12 +110,24 @@ sub onModalDismissed()
 end sub
 
 // Note: The full set of status codes can be found in the SDK `const.brs` file:
-m.timerExpired = -1
-m.declined = -2
-m.abort = -3
-m.accepted = 0
-m.notApplicable = -4
-m.disabled = -5 # popup prompt is disabled
+' Success codes
+m.ok = 1
+
+' Error codes
+m.error = -100
+m.notApplicable = -101
+m.disabled = -102
+m.suppressed = -103
+
+' Interactions
+m.impression = 100
+m.button1 = 101
+m.button2 = 102
+m.button3 = 103
+m.dismissed = 110
+m.timerExpired = 111
+m.holdout = 120
+
 ```
 
 ## Retrieve Inline Prompts
