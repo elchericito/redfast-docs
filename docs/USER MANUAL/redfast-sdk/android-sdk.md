@@ -23,7 +23,7 @@ There are two options with installing the SDK: Add a dependency to an existing G
 **Gradle**
 
 ```java
-// settings.grade
+// settings.gradle
 dependencyResolutionManagement {
   repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
   repositories {
@@ -34,7 +34,8 @@ dependencyResolutionManagement {
 
 // dependency
 dependencies {
-  implementation 'com.github.redfast.redfast-sdk-android-build:redfast-sdk-amazon:v2.2.1.2'
+  "amazonImplementation"("com.github.redfast.redfast-sdk-android-build:redfast-sdk-amazon:v2.2.1.3")
+  "googleImplementation"("com.github.redfast.redfast-sdk-android-build:redfast-sdk-google:v2.2.1.3")
 }
 ```
 
@@ -52,8 +53,8 @@ dependencies {
 // dependency
 <dependency>
   <groupId>com.github.redfast.redfast-sdk-android-build</groupId>
-  <artifactId>redfast-sdk-amazon</artifactId>
-  <version>v2.2.1.2</version>
+  <artifactId>redfast-sdk-google</artifactId> // or redfast-sdk-amazon
+  <version>v2.2.1.3</version>
 </dependency>
 ```
 
