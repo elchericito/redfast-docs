@@ -16,7 +16,7 @@ For web based devices, Redfast utilizes the running instance of the Google Analy
 
 **Event Details**
 
-The following Redfast events are reported to the Google Analytics instance as they occur during the user's session.
+The following Redfast events are sent to the Google Analytics instance as they occur during the user's session.
 
 | Activity                  | Description                                                                                                                                    |
 | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
