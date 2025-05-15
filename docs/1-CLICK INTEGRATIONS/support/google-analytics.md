@@ -38,10 +38,6 @@ The following attributes (if applicable) are sent with each custom event.
 | variation\_name  | The name of the prompt variation running within an experiment                         |
 | event\_timestamp | The time when the activity occurred                                                   |
 
-##
-
-<br />
-
 # Server Integration
 
 ## Create an action
