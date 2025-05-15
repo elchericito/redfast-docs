@@ -26,8 +26,9 @@ This function is invoked to determine a user's authenticated User ID when the Re
 
 ```javascript
 static fetchUserId() {
-  if( localStorage.getItem("ajs_user_id" )
+  if(localStorage.getItem("ajs_user_id" )) {
     return JSON.parse(localStorage.getItem("ajs_user_id"));
+  }
   return null;
 }
 ```
@@ -38,8 +39,9 @@ This function is invoked to determine a user's anonymous User ID (if generated b
 
 ```javascript
 static fetchAnonUserId() {
-  if( localStorage.getItem("ajs_anonymous_id" )
+  if(localStorage.getItem("ajs_anonymous_id")) {
     return JSON.parse(localStorage.getItem("ajs_anonymous_id"));
+  }
   return null;
 }
 ```
