@@ -14,7 +14,7 @@ The Redfast Roku SDK provides the ability to monitor consumption and show prompt
 
 ## Install the SDK
 
-Download the latest Roku SDK (v1.0.25) with Roku Pay support [here](https://assets.redfastlabs.com/sdk/roku-sdk-1.0.25.zip) and without Roku Pay support [here](https://assets.redfastlabs.com/sdk/roku-sdk-noiap-1.0.25.zip). A demo app featuring an example integration can be provided by request.
+Download the latest Roku SDK (v1.0.27) with Roku Pay support [here](https://assets.redfastlabs.com/sdk/roku-sdk-1.0.27.zip) and without Roku Pay support [here](https://assets.redfastlabs.com/sdk/roku-sdk-noiap-1.0.27.zip). A demo app featuring an example integration can be provided by request.
 
 To build a project using the RedFast SDK for Roku, your project must have been built with the Scenegraph SDK.\
 Unzip the SDK into the app `components` directory.
@@ -31,12 +31,22 @@ Unzip the SDK into the app `components` directory.
 
 ```
 sub init()
-  // other app initialization code
-  m.promoMgr = m.top.findNode("promoMgr")
+  ' other app initialization code here
+
+  ' optionally specify cta-button and timer countdown fonts
+  ctaF = CreateObject("roSGNode", "Font")
+  ctaF.uri = "pkg:/fonts/Roboto-Regular.ttf"
+  ctaF.size = 16
+  timeoutF = CreateObject("roSGNode", "Font")
+  timeoutF.uri = "pkg:/fonts/Roboto-Regular.ttf"
+  timeoutF.size = 16
+
+  m.promoMgr = m.top.GetScene().findNode("promoMgr") ' or m.top.findNode("promoMgr")
+	print m.promoMgr.callFunc("getVersion") ' lookup current SDK version
   m.promoMgr.observeField("result", "onInitialized")
-  m.promoMgr.callFunc("initPromotion", {appId: "[YOUR APP ID]", userId: "[USER ID]"})
+  m.promoMgr.callFunc("initPromotion", {appId: "[YOUR APP ID]", userId: "[USER ID]", ctaFont: ctaF, timeoutFont: timeoutF})
 end sub
-// ...
+
 sub onInitialized()
   m.promoMgr.unobserveField("result")
   m.sceneStack = m.top.findNode("sceneStack")
@@ -46,16 +56,6 @@ end sub
 ```
 
 Note that it may take a few seconds after app start for the SDK initialization to complete, after which prompts will be available to present to the user.
-
-Obtain the Promotion Manager instance. In the `sub init()` function, add the following code:
-
-```
-sub init()
-  // ...
-  m.promoMgr = m.top.GetScene().findNode("promoMgr")
-  // ...
-end sub
-```
 
 ## Set UserId
 
