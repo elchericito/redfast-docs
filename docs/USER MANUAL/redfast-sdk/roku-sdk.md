@@ -44,7 +44,8 @@ sub init()
   m.promoMgr = m.top.GetScene().findNode("promoMgr") ' or m.top.findNode("promoMgr")
 	print m.promoMgr.callFunc("getVersion") ' lookup current SDK version
   m.promoMgr.observeField("result", "onInitialized")
-  m.promoMgr.callFunc("initPromotion", {appId: "[YOUR APP ID]", userId: "[USER ID]", ctaFont: ctaF, timeoutFont: timeoutF})
+  ' appId argument is required, all others are optional
+  m.promoMgr.callFunc("initPromotion", {appId: "[YOUR APP ID]", userId: "[USER ID]", annonymousUserId: "[ANON USER ID]",ctaFont: ctaF, timeoutFont: timeoutF})
 end sub
 
 sub onInitialized()
@@ -64,6 +65,16 @@ You may change the userId after the SDK has been initialized. The function will 
 ```
 m.promoMgr.callFunc("setUserId", {userId: "[new user id]"})
 ```
+
+## Set AnonymousUserId
+
+The anonymousUserId may be updated after the SDK has been initialized. If not set, a randomly generated UUID will be assigned to the user.
+
+```
+m.promoMgr.callFunc("setAnonymousUserId", {userId: "[new anon user id]"})
+```
+
+<br />
 
 ## Trigger Popup via Screen Name
 
