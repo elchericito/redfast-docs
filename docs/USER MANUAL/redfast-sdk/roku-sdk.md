@@ -42,7 +42,7 @@ sub init()
   timeoutF.size = 16
 
   m.promoMgr = m.top.GetScene().findNode("promoMgr") ' or m.top.findNode("promoMgr")
-	print m.promoMgr.callFunc("getVersion") ' lookup current SDK version
+  print m.promoMgr.callFunc("getVersion") ' lookup current SDK version
   m.promoMgr.observeField("result", "onInitialized")
   ' appId argument is required, all others are optional
   m.promoMgr.callFunc("initPromotion", {appId: "[YOUR APP ID]", userId: "[USER ID]", annonymousUserId: "[ANON USER ID]", ctaFont: ctaF, timeoutFont: timeoutF})
