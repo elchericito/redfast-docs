@@ -20,3 +20,5 @@ Package [Link](https://assets.redfastlabs.com/sdk/roku-demo-1.0.027.zip) (sdk v1
 ## Android/Fire
 
 [Repo](https://github.com/redfast/redfast-sdk-android)
+
+> 📘 CSM/TAM: Make sure to provide necessary keys to the customer to enable the Demo apps - applicable to all except Roku - [Link](https://www.notion.so/redfast/Apple-Android-React-Native-Demo-App-Installation-10c52c0a764980a4a4ffc5c34e739dd8?pvs=4)
