@@ -7,7 +7,7 @@ metadata:
 ---
 ## Roku
 
-Package [Link](https://assets.redfastlabs.com/sdk/roku-demo-1.0.027.zip) (sdk v1.0.27)
+Package [Link](https://assets.redfastlabs.com/sdk/roku-demo-1.0.27.zip) (sdk v1.0.27)
 
 ## React Native
 
