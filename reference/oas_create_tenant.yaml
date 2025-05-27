@@ -104,8 +104,8 @@ paths:
                     format: date-time
                     example: '2025-02-18T17:02:26.000Z'
               examples:
-                New Example:
-                  summary: New Example
+                OK:
+                  summary: OK
                   value:
                     success: true
                     status: provisioning_started
