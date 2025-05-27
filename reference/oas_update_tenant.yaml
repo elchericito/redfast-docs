@@ -84,6 +84,19 @@ paths:
                     type: string
                     format: date-time
                     example: '2025-02-18T17:02:26.000Z'
+              examples:
+                New Example:
+                  summary: New Example
+                  value: ''
+                New Example 1:
+                  summary: New Example 1
+                  value:
+                    success: true
+                    status: updated
+                    external_tenant_id: tenant-123
+                    app_id: abc123app
+                    tag_url: https://abc123app.redfastlabs.com/assets/redfast.js
+                    test_mode: false
         '401':
           description: Unauthorized - Shared secret is incorrect
           content:
