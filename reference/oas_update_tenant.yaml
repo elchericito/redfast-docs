@@ -88,8 +88,8 @@ paths:
                 New Example:
                   summary: New Example
                   value: ''
-                New Example 1:
-                  summary: New Example 1
+                OK:
+                  summary: OK
                   value:
                     success: true
                     status: updated
