@@ -1,5 +1,5 @@
 ---
-title: Get an existing Redfast tenant
+title: Get tenant
 excerpt: Retrieves an existing tenant from the Redfast platform.
 api:
   file: oas_get_tenant.yaml
