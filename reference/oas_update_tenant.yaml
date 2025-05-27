@@ -73,17 +73,6 @@ paths:
                   test_mode:
                     type: boolean
                     example: false
-                  jwt_public_key:
-                    type: string
-                    description: Returned only if updated
-                    example: |
-                      -----BEGIN PUBLIC KEY-----
-                      MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAr...
-                      -----END PUBLIC KEY-----
-                  jwt_public_key_updated_at:
-                    type: string
-                    format: date-time
-                    example: '2025-02-18T17:02:26.000Z'
               examples:
                 New Example:
                   summary: New Example

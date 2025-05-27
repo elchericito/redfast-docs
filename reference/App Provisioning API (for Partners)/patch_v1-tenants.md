@@ -1,5 +1,5 @@
 ---
-title: Update tenant
+title: Update a Redfast tenant
 excerpt: Updates a Redfast tenant's information or public key.
 api:
   file: oas_update_tenant.yaml
