@@ -1,5 +1,5 @@
 ---
-title: Create tenant
+title: Create a new Redfast tenant
 excerpt: Creates a new tenant on the Redfast platform.
 api:
   file: oas_create_tenant.yaml
