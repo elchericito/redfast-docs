@@ -239,7 +239,14 @@ interface PromptResult {
   code: PromptResultCode;
   value?: { [key: string]: any };
   meta?: { [key: string]: any };
-  promptMeta?: { [key: string]: any };
+  promptMeta?: {
+    promptName: string;
+    promptID: string;
+    promptVariationName: string;
+    promptVariationID: string;
+    promptExperimentName: string;
+    promptExperimentID: string;
+  };
 }
 ```
 
