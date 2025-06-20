@@ -1,6 +1,8 @@
 ---
 title: Tags
-excerpt: ''
+excerpt: >-
+  Manage and report on groups of prompts using tags, with combined analytics and
+  frequency controls.
 deprecated: false
 hidden: false
 metadata:
@@ -10,88 +12,54 @@ metadata:
 next:
   description: ''
 ---
-#### Metadata description
-
-<br />
-
-Briefly categorize prompts with tags, view tag‑specific performance, and control display frequency by tag.
-
-<br />
-
 # Overview
 
-<br />
-
-Tags provide a simple way to group and manage prompts by campaigns, use cases, markets, or any custom criteria. They enable consolidated reporting and frequency control across all tagged prompts.
-
-<br />
+Tags let you categorize prompts by campaigns, use cases, markets, or any custom criteria. They enable better organization, consolidated reporting, and the ability to cap how often related prompts are shown.
 
 ### Required plan
 
-<br />
-
 This feature or setting is available to all customers on any Recurly Engage subscription plan.
-
-<br />
 
 ### Prerequisites & limitations
 
-<br />
-
-* Requires App or Company Administrator privileges to create and manage tags.
-  <br />
+* You must have **Company**, **App Administrator** or **App member** permissions in Recurly Engage.
 
 # Definition
 
-<br />
-
-Tags are labels you assign to prompts to categorize them and facilitate filtering, reporting, and frequency capping.
-
-<br />
+A **tag** is a label you assign to one or more prompts to group them for filtering, reporting, and frequency capping.
 
 # Key benefits
 
-<br />
-
-* **Organize prompts**: Group prompts by use case, campaign, market, or offer for intuitive management.
-  * **Aggregate metrics**: View combined performance metrics (impressions, clicks, conversion) across all prompts sharing a specific tag.
-    * **Control frequency**: Set per‑tag frequency caps to limit how often tagged prompts appear to individual users.
-      <br />
+* **Organize prompts**: Group prompts by use case, campaign, or market for easier management.
+* **Unified analytics**: View combined performance metrics (impressions, conversions, CTR) across all prompts sharing a tag.
+* **Frequency control**: Set per-tag frequency caps to limit how often users see any prompts with that tag.
 
 # Key details
 
-<br />
+## Create and manage tags
 
-***
+App admins can create default tags at the application level under **Settings → Tags**, or add new tags on the fly when editing a prompt.
 
-<br />
+<Image align="center" className="border" border={true} src="https://files.readme.io/4a443a46f12b41134aed1a8ccdb932aba86cbf2b20f37945c75d01712dd475da-image.png" />
 
-<br />
+## Assign tags to prompts
 
-**Create and manage tags**
+When creating or editing a prompt, select existing tags or type to add a new one under **Details → Tags**.
 
-* Navigate to **Settings → Tags** to add, edit, or delete tags at the application level.
-  * You can also add new tags directly when creating or editing a prompt under **Details → Tags**.
+<Image align="center" className="border" border={true} src="https://files.readme.io/a248fe5e233d5c15ec140885651bc2a1ef2e0e33dceee6cbb084ce3cc6a5ae9c-image.png" />
 
-\<Image align="center" className="border" border=\{true} src="https\://files.readme.io/4a443a46f12b41134aed1a8ccdb932aba86cbf2b20f37945c75d01712dd475da-image.png" />
-\<br>
+## Filter and report by tag
 
-\*\*Assign tags to prompts\*\*
+Go to **Prompts**, click the filter icon in the **Tags** column, and choose a tag to see all associated prompts and their combined metrics.
 
-\* In the prompt editor, locate \*\*Details → Tags\*\*, select existing tags or type to create a new one.
+<Image align="center" className="border" border={true} src="https://files.readme.io/ffa89a2acdc30406f18ce2a9655dac93d26eda3ca5e15a6e29ab57bf48213ba2-image.png" />
 
-\<Image align="center" className="border" border=\{true} src="https\://files.readme.io/a248fe5e233d5c15ec140885651bc2a1ef2e0e33dceee6cbb084ce3cc6a5ae9c-image.png" />
-\<br>
+## Frequency capping by tag
 
-\*\*Filter and report by tag\*\*
+To limit how often prompts with a specific tag appear to users:
 
-\* Go to \*\*Prompts\*\*, click the filter icon next to the \*\*Tags\*\* column, and choose a tag to see all associated prompts and their combined analytics.
+1. Navigate to **Settings → Tags**.
+2. Click the edit (pencil) icon for your tag.
+3. Under **Frequency Cap**, select **Custom**, configure the limit, and submit.
 
-\<Image align="center" className="border" border=\{true} src="https\://files.readme.io/ffa89a2acdc30406f18ce2a9655dac93d26eda3ca5e15a6e29ab57bf48213ba2-image.png" />
-\<br>
-
-\*\*Frequency capping by tag\*\*
-
-\* To limit how often prompts with a given tag appear to users, go to \*\*Settings → Tags\*\*, edit the tag, select \*\*Custom\*\* under \*\*Frequency Cap\*\*, configure the cap, and submit.
-
-!\[]\(https\://files.readme.io/dced510deb4e280058e63236c304795fd959ffb8f7c6a5fafd01bdb7a55f9636-Frequency\_cap\_by\_tag.png)
+<Image align="center" className="border" border={true} src="https://files.readme.io/dced510deb4e280058e63236c304795fd959ffb8f7c6a5fafd01bdb7a55f9636-Frequency_cap_by_tag.png" />
