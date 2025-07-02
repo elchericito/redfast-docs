@@ -192,6 +192,20 @@ promoMgr.onInlineDismissed(inlineItem)
 
 ## Respond to Prompt Interactions
 
+A PromptResult object is returned upon any prompt interaction performed by the user.
+
+The PromptResult schema includes the following properties:
+
+* code: Interaction code (ex: 100 for impression, 101 for button1 click)
+* meta: Metadata specified within the prompt
+* promptName
+* promptID
+* promptVariationName
+* promptVariationID
+* promptExperimentName
+* promptExperimentID
+* buttonLabel
+
 ```
 ' Observe Prompt Interactions
 m.promoMgr.observeField("result", "onPromptResult")
@@ -214,8 +228,6 @@ sub onPromptResult()
 end sub
 
 ```
-
-<br />
 
 ## Send Usage Tracking Event
 
