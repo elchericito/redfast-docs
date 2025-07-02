@@ -74,11 +74,9 @@ The anonymousUserId may be updated after the SDK has been initialized. If not se
 m.promoMgr.callFunc("setAnonymousUserId", {userId: "[new anon user id]"})
 ```
 
-<br />
+## Trigger Modal via Screen Name
 
-## Trigger Popup via Screen Name
-
-Allow the Redfast SDK to display a popup on the specified screen. If the prompt also requires a button click, the trigger will not occur until the associated `onButtonClicked` function is called.
+You may utilize the Redfast SDK to display a modal on a specified screen. If the prompt also requires a button click, the trigger will not occur until the associated `onButtonClicked` function is called.
 
 Add the following line in the screen init function:
 
@@ -100,12 +98,12 @@ Ensure that you add an event listener before calling any function on `m.promoMgr
   m.promoMgr.observeField("result", "onPromotionEvent")
 ```
 
-## Trigger Popup via Button Click
+## Trigger Modal via Button Click
 
 The sample code below demonstrates:
 
 1. Tracking a button click event
-2. Displaying a popup if applicable to the button.
+2. Displaying a modal if applicable to the button.
 
 Note that a previous `onScreenChanged` call is required if the prompt trigger is configured to be invoked only when the button click occurs on a specified screen name.
 
@@ -191,6 +189,33 @@ promoMgr.onInlineClicked(inlineItem)
 ' Report dismiss
 promoMgr.onInlineDismissed(inlineItem)
 ```
+
+## Respond to Prompt Interactions
+
+```
+' Observe Prompt Interactions
+m.promoMgr.observeField("result", "onPromptResult")
+
+' Perform actions on resulting interaction
+sub onPromptResult()
+		' Call custom sendAnalytics() function
+    sendAnalytics(m.promoMgr.result)
+
+		' Kick off Roku Pay flow for specified SKU if specified
+    if  m.promoMgr.result.roku <> invalid and m.promoMgr.result.roku <> ""
+        m.promoMgr.callFunc("purchaseIap", {sku: m.promoMgr.result.roku, qty: 1})
+    else
+        if m.modal.visible
+            m.detail.setFocus(true)
+        else
+            m.home.setFocus(true)
+        end if
+    end if
+end sub
+
+```
+
+<br />
 
 ## Send Usage Tracking Event
 
