@@ -125,7 +125,7 @@ sub onModalDismissed()
   end if
 end sub
 
-// Note: The full set of status codes can be found in the SDK `const.brs` file:
+' Note: The full set of status codes can be found in the SDK `const.brs` file:
 ' Success codes
 m.ok = 1
 
@@ -177,6 +177,19 @@ for ii = 0 To inlineItems.count() - 1
 end for
 featured.title = "Featured"
 contentNode.insertChild(featured, 2)
+```
+
+Note: prompt interactions for inline prompts must be reported within your application code.
+
+```
+' Report impression when inline prompt is viewed
+promoMgr.onInlineViewed(inlineItem)
+
+' Report click
+promoMgr.onInlineClicked(inlineItem)
+
+' Report dismiss
+promoMgr.onInlineDismissed(inlineItem)
 ```
 
 ## Send Usage Tracking Event
