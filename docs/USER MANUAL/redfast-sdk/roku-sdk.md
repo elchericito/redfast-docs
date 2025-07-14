@@ -144,6 +144,17 @@ m.holdout = 120
 
 ```
 
+## Show Modal via Manual Trigger
+
+A prompt may triggered manually if triggering via Screen Name or Button Click is not desired.
+
+```
+prompt = m.promoMgr.callFunc("getPrompt", {pathId: "myPathId"})
+m.promoMgr.callFunc("showPrompt", {root: m.viewRoot, prompt: prompt})
+```
+
+<br />
+
 ## Retrieve Inline Prompts
 
 The SDK provides a method to retrieve inline prompts within the specified Zone ID that are eligible for the current userId. You may access the properties of the inline prompts to render in the appropriate locations within the app.
