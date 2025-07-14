@@ -208,14 +208,16 @@ A PromptResult object is returned upon any prompt interaction performed by the u
 The PromptResult schema includes the following properties:
 
 * code: Interaction code (ex: 100 for impression, 101 for button1 click)
-* meta: Metadata specified within the prompt
-* promptName
-* promptID
-* promptVariationName
-* promptVariationID
-* promptExperimentName
-* promptExperimentID
-* buttonLabel
+* meta: Device Metadata specified within the prompt
+* promptMeta
+  * promptName
+  * promptID
+  * promptType (coming soon)
+  * promptVariationName
+  * promptVariationID
+  * promptExperimentName
+  * promptExperimentID
+  * buttonLabel
 
 ```
 ' Observe Prompt Interactions
