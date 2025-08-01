@@ -34,8 +34,12 @@ dependencyResolutionManagement {
 
 // dependency
 dependencies {
-  "amazonImplementation"("com.github.redfast.redfast-sdk-android-build:redfast-sdk-amazon:v2.2.1.3")
-  "googleImplementation"("com.github.redfast.redfast-sdk-android-build:redfast-sdk-google:v2.2.1.3")
+  // amazon devices with inapp billing support
+  "amazonImplementation"("com.github.redfast.redfast-sdk-android-build:redfast-sdk-amazon:v2.2.1.5")
+  // google devices with inapp billing support
+  "googleImplementation"("com.github.redfast.redfast-sdk-android-build:redfast-sdk-google:v2.2.1.5")
+  // google devices without inapp billing support
+  "noiapImplementation"("com.github.redfast.redfast-sdk-android-build:redfast-sdk-noiap:v2.2.1.5")
 }
 ```
 
@@ -53,7 +57,7 @@ dependencies {
 // dependency
 <dependency>
   <groupId>com.github.redfast.redfast-sdk-android-build</groupId>
-  <artifactId>redfast-sdk-google</artifactId> // or redfast-sdk-amazon
+  <artifactId>redfast-sdk-google</artifactId> // or redfast-sdk-amazon, redfast-sdk-noiap
   <version>v2.2.1.3</version>
 </dependency>
 ```
