@@ -246,6 +246,7 @@ interface PromptResult {
     promptVariationID: string;
     promptExperimentName: string;
     promptExperimentID: string;
+    buttonLabel: string;
   };
 }
 ```
@@ -289,6 +290,24 @@ interface PromptResult {
         timestamp: new Date().toISOString()
       }
     };
+    console.log('ANALYTICS:', JSON.stringify(analyticsData, null, 2));
+    /* Example:
+      ANALYTICS: {
+        "name": "Redfast Click",
+        "data": {
+          "promptName": "My Prompt Name",
+          "promptID": "438c8eec-1111-1111-1111-2222",
+          "promptVariationName": "Varation 2",
+          "promptVariationID": "438c8eec-1111-1111-1111-2222",
+          "promptExperimentName": "My Experiment",
+          "promptExperimentID": "438c8eec-1111-1111-1111-3333",
+          "promptType": 5,
+          "buttonLabel": "Sign me up",
+          "timestamp": "2025-02-12T05:41:28.365Z"
+        }
+      }
+    */
+
     // Send Payload to Analytics
   }}
 />
