@@ -62,6 +62,47 @@ React.useEffect(() => {
   }
   return () => {};
 }, [dispatch]);
+
+// (optional) Utilize specific fonts for various parts of the prompts
+useFonts({
+  buttonFont: require('./assets/fonts/fontA.ttf'),
+  otherFont: require('./assets/fonts/fontB.ttf'),
+});
+
+React.useEffect(() => {
+  if (dispatch) {
+    const promptMgr = new PromptManager(
+      'YOUR_APP_ID',
+      'INITIAL_USER_ID'
+    );
+    const intervalId = setInterval(() => {
+      if (promptMgr.isInitialized()) {
+        dispatch({
+          type: PromptAction_Init,
+          data: promptMgr,
+        });
+        dispatch({
+          type: PromptAction_Font_Button,
+          data: 'buttonFont',
+        });
+        dispatch({
+          type: PromptAction_Font_Timer,
+          data: 'otherFont',
+        });
+        dispatch({
+          type: PromptAction_Font_LegalText,
+          data: 'otherFont',
+        });
+        setReady(true);
+        clearInterval(intervalId);
+      }
+    }, 1000);
+    return () => clearInterval(intervalId);
+  }
+  return () => {};
+}, [dispatch]);
+
+
 ```
 
 ## Set UserId
