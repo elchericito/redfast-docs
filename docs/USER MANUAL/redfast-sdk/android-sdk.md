@@ -63,7 +63,7 @@ dependencies {
 // dependency
 <dependency>
   <groupId>com.github.redfast.redfast-sdk-android-build</groupId>
-  <artifactId>redfast-sdk-google</artifactId> // or redfast-sdk-amazon, redfast-sdk-noiap
+  <artifactId>redfast-sdk-google</artifactId> // or redfast-sdk-amazon, redfast-sdk-noiap, redfast-sdk-core
   <version>v2.2.1.3</version>
 </dependency>
 ```
