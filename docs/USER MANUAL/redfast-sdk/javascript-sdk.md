@@ -25,7 +25,9 @@ We recommend the following when integrating the JS SDK on CTV apps:
 
 ## Analytics
 
-While there are a number of built in integrations with Analytics services, you may want to generate a custom analytics payload to report all events relating to user interactions against Recurly Engage prompts. You may implement a callback function that is invoked whenever a user interaction occurs within Settings > Custom JS Snippet. Example code below:
+While there are a number of built in integrations with Analytics services, you may want to generate a custom analytics payload to report all events relating to user interactions against Recurly Engage prompts. You may implement a callback function that is invoked whenever a user interaction occurs within Settings > Custom JS Snippet. 
+
+Example code below:
 
 ```javascript
 /*
@@ -54,3 +56,100 @@ static onPromptInteraction(eventName, payload) {
   }
 }
 ```
+
+Google Analytics (GA4) Example:
+
+```javascript
+static onPromptInteraction(eventName, payload) {
+  const baseParams = {
+    promo_id: payload.promo_id,
+    promo_name: payload.promo_name,
+    variation_id: payload.variation_id,
+    variation_name: payload.variation_name,
+    cta: payload.cta,
+    activity: payload.activity,
+    user_id: payload.user_id,
+    event_timestamp: payload.event_timestamp,
+  };
+
+  switch(eventName) {
+    case "impression":
+      gtag("event", "prompt_impression", baseParams);
+      break;
+
+    case "click":
+    case "click2":
+      gtag("event", "prompt_click", { ...baseParams, click_type: eventName });
+      break;
+
+    case "decline":
+      gtag("event", "prompt_decline", baseParams);
+      break;
+
+    case "dismiss":
+      gtag("event", "prompt_dismiss", baseParams);
+      break;
+
+    case "timeout":
+      gtag("event", "prompt_timeout", baseParams);
+      break;
+
+    case "holdout":
+      gtag("event", "prompt_holdout", baseParams);
+      break;
+
+    default:
+      console.warn("Unknown event:", eventName);
+  }
+}
+
+```
+
+Segment example:
+
+```javascript
+static onPromptInteraction(eventName, payload) {
+  const properties = {
+    promo_id: payload.promo_id,
+    promo_name: payload.promo_name,
+    variation_id: payload.variation_id,
+    variation_name: payload.variation_name,
+    cta: payload.cta,
+    activity: payload.activity,
+    event_timestamp: payload.event_timestamp,
+  };
+
+  switch(eventName) {
+    case "impression":
+      analytics.track("Prompt Impression", properties);
+      break;
+
+    case "click":
+    case "click2":
+      analytics.track("Prompt Click", { ...properties, click_type: eventName });
+      break;
+
+    case "decline":
+      analytics.track("Prompt Decline", properties);
+      break;
+
+    case "dismiss":
+      analytics.track("Prompt Dismiss", properties);
+      break;
+
+    case "timeout":
+      analytics.track("Prompt Timeout", properties);
+      break;
+
+    case "holdout":
+      analytics.track("Prompt Holdout", properties);
+      break;
+
+    default:
+      console.warn("Unknown event:", eventName);
+  }
+}
+
+```
+
+<br />
