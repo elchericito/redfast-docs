@@ -16,7 +16,7 @@ The Redfast Roku SDK provides the ability to monitor consumption and show prompt
 
 Download the latest Roku SDK (v1.0.34) with Roku Pay support [here](https://assets.redfastlabs.com/sdk/roku-sdk-1.0.34.zip) and without Roku Pay support [here](https://assets.redfastlabs.com/sdk/roku-sdk-noiap-1.0.34.zip). A demo app featuring an example integration can be provided by request.
 
-To build a project using the RedFast SDK for Roku, your project must have been built with the Scenegraph SDK.\
+To build a project using the RedFast SDK for Roku, your project must have been built with the Scenegraph SDK.
 Unzip the SDK into the app `components` directory.
 
 ## Initialize SDK
@@ -212,7 +212,7 @@ The PromptResult schema includes the following properties:
 * promptMeta
   * promptName
   * promptID
-  * promptType (coming soon)
+  * promptType
   * promptVariationName
   * promptVariationID
   * promptExperimentName
